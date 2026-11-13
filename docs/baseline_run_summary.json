@@ -1,0 +1,220 @@
+{
+  "recording": {
+    "video": {
+      "path": "/media/Synology4/Yang Chen/2025-05-30/afternoon/c51__2025-05-30__19-22-58.avi",
+      "size_bytes": 1614898950,
+      "mtime_ns": 1748709752023478600
+    },
+    "trx": {
+      "path": "/media/Synology4/Yang Chen/2025-05-30/afternoon/c51__2025-05-30__19-22-58.trx",
+      "size_bytes": 20472280,
+      "mtime_ns": 1748709752344237900,
+      "sha256": "c1491dd8c6412272d9435ca8f5e01c8708f64c35feac21569e0c782004ccac01"
+    },
+    "data": {
+      "path": "/media/Synology4/Yang Chen/2025-05-30/afternoon/c51__2025-05-30__19-22-58.data",
+      "size_bytes": 550536,
+      "mtime_ns": 1748709752166277800,
+      "sha256": "6ab80bdd7eb8f7ca6ce34811e1d0d5c8a3a445bbfdbcb7501cfc13756866a95e"
+    }
+  },
+  "frames": 108293,
+  "opportunities": 433172,
+  "interpretation": "Candidate coverage and disagreement with acquisition, not accuracy. No manual ground truth.",
+  "original": [
+    {
+      "slot": 0,
+      "missing_frames": 15241,
+      "gaps": {
+        "count": 453,
+        "maximum_frames": 2140
+      }
+    },
+    {
+      "slot": 1,
+      "missing_frames": 2312,
+      "gaps": {
+        "count": 303,
+        "maximum_frames": 283
+      }
+    },
+    {
+      "slot": 2,
+      "missing_frames": 15061,
+      "gaps": {
+        "count": 1587,
+        "maximum_frames": 321
+      }
+    },
+    {
+      "slot": 3,
+      "missing_frames": 9987,
+      "gaps": {
+        "count": 1912,
+        "maximum_frames": 152
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "mode": "absolute",
+      "file": "/home/tracking/code/YL/nvsl-offline-tracking/runs/c51-baseline/c51.absolute.offline.trx",
+      "producer": {
+        "name": "nvsl-offline-tracking",
+        "version": "0.1.0",
+        "git_commit": "f47f0fcde06f1c2a14560b7fb670683b65c96260",
+        "working_tree_dirty": true,
+        "package_sha256": "f4abcfdbc77cc1bb5c84d93b3768ac51a3a77fa94805106431a3b3414af78731",
+        "numpy_version": "2.2.6",
+        "opencv_version": "4.12.0"
+      },
+      "processing_seconds": 304.5056219608523,
+      "missing_frames": 23160,
+      "missing_fraction": 0.05346605967144691,
+      "originally_missing_with_new_candidate": 19477,
+      "slot0_gap_4828_6968_candidate_frames": 26,
+      "flies": [
+        {
+          "slot": 0,
+          "missing_frames": 12423,
+          "new_candidates": 2818,
+          "original_finite_now_missing": 0,
+          "gaps": {
+            "count": 331,
+            "maximum_frames": 1291
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.5000030530989088,
+            1.3382342581226723
+          ],
+          "common_body_area_ratio_median": 1.2891665221629487
+        },
+        {
+          "slot": 1,
+          "missing_frames": 704,
+          "new_candidates": 1608,
+          "original_finite_now_missing": 0,
+          "gaps": {
+            "count": 150,
+            "maximum_frames": 187
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.40000796437018,
+            1.0639176697446575
+          ],
+          "common_body_area_ratio_median": 1.1589332657635092
+        },
+        {
+          "slot": 2,
+          "missing_frames": 7341,
+          "new_candidates": 7720,
+          "original_finite_now_missing": 0,
+          "gaps": {
+            "count": 1130,
+            "maximum_frames": 100
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.4471773894487073,
+            1.118033988749895
+          ],
+          "common_body_area_ratio_median": 1.2478990827287946
+        },
+        {
+          "slot": 3,
+          "missing_frames": 2692,
+          "new_candidates": 7331,
+          "original_finite_now_missing": 36,
+          "gaps": {
+            "count": 948,
+            "maximum_frames": 25
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.37925894350542755,
+            1.0181384173322465
+          ],
+          "common_body_area_ratio_median": 1.1640396263624797
+        }
+      ]
+    },
+    {
+      "mode": "normalized",
+      "file": "/home/tracking/code/YL/nvsl-offline-tracking/runs/c51-baseline/c51.normalized.offline.trx",
+      "producer": {
+        "name": "nvsl-offline-tracking",
+        "version": "0.1.0",
+        "git_commit": "f47f0fcde06f1c2a14560b7fb670683b65c96260",
+        "working_tree_dirty": true,
+        "package_sha256": "f4abcfdbc77cc1bb5c84d93b3768ac51a3a77fa94805106431a3b3414af78731",
+        "numpy_version": "2.2.6",
+        "opencv_version": "4.12.0"
+      },
+      "processing_seconds": 353.945822766982,
+      "missing_frames": 3687,
+      "missing_fraction": 0.0085116304839648,
+      "originally_missing_with_new_candidate": 41931,
+      "slot0_gap_4828_6968_candidate_frames": 2140,
+      "flies": [
+        {
+          "slot": 0,
+          "missing_frames": 241,
+          "new_candidates": 15081,
+          "original_finite_now_missing": 81,
+          "gaps": {
+            "count": 45,
+            "maximum_frames": 46
+          },
+          "common_center_disagreement_median_p95_px": [
+            1.2286821497546505,
+            4.067963633150948
+          ],
+          "common_body_area_ratio_median": 2.3553208474875076
+        },
+        {
+          "slot": 1,
+          "missing_frames": 1271,
+          "new_candidates": 2206,
+          "original_finite_now_missing": 1165,
+          "gaps": {
+            "count": 156,
+            "maximum_frames": 611
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.7071175708620832,
+            2.276623113501453
+          ],
+          "common_body_area_ratio_median": 1.8069962180248962
+        },
+        {
+          "slot": 2,
+          "missing_frames": 532,
+          "new_candidates": 14822,
+          "original_finite_now_missing": 293,
+          "gaps": {
+            "count": 86,
+            "maximum_frames": 213
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.8120708598874958,
+            2.0652077091292527
+          ],
+          "common_body_area_ratio_median": 2.000721580529467
+        },
+        {
+          "slot": 3,
+          "missing_frames": 1643,
+          "new_candidates": 9822,
+          "original_finite_now_missing": 1478,
+          "gaps": {
+            "count": 197,
+            "maximum_frames": 573
+          },
+          "common_center_disagreement_median_p95_px": [
+            0.6988281888013481,
+            1.7631311026446326
+          ],
+          "common_body_area_ratio_median": 1.7929497291715948
+        }
+      ]
+    }
+  ]
+}
