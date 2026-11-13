@@ -162,7 +162,7 @@ The initial 12-pixel margin clipped the dark-edge fly in the development example
 This absolute control differs from acquisition in background and spatial/rejection
 rules; it does not reproduce camera-time detection exactly.
 
-Optional body geometry: `inspect` and `track` accept `--shape-fit weighted_moments`.
+Default body geometry: `inspect` and `track` use `--shape-fit weighted_moments`.
 This leaves foreground segmentation, contour filters, candidate selection and
 accepted x/y centers unchanged. Within the accepted component, it weights pixels
 by squared positive background difference and estimates an ellipse from second
@@ -170,7 +170,11 @@ moments about that same center. Weak peripheral pixels have less influence than
 in an enclosing rectangle. No temporal smoothing, position interpolation, extra
 detections or missing-value filling is introduced. Numerically unresolved shape
 estimates fall back to the original rectangle; per-frame `tracking_quality`
-records the chosen method. Default `--shape-fit box` preserves the initial method.
+records the chosen method. Explicit `--shape-fit box` selects the initial method.
+Existing companion files retain the geometry and configuration they were generated
+with; changing the default does not rewrite them. The original baseline results
+above used box geometry. To reproduce those exact comparisons, specify
+`--shape-fit box`. Foreground-thresholding defaults have not changed.
 
 Moment ellipses use w as minor diameter, h as major diameter, and theta modulo
 180 degrees in the existing OpenCV convention. Canonicalizing equivalent box
@@ -178,7 +182,8 @@ axes before evaluating angle changes avoids mistaking width/height swaps for
 real rotation. Neither method resolves head/tail direction, and orientation is
 intrinsically uncertain for nearly circular silhouettes. Smaller or steadier
 ellipses are not necessarily anatomically more accurate; weighted moments can
-underrepresent faint real body parts. This is an optional experimental estimator.
+underrepresent faint real body parts. It is now the working default following
+visual review, while quantitative anatomical validation remains outstanding.
 
 ```bash
 PYTHONPATH=src python -m nvsl_offline track runs/c51-baseline \
@@ -193,6 +198,8 @@ The second command compares shapes on explicit development windows, checks
 identical masks/decisions/centers, and exports paired shape views plus statistics.
 Use repeatable `--interval START:STOP` arguments to choose other windows. Results
 and interpretation are in [the geometry pilot](docs/geometry_pilot.md).
+The [weighted-moment explanation](docs/weighted_moment_notes.md) develops the
+mathematics, conventions and rationale in a log-ready form.
 
 Review overlays show original ellipses in red, accepted candidates in green,
 and candidate contours in orange. Raw `_frame.png` images contain no predictions

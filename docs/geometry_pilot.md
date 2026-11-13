@@ -1,4 +1,4 @@
-**Optional body-geometry pilot, 2026-11-13.** The current detection baseline
+**Body-geometry pilot, 2026-11-13.** The current detection baseline
 measures each frame independently; it does not optimize trajectory continuity.
 Foreground thresholding determines which pixels enter a candidate. Including
 weak peripheral pixels can improve center availability while also enlarging or
@@ -16,7 +16,9 @@ fit or a guarantee that the fly's anatomical outline has been identified.
 Only w/h/theta change. Foreground masks, candidate contours/ranking, acceptance
 rules, x/y, original timestamps, physical slot ordering and missingness are kept
 fixed. If moments are numerically unresolved, the existing rectangle is retained.
-The default remains `box`; use `--shape-fit weighted_moments` explicitly. Per-frame
+The pilot initially used opt-in `--shape-fit weighted_moments`. Following visual
+review, weighted moments were selected as the working default on 2026-11-13;
+`--shape-fit box` remains available for the original geometry. Per-frame
 `tracking_quality.shape_method` codes distinguish missing, box, weighted moments,
 and box fallback. No temporal information or smoothing is used in this estimator.
 
@@ -82,8 +84,10 @@ acceptance, statuses and timestamps through full synthetic companion generation.
 geometry in these development examples without requiring detection tradeoffs.
 It can also suppress faint true body parts or distort dimensions when the fixed
 detection center differs from the intensity center. Manual body-outline review
-is required before promoting it to a default or using its geometry for boundary
-contact measurements. Testing additional dates, flies, illumination conditions,
+is still needed to quantify anatomical accuracy and effects on boundary-contact
+measurements. Selection as the working default reflects visual review and the
+verified preservation of detections, rather than a completed annotation benchmark.
+Testing additional dates, flies, illumination conditions,
 and ordinary frames is now more valuable than repeatedly tuning this same fly.
 
 Using offline measurements only in original gaps is a plausible separate output

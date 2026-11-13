@@ -21,7 +21,7 @@ class DetectionConfig:
     ambiguity_ratio: float = 0.5
     reject_ambiguous: bool = True
     reject_truncated: bool = True
-    shape_fit: str = "box"
+    shape_fit: str = "weighted_moments"
 
     def validate(self):
         if self.mode not in ("absolute", "normalized"):

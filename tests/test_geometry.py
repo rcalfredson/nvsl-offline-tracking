@@ -41,7 +41,7 @@ def test_weaker_periphery_is_downweighted_without_changing_detection(tmp_path):
     frame = np.full((240, 240, 3), 150, np.uint8)
     cv2.ellipse(frame, (50, 50), (10, 20), 25, 0, 360, (136, 136, 136), -1)
     cv2.ellipse(frame, (50, 50), (6, 14), 25, 0, 360, (70, 70, 70), -1)
-    config = DetectionConfig(mode="normalized")
+    config = DetectionConfig(mode="normalized", shape_fit="box")
     baseline, _, mask1 = detect(frame, bg, cal, config)
     refined, _, mask2 = detect(frame, bg, cal, replace(config, shape_fit="weighted_moments"))
     np.testing.assert_array_equal(mask1, mask2)
@@ -66,7 +66,7 @@ def test_full_companion_centers_status_and_timestamp_are_exactly_preserved(tmp_p
     run = tmp_path/"audit"
     audit(video, run, layout="large2", samples=9)
     old, new = tmp_path/"box.trx", tmp_path/"moments.trx"
-    config = DetectionConfig(mode="normalized")
+    config = DetectionConfig(mode="normalized", shape_fit="box")
     track(run, old, config=config)
     track(run, new, config=replace(config, shape_fit="weighted_moments"))
     a, b = load_pickle(old), load_pickle(new)
@@ -78,3 +78,22 @@ def test_full_companion_centers_status_and_timestamp_are_exactly_preserved(tmp_p
         np.testing.assert_array_equal(np.isnan(a[key]), np.isnan(b[key]))
     accepted = np.isfinite(b["x"])
     assert np.all(b["tracking_quality"]["shape_method"][accepted] == 2)
+
+
+def test_weighted_geometry_is_default_and_box_remains_explicit(tmp_path):
+    from nvsl_offline.cli import parser
+    assert DetectionConfig().shape_fit == "weighted_moments"
+    for argv in (["track", "run", "--output", "new.trx"],
+                 ["inspect", "run", "--output", "review", "--frames", "2"]):
+        assert parser().parse_args(argv).shape_fit == "weighted_moments"
+        assert parser().parse_args([*argv, "--shape-fit", "box"]).shape_fit == "box"
+    video = recording(tmp_path)
+    run = tmp_path/"audit"
+    audit(video, run, layout="large2", samples=9)
+    default, explicit = tmp_path/"default.trx", tmp_path/"explicit.trx"
+    track(run, default)
+    track(run, explicit, config=DetectionConfig(shape_fit="weighted_moments"))
+    a, b = load_pickle(default), load_pickle(explicit)
+    for key in ("x", "y", "w", "h", "theta", "ts"):
+        np.testing.assert_array_equal(a[key], b[key])
+    assert a["tracking_metadata"]["configuration"]["detector"]["shape_fit"] == "weighted_moments"

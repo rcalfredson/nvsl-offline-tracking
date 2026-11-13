@@ -60,8 +60,8 @@ def parser():
         command.add_argument("--ambiguity-ratio", type=float, default=.5)
         command.add_argument("--largest-only", action="store_true", help="Disable ambiguity rejection for a control experiment")
         command.add_argument("--allow-truncated", action="store_true", help="Allow contours touching chamber ROI border")
-        command.add_argument("--shape-fit", choices=["box", "weighted_moments"], default="box",
-                             help="Body geometry only; weighted moments preserve accepted centers and missingness")
+        command.add_argument("--shape-fit", choices=["box", "weighted_moments"], default="weighted_moments",
+                             help="Body geometry only (default: weighted_moments); centers and missingness are preserved")
     return p
 
 

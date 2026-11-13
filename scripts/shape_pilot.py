@@ -70,7 +70,7 @@ def main():
     if any(len(v) != 2 or not 0 <= v[0] < v[1] <= rec.shape[1] for v in intervals):
         parser.error("Intervals must satisfy 0 <= start < stop <= recording length")
     out = create_run(args.output)
-    config = DetectionConfig(mode="normalized")
+    config = DetectionConfig(mode="normalized", shape_fit="box")
     rows = []
     reader = FrameReader(rec.video)
     try:

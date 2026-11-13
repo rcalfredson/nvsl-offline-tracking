@@ -1,4 +1,4 @@
-"""Optional image-based body geometry with a fixed detection center."""
+"""Image-based body geometry with a fixed detection center."""
 
 import cv2
 import numpy as np
