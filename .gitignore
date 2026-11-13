@@ -6,3 +6,5 @@ runs/
 build/
 dist/
 /reference/
+/.vscode/
+/full_video_list.txt
