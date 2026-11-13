@@ -155,6 +155,14 @@ def test_quality_missingness_cannot_contradict_measurements(pair):
         Comparison.load(path)
 
 
+def test_optional_body_estimator_is_named_in_comparison_view(pair):
+    _, path, payload = pair
+    payload["tracking_metadata"]["configuration"]["detector"]["shape_fit"] = "weighted_moments"
+    with path.open("wb") as stream:
+        pickle.dump(payload, stream)
+    assert Comparison.load(path).variant_label == "normalized + weighted moments"
+
+
 def test_player_loop_navigation_and_snapshot_without_a_desktop(pair, tmp_path, monkeypatch):
     import nvsl_offline.replay as replay
     comp, _, _ = pair

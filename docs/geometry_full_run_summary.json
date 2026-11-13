@@ -1,0 +1,31 @@
+{
+  "centers_timestamps_detection_status_reasons_candidates_exactly_identical": true,
+  "frames": 108293,
+  "missing_fly_frames": 3687,
+  "missing_fraction": 0.0085116304839648,
+  "body_methods": {
+    "missing": 3687,
+    "box": 0,
+    "weighted_moments": 429485,
+    "box_fallback": 0
+  },
+  "median_area_ratio_by_slot": [
+    0.5861051082611084,
+    0.568580150604248,
+    0.6077384352684021,
+    0.5955792665481567
+  ],
+  "baseline": {
+    "path": "/home/tracking/code/YL/nvsl-offline-tracking/runs/c51-baseline/c51.normalized.offline.trx",
+    "size_bytes": 12997997,
+    "mtime_ns": 1794590323112767089,
+    "sha256": "e986b39f6f7fcea5f127ce091f0d56b630ff3a6ec0089a0dafe52be05224641c"
+  },
+  "moments": {
+    "path": "/home/tracking/code/YL/nvsl-offline-tracking/runs/c51-baseline/c51.normalized.moments.offline.trx",
+    "size_bytes": 13431358,
+    "mtime_ns": 1794596489237138746,
+    "sha256": "7fa35a0df67f4e989592cd10b0bae2fc23c7d095af5eabd6437d3fea0eb192f1"
+  },
+  "interpretation": "Geometry differences only; no anatomical accuracy claim."
+}

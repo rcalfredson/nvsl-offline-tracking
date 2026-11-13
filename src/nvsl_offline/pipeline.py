@@ -192,6 +192,7 @@ def inspect(run, output, *, indices, configs):
                         diagnostic_sheet(frame, rec, cal, index, background, results, residual, mask, config))
             for result in results:
                 row = dict(frame=index, slot=result.slot, mode=config.mode, reason=result.reason,
+                           shape_method=result.shape_method,
                            original_missing=bool(np.isnan(rec.arrays["x"][result.slot, index])),
                            candidate_count=len(result.candidates), runner_up_ratio=result.runner_up_ratio,
                            **{k: "" for k in FIELDS}, **result.rejected_counts)
@@ -237,6 +238,8 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
     reasons = np.zeros(rec.shape, np.uint8)
     counts = np.zeros(rec.shape, np.uint16)
     ratios = np.full(rec.shape, np.nan, np.float32)
+    shape_method = np.zeros(rec.shape, np.uint8)
+    shape_codes = {"missing": 0, "box": 1, "weighted_moments": 2, "box_fallback": 3}
     reason_codes = {"accepted": 0, "no_candidate": 1, "ambiguous": 2, "truncated": 3, "excluded": 4}
     start = last_report = time.monotonic()
     decoded = 0
@@ -253,6 +256,7 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
             reasons[slot, index] = reason_codes["excluded" if slot in exclude_slots else result.reason]
             if result.ellipse is None or slot in exclude_slots:
                 continue
+            shape_method[slot, index] = shape_codes[result.shape_method]
             (x, y), (w, h), theta = result.ellipse
             for key, value in zip(FIELDS, (x, y, w, h, theta)):
                 arrays[key][slot, index] = value
@@ -274,12 +278,13 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
         exclude_slots=list(exclude_slots)), source_recording=manifest["sources"],
         background_sha256=manifest["background_sha256"],
         audit=str(Path(run).resolve()), processing_seconds=time.monotonic()-start,
-        measurement_convention="saved-image pixels; OpenCV minAreaRect Box2D full diameters and degrees",
+        measurement_convention="saved-image pixels; OpenCV Box2D full diameters and degrees; body estimator in configuration",
         validation="experimental; no measured accuracy claim"), tracking_quality=dict(
         schema_version=1, status=status,
         status_codes={"observed": 0, "recovered": 1, "interpolated": 2, "missing": 3},
         reason=reasons, reason_codes=reason_codes, candidate_count=counts,
         runner_up_area_ratio=ratios, changed_from_original=changed,
+        shape_method=shape_method, shape_method_codes=shape_codes,
         uncertainty_calibrated=False, position_uncertainty_px=None,
         shape_uncertainty_px=None, orientation_uncertainty_deg=None))
     output.parent.mkdir(parents=True, exist_ok=True)

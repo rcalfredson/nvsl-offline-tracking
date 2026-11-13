@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 
 from .background import Background
+from .geometry import weighted_moment_ellipse
 from .recording import Calibration
 
 
@@ -20,10 +21,13 @@ class DetectionConfig:
     ambiguity_ratio: float = 0.5
     reject_ambiguous: bool = True
     reject_truncated: bool = True
+    shape_fit: str = "box"
 
     def validate(self):
         if self.mode not in ("absolute", "normalized"):
             raise ValueError("Unknown detector mode")
+        if self.shape_fit not in ("box", "weighted_moments"):
+            raise ValueError("Unknown body shape method")
         vals = [self.threshold, self.signal_floor, self.score_threshold, self.area_min,
                 self.area_max, self.ambiguity_ratio]
         if (not np.isfinite(vals).all() or min(vals[:4]) <= 0 or self.area_max < self.area_min
@@ -47,6 +51,7 @@ class Detection:
     rejected_counts: dict[str, int]
     reason: str
     runner_up_ratio: float | None
+    shape_method: str = "missing"
 
 
 def detect(frame, background: Background, calibration: Calibration, config: DetectionConfig):
@@ -94,5 +99,14 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
                 reason = "ambiguous"
             else:
                 reason, ellipse = "accepted", candidates[0].ellipse
-        results.append(Detection(slot, ellipse, candidates, counts, reason, ratio))
+        shape_method = "missing"
+        if ellipse is not None:
+            shape_method = "box"
+            if config.shape_fit == "weighted_moments":
+                refined = weighted_moment_ellipse(candidates[0].contour, residual, mask, ellipse[0])
+                if refined is not None:
+                    ellipse, shape_method = refined, "weighted_moments"
+                else:
+                    shape_method = "box_fallback"
+        results.append(Detection(slot, ellipse, candidates, counts, reason, ratio, shape_method))
     return results, residual, mask

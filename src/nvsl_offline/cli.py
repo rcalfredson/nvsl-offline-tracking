@@ -60,6 +60,8 @@ def parser():
         command.add_argument("--ambiguity-ratio", type=float, default=.5)
         command.add_argument("--largest-only", action="store_true", help="Disable ambiguity rejection for a control experiment")
         command.add_argument("--allow-truncated", action="store_true", help="Allow contours touching chamber ROI border")
+        command.add_argument("--shape-fit", choices=["box", "weighted_moments"], default="box",
+                             help="Body geometry only; weighted moments preserve accepted centers and missingness")
     return p
 
 
@@ -88,7 +90,7 @@ def main(argv=None):
         configs = [DetectionConfig(mode=mode, threshold=args.threshold, signal_floor=args.signal_floor,
                    score_threshold=args.score_threshold, area_min=args.area_min, area_max=args.area_max,
                    ambiguity_ratio=args.ambiguity_ratio, reject_ambiguous=not args.largest_only,
-                   reject_truncated=not args.allow_truncated) for mode in modes]
+                   reject_truncated=not args.allow_truncated, shape_fit=args.shape_fit) for mode in modes]
         if args.command == "inspect":
             result = inspect(args.run, args.output, indices=integer_list(args.frames), configs=configs)
         else:
