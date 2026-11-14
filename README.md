@@ -239,4 +239,14 @@ Investigation and proposed development plan: [offline tracking investigation](do
 
 Implementation evidence and limitations: [first baseline run](docs/baseline_first_run.md).
 
+False-positive testing with the tracker held fixed: [jump screening and image
+review](docs/false_positive_testing.md). `scripts/scan_suspicious_jumps.py` ranks
+the large-chamber section of the local experiment list without decoding videos;
+`scripts/compare_jump_trajectories.py` compares completed companions. Both retain
+raw and analysis-interpolated diagnostic counts. Neither changes source data or
+fills tracking gaps. A suspicious jump is a review cue, not a false-positive label.
+The comparator also reports full-set totals, frame-weighted missingness and
+per-slot improvements/regressions; its aggregate includes every supplied paired
+slot and requires one companion per recording to avoid double-counted exposure.
+
 Supporting evidence: [recording probes](docs/recording_probe.json) and [inspection contact sheet](docs/inspection_contact_sheet.png).
