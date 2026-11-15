@@ -121,7 +121,8 @@ def test_calibration_slots_and_acquisition_rounding(scene):
         Calibration.from_recording(rec, 120, 120, layout="large2")
 
 
-def test_audit_review_companion_preserve_sources_and_frame_contract(tmp_path):
+@pytest.mark.parametrize("illumination", ["none", "global_offset"])
+def test_audit_review_companion_preserve_sources_and_frame_contract(tmp_path, illumination):
     video = recording(tmp_path)
     original = Recording.load(video)
     sources = original.sources(hash_video=True)
@@ -136,10 +137,13 @@ def test_audit_review_companion_preserve_sources_and_frame_contract(tmp_path):
     assert (review/"0000001_absolute.jpg").is_file()
     assert len((review/"annotations.csv").read_text().splitlines()) == 9
     output = tmp_path/"experiment.offline.trx"
-    track(run, output, exclude_slots=[3])
+    track(run, output, config=DetectionConfig(illumination=illumination), exclude_slots=[3])
     with output.open("rb") as stream:
         offline = pickle.load(stream)
     assert offline["x"].shape == original.shape
+    assert offline["tracking_metadata"]["configuration"]["detector"]["illumination"] == illumination
+    assert offline["tracking_quality"]["illumination_offset"].shape == (original.shape[1],)
+    assert np.isfinite(offline["tracking_quality"]["illumination_offset"]).all()
     np.testing.assert_array_equal(offline["ts"], original.raw["ts"])
     assert np.isnan(offline["x"][3]).all()
     assert not np.any(offline["tracking_quality"]["status"] == 2)

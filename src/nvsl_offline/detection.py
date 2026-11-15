@@ -7,6 +7,7 @@ import numpy as np
 
 from .background import Background
 from .geometry import weighted_moment_ellipse
+from .illumination import global_offset
 from .recording import Calibration
 
 
@@ -22,12 +23,15 @@ class DetectionConfig:
     reject_ambiguous: bool = True
     reject_truncated: bool = True
     shape_fit: str = "weighted_moments"
+    illumination: str = "none"
 
     def validate(self):
         if self.mode not in ("absolute", "normalized"):
             raise ValueError("Unknown detector mode")
         if self.shape_fit not in ("box", "weighted_moments"):
             raise ValueError("Unknown body shape method")
+        if self.illumination not in ("none", "global_offset"):
+            raise ValueError("Unknown illumination correction")
         vals = [self.threshold, self.signal_floor, self.score_threshold, self.area_min,
                 self.area_max, self.ambiguity_ratio]
         if (not np.isfinite(vals).all() or min(vals[:4]) <= 0 or self.area_max < self.area_min
@@ -52,11 +56,18 @@ class Detection:
     reason: str
     runner_up_ratio: float | None
     shape_method: str = "missing"
+    illumination_offset: float = 0.0
+    illumination_tile_mad: float = 0.0
 
 
 def detect(frame, background: Background, calibration: Calibration, config: DetectionConfig):
     config.validate()
     residual = background.residual(frame)
+    offset = tile_mad = 0.0
+    if config.illumination == "global_offset":
+        lighting = global_offset(residual, [calibration.roi(slot) for slot in range(4)])
+        offset, tile_mad = lighting.offset, lighting.tile_mad
+        residual = residual + offset
     if config.mode == "absolute":
         mask = residual > config.threshold
     else:
@@ -108,5 +119,6 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
                     ellipse, shape_method = refined, "weighted_moments"
                 else:
                     shape_method = "box_fallback"
-        results.append(Detection(slot, ellipse, candidates, counts, reason, ratio, shape_method))
+        results.append(Detection(slot, ellipse, candidates, counts, reason, ratio, shape_method,
+                                 offset, tile_mad))
     return results, residual, mask

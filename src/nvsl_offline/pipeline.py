@@ -143,7 +143,7 @@ def diagnostic_sheet(frame, rec, cal, index, background, results, residual, mask
     noise_image = cv2.applyColorMap(np.clip(background.noise/25*255, 0, 255).astype(np.uint8), cv2.COLORMAP_VIRIDIS)
     tiles = [(overlay(frame, rec, cal, index, results), "red: original; green: accepted; orange: candidates"),
              (cv2.cvtColor(background.estimate.astype(np.uint8), cv2.COLOR_GRAY2BGR), "recording-wide background"),
-             (residual_image, "signed residual: -50 to +50 gray levels"),
+             (residual_image, f"residual; {config.illumination}; offset {results[0].illumination_offset:+.2f}"),
              (score_image, "residual / temporal noise: 0 to 10"),
              (cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR), f"{config.mode} mask (before chamber ROI)"),
              (noise_image, "temporal MAD noise scale: 0 to 25 gray levels")]
@@ -192,6 +192,8 @@ def inspect(run, output, *, indices, configs):
                         diagnostic_sheet(frame, rec, cal, index, background, results, residual, mask, config))
             for result in results:
                 row = dict(frame=index, slot=result.slot, mode=config.mode, reason=result.reason,
+                           illumination_offset=result.illumination_offset,
+                           illumination_tile_mad=result.illumination_tile_mad,
                            shape_method=result.shape_method,
                            original_missing=bool(np.isnan(rec.arrays["x"][result.slot, index])),
                            candidate_count=len(result.candidates), runner_up_ratio=result.runner_up_ratio,
@@ -239,6 +241,8 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
     counts = np.zeros(rec.shape, np.uint16)
     ratios = np.full(rec.shape, np.nan, np.float32)
     shape_method = np.zeros(rec.shape, np.uint8)
+    illumination_offsets = np.zeros(rec.shape[1], np.float32)
+    illumination_tile_mad = np.zeros(rec.shape[1], np.float32)
     shape_codes = {"missing": 0, "box": 1, "weighted_moments": 2, "box_fallback": 3}
     reason_codes = {"accepted": 0, "no_candidate": 1, "ambiguous": 2, "truncated": 3, "excluded": 4}
     start = last_report = time.monotonic()
@@ -248,6 +252,8 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
             raise ValueError("Video grew beyond audited length")
         decoded += 1
         results, _, _ = detect(frame, background, cal, config)
+        illumination_offsets[index] = results[0].illumination_offset
+        illumination_tile_mad[index] = results[0].illumination_tile_mad
         for result in results:
             slot = result.slot
             counts[slot, index] = min(len(result.candidates), np.iinfo(np.uint16).max)
@@ -285,6 +291,8 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
         reason=reasons, reason_codes=reason_codes, candidate_count=counts,
         runner_up_area_ratio=ratios, changed_from_original=changed,
         shape_method=shape_method, shape_method_codes=shape_codes,
+        illumination_offset=illumination_offsets, illumination_tile_mad=illumination_tile_mad,
+        illumination_convention="one value per saved frame; additive background offset in gray levels; tile MAD is spatial disagreement, not calibrated uncertainty",
         uncertainty_calibrated=False, position_uncertainty_px=None,
         shape_uncertainty_px=None, orientation_uncertainty_deg=None))
     output.parent.mkdir(parents=True, exist_ok=True)

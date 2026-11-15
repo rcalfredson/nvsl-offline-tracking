@@ -52,6 +52,8 @@ def parser():
     r.add_argument("--snapshot", help="Save start frame to a new .png instead of opening the player")
     r.add_argument("--snapshot-dir", default="runs/comparison-snapshots", help="Directory for the player's s key")
     for command in (i, t):
+        command.add_argument("--illumination", choices=["none", "global_offset"], default="none",
+                             help="Optional per-frame additive background correction (default: none)")
         command.add_argument("--threshold", type=float, default=25)
         command.add_argument("--signal-floor", type=float, default=6)
         command.add_argument("--score-threshold", type=float, default=4)
@@ -90,7 +92,8 @@ def main(argv=None):
         configs = [DetectionConfig(mode=mode, threshold=args.threshold, signal_floor=args.signal_floor,
                    score_threshold=args.score_threshold, area_min=args.area_min, area_max=args.area_max,
                    ambiguity_ratio=args.ambiguity_ratio, reject_ambiguous=not args.largest_only,
-                   reject_truncated=not args.allow_truncated, shape_fit=args.shape_fit) for mode in modes]
+                   reject_truncated=not args.allow_truncated, shape_fit=args.shape_fit,
+                   illumination=args.illumination) for mode in modes]
         if args.command == "inspect":
             result = inspect(args.run, args.output, indices=integer_list(args.frames), configs=configs)
         else:

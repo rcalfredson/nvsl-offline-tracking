@@ -127,6 +127,8 @@ class Comparison:
             mode = f"absolute threshold {detector.get('threshold', '?'):g}" if isinstance(detector.get("threshold"), (int, float)) else mode
         if detector.get("shape_fit", "box") != "box":
             mode += " + " + detector["shape_fit"].replace("_", " ")
+        if detector.get("illumination", "none") != "none":
+            mode += " + " + detector["illumination"].replace("_", " ")
         return cls(base, other, info.fps, info.width, info.height, calibration,
                    label or mode, status, names, reasons, reason_names)
 
