@@ -1,0 +1,2680 @@
+{
+  "schema_version": 1,
+  "compiled_date": "2026-11-15",
+  "configuration": {
+    "layout": "large2",
+    "mode": "normalized",
+    "shape_fit": "weighted_moments",
+    "illumination": "global_offset",
+    "samples": 129,
+    "quantile": 0.8,
+    "noise_floor": 3,
+    "noise_smoothing": 3,
+    "sidewall_margin": 24,
+    "signal_floor": 6,
+    "score_threshold": 4,
+    "area_min": 40,
+    "area_max": 1000,
+    "ambiguity_ratio": 0.5
+  },
+  "producer": {
+    "name": "nvsl-offline-tracking",
+    "version": "0.1.0",
+    "git_commit": "f987b0017b77984f7f4bac55d971a066fad2c7ba",
+    "working_tree_dirty": true,
+    "package_sha256": "9a9bb6dae7de0ff39a91f68acdc15c82e535b5e57c5fc76a86106da64246886a",
+    "numpy_version": "2.2.6",
+    "opencv_version": "4.12.0"
+  },
+  "elapsed_tracking_and_diagnostics_seconds": 958.4522759914398,
+  "aggregate": {
+    "schema_version": 1,
+    "recordings": 3,
+    "fly_slots": 12,
+    "weighting": "Missingness = summed missing fly-frames / summed saved fly-frames; no averaging of percentages.",
+    "interpretation": "Diagnostic jump counts and availability, not an annotated false-positive rate.",
+    "original": {
+      "saved_fly_frames": 1299700,
+      "observed_fly_frames": 1012460,
+      "missing_fly_frames": 287240,
+      "missing_fraction": 0.22100484727244749,
+      "raw_suspicious_pairs": 1,
+      "raw_pairs_per_100k_saved_fly_frames": 0.07694083249980765,
+      "slots_with_raw_suspicious_pairs": 1,
+      "analysis_assessed_slots": 12,
+      "analysis_unassessed_slots": 0,
+      "analysis_suspicious_pairs": 1
+    },
+    "offline": {
+      "saved_fly_frames": 1299700,
+      "observed_fly_frames": 1282166,
+      "missing_fly_frames": 17534,
+      "missing_fraction": 0.013490805570516273,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_saved_fly_frames": 0.0,
+      "slots_with_raw_suspicious_pairs": 0,
+      "analysis_assessed_slots": 12,
+      "analysis_unassessed_slots": 0,
+      "analysis_suspicious_pairs": 0
+    },
+    "slot_outcomes_by_raw_pair_count": {
+      "decreased": 1,
+      "increased": 0,
+      "unchanged": 11
+    }
+  },
+  "comparisons": [
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 0,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 199,
+      "observed_frames": 83813,
+      "observed_adjacent_pairs": 81164,
+      "missing_fraction": 0.22631773285331858,
+      "loss_after_start": 0.2248938787211808,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 289,
+      "analysis_suspicious_pairs": 1,
+      "analysis_suspicious_fraction": 0.0034602076124567475,
+      "analysis_pairs_per_100k_frames": 0.9248041727164273,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 285,
+      "raw_suspicious_pairs": 1,
+      "raw_pairs_per_100k_observed_edges": 1.2320733330047804,
+      "raw_pairs_after_original_start": 1
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 0,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 0,
+      "observed_frames": 108215,
+      "observed_adjacent_pairs": 108149,
+      "missing_fraction": 0.0010615711252653928,
+      "loss_after_start": 0.0010615711252653928,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 351,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 351,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 1,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 213,
+      "observed_frames": 84399,
+      "observed_adjacent_pairs": 82059,
+      "missing_fraction": 0.22090833564109666,
+      "loss_after_start": 0.21937345653320015,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 208,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 204,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 1,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 0,
+      "observed_frames": 107903,
+      "observed_adjacent_pairs": 107634,
+      "missing_fraction": 0.00394165974337672,
+      "loss_after_start": 0.00394165974337672,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 270,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 270,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 2,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 189,
+      "observed_frames": 94980,
+      "observed_adjacent_pairs": 93396,
+      "missing_fraction": 0.12323456106341733,
+      "loss_after_start": 0.12170222209892641,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 12,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 8,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 2,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 350,
+      "observed_frames": 106370,
+      "observed_adjacent_pairs": 106150,
+      "missing_fraction": 0.018092864395827565,
+      "loss_after_start": 0.014910168549731432,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 19,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 17,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 3,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 322,
+      "observed_frames": 66073,
+      "observed_adjacent_pairs": 65185,
+      "missing_fraction": 0.39007661774208435,
+      "loss_after_start": 0.3882582771646545,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 4,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 4,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "slot": 3,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108330,
+      "first_observed_frame": 0,
+      "observed_frames": 98453,
+      "observed_adjacent_pairs": 97471,
+      "missing_fraction": 0.09117511308040248,
+      "loss_after_start": 0.09117511308040248,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 9,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 9,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 0,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 153,
+      "observed_frames": 91060,
+      "observed_adjacent_pairs": 88937,
+      "missing_fraction": 0.15914085729587973,
+      "loss_after_start": 0.15795119334942342,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 55,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 30,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 0,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 0,
+      "observed_frames": 108245,
+      "observed_adjacent_pairs": 108203,
+      "missing_fraction": 0.0004524719744399505,
+      "loss_after_start": 0.0004524719744399505,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 76,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 64,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 1,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 154,
+      "observed_frames": 51312,
+      "observed_adjacent_pairs": 49403,
+      "missing_fraction": 0.5261787356640257,
+      "loss_after_start": 0.5255039763269835,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 1,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 1,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 1,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 0,
+      "observed_frames": 106440,
+      "observed_adjacent_pairs": 105783,
+      "missing_fraction": 0.017120062053299353,
+      "loss_after_start": 0.017120062053299353,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 11,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 11,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 2,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 153,
+      "observed_frames": 95646,
+      "observed_adjacent_pairs": 93235,
+      "missing_fraction": 0.11679317413707131,
+      "loss_after_start": 0.1155435958609593,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 119,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 95,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 2,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 0,
+      "observed_frames": 108270,
+      "observed_adjacent_pairs": 108248,
+      "missing_fraction": 0.0002216189262563023,
+      "loss_after_start": 0.0002216189262563023,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 200,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 198,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 3,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 169,
+      "observed_frames": 45035,
+      "observed_adjacent_pairs": 42499,
+      "missing_fraction": 0.5841413190019761,
+      "loss_after_start": 0.5834913294797688,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 8,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 6,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "slot": 3,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108294,
+      "first_observed_frame": 0,
+      "observed_frames": 106729,
+      "observed_adjacent_pairs": 106131,
+      "missing_fraction": 0.014451400816296379,
+      "loss_after_start": 0.014451400816296379,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 48,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 38,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 0,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 160,
+      "observed_frames": 93993,
+      "observed_adjacent_pairs": 91302,
+      "missing_fraction": 0.13211327688571667,
+      "loss_after_start": 0.13082919521735512,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 102,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 59,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 0,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 0,
+      "observed_frames": 108063,
+      "observed_adjacent_pairs": 107880,
+      "missing_fraction": 0.0021975789697232712,
+      "loss_after_start": 0.0021975789697232712,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 142,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 116,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 1,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 160,
+      "observed_frames": 97126,
+      "observed_adjacent_pairs": 94229,
+      "missing_fraction": 0.10318464280108217,
+      "loss_after_start": 0.10185775977658797,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 458,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 403,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 1,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 0,
+      "observed_frames": 108169,
+      "observed_adjacent_pairs": 108052,
+      "missing_fraction": 0.001218825310938957,
+      "loss_after_start": 0.001218825310938957,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 501,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 471,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 2,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 160,
+      "observed_frames": 101565,
+      "observed_adjacent_pairs": 100418,
+      "missing_fraction": 0.0621970249582183,
+      "loss_after_start": 0.06080949871001748,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 893,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 838,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 2,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 0,
+      "observed_frames": 108142,
+      "observed_adjacent_pairs": 108018,
+      "missing_fraction": 0.001468130488176471,
+      "loss_after_start": 0.001468130488176471,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 911,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 887,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 3,
+      "source": "original",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 160,
+      "observed_frames": 107458,
+      "observed_adjacent_pairs": 107097,
+      "missing_fraction": 0.007783861644860158,
+      "loss_after_start": 0.006315828409206499,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 104,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 78,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "slot": 3,
+      "source": "offline",
+      "nominal_fps": 7.5,
+      "frames": 108301,
+      "first_observed_frame": 615,
+      "observed_frames": 107167,
+      "observed_adjacent_pairs": 107071,
+      "missing_fraction": 0.010470817443975586,
+      "loss_after_start": 0.004819568003268763,
+      "analysis_state": "eligible",
+      "analysis_long_jumps": 107,
+      "analysis_suspicious_pairs": 0,
+      "analysis_suspicious_fraction": 0.0,
+      "analysis_pairs_per_100k_frames": 0.0,
+      "analysis_would_mark_bad": false,
+      "raw_long_jumps": 94,
+      "raw_suspicious_pairs": 0,
+      "raw_pairs_per_100k_observed_edges": 0.0,
+      "raw_pairs_after_original_start": 0
+    }
+  ],
+  "selected_recordings": [
+    {
+      "role": "known startup rim-lock",
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/jump-batch-2/03-c42__2025-07-21__20-33-41/audit",
+      "seconds": 891.3172012029681,
+      "aggregate": {
+        "schema_version": 1,
+        "recordings": 1,
+        "fly_slots": 4,
+        "weighting": "Missingness = summed missing fly-frames / summed saved fly-frames; no averaging of percentages.",
+        "interpretation": "Diagnostic jump counts and availability, not an annotated false-positive rate.",
+        "original": {
+          "saved_fly_frames": 433320,
+          "observed_fly_frames": 329265,
+          "missing_fly_frames": 104055,
+          "missing_fraction": 0.24013431182497924,
+          "raw_suspicious_pairs": 1,
+          "raw_pairs_per_100k_saved_fly_frames": 0.23077633157943322,
+          "slots_with_raw_suspicious_pairs": 1,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 1
+        },
+        "offline": {
+          "saved_fly_frames": 433320,
+          "observed_fly_frames": 420941,
+          "missing_fly_frames": 12379,
+          "missing_fraction": 0.028567802086218036,
+          "raw_suspicious_pairs": 0,
+          "raw_pairs_per_100k_saved_fly_frames": 0.0,
+          "slots_with_raw_suspicious_pairs": 0,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 0
+        },
+        "slot_outcomes_by_raw_pair_count": {
+          "decreased": 1,
+          "increased": 0,
+          "unchanged": 3
+        }
+      }
+    },
+    {
+      "role": "high original loss",
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/audit",
+      "seconds": 952.1721564081963,
+      "aggregate": {
+        "schema_version": 1,
+        "recordings": 1,
+        "fly_slots": 4,
+        "weighting": "Missingness = summed missing fly-frames / summed saved fly-frames; no averaging of percentages.",
+        "interpretation": "Diagnostic jump counts and availability, not an annotated false-positive rate.",
+        "original": {
+          "saved_fly_frames": 433176,
+          "observed_fly_frames": 283053,
+          "missing_fly_frames": 150123,
+          "missing_fraction": 0.34656352152473824,
+          "raw_suspicious_pairs": 0,
+          "raw_pairs_per_100k_saved_fly_frames": 0.0,
+          "slots_with_raw_suspicious_pairs": 0,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 0
+        },
+        "offline": {
+          "saved_fly_frames": 433176,
+          "observed_fly_frames": 429684,
+          "missing_fly_frames": 3492,
+          "missing_fraction": 0.008061388442572997,
+          "raw_suspicious_pairs": 0,
+          "raw_pairs_per_100k_saved_fly_frames": 0.0,
+          "slots_with_raw_suspicious_pairs": 0,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 0
+        },
+        "slot_outcomes_by_raw_pair_count": {
+          "decreased": 0,
+          "increased": 0,
+          "unchanged": 4
+        }
+      }
+    },
+    {
+      "role": "ordinary control",
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/audit",
+      "seconds": 956.7678179200739,
+      "aggregate": {
+        "schema_version": 1,
+        "recordings": 1,
+        "fly_slots": 4,
+        "weighting": "Missingness = summed missing fly-frames / summed saved fly-frames; no averaging of percentages.",
+        "interpretation": "Diagnostic jump counts and availability, not an annotated false-positive rate.",
+        "original": {
+          "saved_fly_frames": 433204,
+          "observed_fly_frames": 400142,
+          "missing_fly_frames": 33062,
+          "missing_fraction": 0.07631970157246933,
+          "raw_suspicious_pairs": 0,
+          "raw_pairs_per_100k_saved_fly_frames": 0.0,
+          "slots_with_raw_suspicious_pairs": 0,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 0
+        },
+        "offline": {
+          "saved_fly_frames": 433204,
+          "observed_fly_frames": 431541,
+          "missing_fly_frames": 1663,
+          "missing_fraction": 0.0038388380532035716,
+          "raw_suspicious_pairs": 0,
+          "raw_pairs_per_100k_saved_fly_frames": 0.0,
+          "slots_with_raw_suspicious_pairs": 0,
+          "analysis_assessed_slots": 4,
+          "analysis_unassessed_slots": 0,
+          "analysis_suspicious_pairs": 0
+        },
+        "slot_outcomes_by_raw_pair_count": {
+          "decreased": 0,
+          "increased": 0,
+          "unchanged": 4
+        }
+      }
+    }
+  ],
+  "review": {
+    "recordings": [
+      {
+        "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+        "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+        "frames": 108330,
+        "alignment": "Comparison.load verified source identities, array shape and original timestamps",
+        "slots": [
+          {
+            "slot": 0,
+            "original_missing": 24517,
+            "offline_missing": 115,
+            "newly_finite": 24402,
+            "newly_missing": 0,
+            "common_finite": 83813,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                3803,
+                4273
+              ],
+              [
+                13995,
+                14406
+              ],
+              [
+                13484,
+                13788
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                274,
+                283
+              ],
+              [
+                147,
+                155
+              ],
+              [
+                28,
+                35
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108215,
+              "ambiguous": 95,
+              "no_candidate": 20
+            }
+          },
+          {
+            "slot": 1,
+            "original_missing": 23931,
+            "offline_missing": 427,
+            "newly_finite": 23504,
+            "newly_missing": 0,
+            "common_finite": 84399,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                10301,
+                11027
+              ],
+              [
+                4288,
+                4973
+              ],
+              [
+                6671,
+                6999
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                6743,
+                6828
+              ],
+              [
+                44278,
+                44287
+              ],
+              [
+                9972,
+                9979
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 107903,
+              "no_candidate": 424,
+              "ambiguous": 3
+            }
+          },
+          {
+            "slot": 2,
+            "original_missing": 13350,
+            "offline_missing": 1960,
+            "newly_finite": 12806,
+            "newly_missing": 1416,
+            "common_finite": 93564,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                74134,
+                74556
+              ],
+              [
+                62366,
+                62719
+              ],
+              [
+                59458,
+                59797
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                825,
+                1212
+              ],
+              [
+                0,
+                350
+              ],
+              [
+                544,
+                769
+              ]
+            ],
+            "offline_reason_counts": {
+              "ambiguous": 1636,
+              "accepted": 106370,
+              "no_candidate": 324
+            }
+          },
+          {
+            "slot": 3,
+            "original_missing": 42257,
+            "offline_missing": 9877,
+            "newly_finite": 32380,
+            "newly_missing": 0,
+            "common_finite": 66073,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                13004,
+                24766
+              ],
+              [
+                27143,
+                30085
+              ],
+              [
+                35547,
+                37862
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                23438,
+                23926
+              ],
+              [
+                22940,
+                23313
+              ],
+              [
+                18621,
+                18993
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 98453,
+              "no_candidate": 9877
+            }
+          }
+        ],
+        "review_points": [
+          {
+            "frame": 400,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0000400-slot0.png"
+          },
+          {
+            "frame": 400,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0000400-slot1.png"
+          },
+          {
+            "frame": 400,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0000400-slot2.png"
+          },
+          {
+            "frame": 400,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0000400-slot3.png"
+          },
+          {
+            "frame": 617,
+            "slot": 0,
+            "reasons": [
+              "previously reviewed startup rim-lock"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0000617-slot0.png"
+          },
+          {
+            "frame": 1005,
+            "slot": 0,
+            "reasons": [
+              "previously reviewed startup rim-lock"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0001005-slot0.png"
+          },
+          {
+            "frame": 1028,
+            "slot": 2,
+            "reasons": [
+              "longest run of newly missing measurements"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0001028-slot2.png"
+          },
+          {
+            "frame": 1058,
+            "slot": 0,
+            "reasons": [
+              "previously reviewed startup rim-lock"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0001058-slot0.png"
+          },
+          {
+            "frame": 3803,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0003803-slot0.png"
+          },
+          {
+            "frame": 4038,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0004038-slot0.png"
+          },
+          {
+            "frame": 4272,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0004272-slot0.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010000-slot0.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010000-slot1.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010000-slot2.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010000-slot3.png"
+          },
+          {
+            "frame": 10301,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010301-slot1.png"
+          },
+          {
+            "frame": 10664,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0010664-slot1.png"
+          },
+          {
+            "frame": 11026,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0011026-slot1.png"
+          },
+          {
+            "frame": 13004,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0013004-slot3.png"
+          },
+          {
+            "frame": 17381,
+            "slot": 1,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0017381-slot1.png"
+          },
+          {
+            "frame": 18885,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0018885-slot3.png"
+          },
+          {
+            "frame": 24765,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0024765-slot3.png"
+          },
+          {
+            "frame": 33656,
+            "slot": 0,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0033656-slot0.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0054000-slot0.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0054000-slot1.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0054000-slot2.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0054000-slot3.png"
+          },
+          {
+            "frame": 74134,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0074134-slot2.png"
+          },
+          {
+            "frame": 74345,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0074345-slot2.png"
+          },
+          {
+            "frame": 74555,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0074555-slot2.png"
+          },
+          {
+            "frame": 85054,
+            "slot": 3,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0085054-slot3.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0090000-slot0.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0090000-slot1.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0090000-slot2.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0090000-slot3.png"
+          },
+          {
+            "frame": 103635,
+            "slot": 2,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/01-c42__2025-07-21__20-33-41/frame0103635-slot2.png"
+          }
+        ],
+        "offline_only_pairs": [],
+        "illumination_offset_percentiles": {
+          "p0": -12.0,
+          "p50": -1.0,
+          "p95": -1.0,
+          "p100": 0.0
+        }
+      },
+      {
+        "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+        "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+        "frames": 108294,
+        "alignment": "Comparison.load verified source identities, array shape and original timestamps",
+        "slots": [
+          {
+            "slot": 0,
+            "original_missing": 17234,
+            "offline_missing": 49,
+            "newly_finite": 17185,
+            "newly_missing": 0,
+            "common_finite": 91060,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                82354,
+                83177
+              ],
+              [
+                36190,
+                36488
+              ],
+              [
+                40514,
+                40747
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                975,
+                980
+              ],
+              [
+                46597,
+                46599
+              ],
+              [
+                49403,
+                49405
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108245,
+              "no_candidate": 49
+            }
+          },
+          {
+            "slot": 1,
+            "original_missing": 56982,
+            "offline_missing": 1854,
+            "newly_finite": 55128,
+            "newly_missing": 0,
+            "common_finite": 51312,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                21789,
+                24728
+              ],
+              [
+                104264,
+                106991
+              ],
+              [
+                51062,
+                52813
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                17190,
+                17231
+              ],
+              [
+                42415,
+                42448
+              ],
+              [
+                6283,
+                6315
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 106440,
+              "no_candidate": 1854
+            }
+          },
+          {
+            "slot": 2,
+            "original_missing": 12648,
+            "offline_missing": 24,
+            "newly_finite": 12624,
+            "newly_missing": 0,
+            "common_finite": 95646,
+            "common_disagreement_over_10px": 15,
+            "original_longest_gaps": [
+              [
+                696,
+                1033
+              ],
+              [
+                0,
+                153
+              ],
+              [
+                45138,
+                45218
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                703,
+                706
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                451,
+                452
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108270,
+              "ambiguous": 10,
+              "no_candidate": 14
+            }
+          },
+          {
+            "slot": 3,
+            "original_missing": 63259,
+            "offline_missing": 1565,
+            "newly_finite": 61694,
+            "newly_missing": 0,
+            "common_finite": 45035,
+            "common_disagreement_over_10px": 8,
+            "original_longest_gaps": [
+              [
+                60266,
+                62923
+              ],
+              [
+                22243,
+                23997
+              ],
+              [
+                47962,
+                49616
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                53355,
+                53452
+              ],
+              [
+                93272,
+                93304
+              ],
+              [
+                93064,
+                93084
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 106729,
+              "ambiguous": 67,
+              "no_candidate": 1498
+            }
+          }
+        ],
+        "review_points": [
+          {
+            "frame": 293,
+            "slot": 3,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000293-slot3.png"
+          },
+          {
+            "frame": 400,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000400-slot0.png"
+          },
+          {
+            "frame": 400,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000400-slot1.png"
+          },
+          {
+            "frame": 400,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000400-slot2.png"
+          },
+          {
+            "frame": 400,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000400-slot3.png"
+          },
+          {
+            "frame": 696,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000696-slot2.png"
+          },
+          {
+            "frame": 864,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0000864-slot2.png"
+          },
+          {
+            "frame": 1032,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0001032-slot2.png"
+          },
+          {
+            "frame": 1113,
+            "slot": 2,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0001113-slot2.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0010000-slot0.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0010000-slot1.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0010000-slot2.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0010000-slot3.png"
+          },
+          {
+            "frame": 21789,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0021789-slot1.png"
+          },
+          {
+            "frame": 23258,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0023258-slot1.png"
+          },
+          {
+            "frame": 24727,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0024727-slot1.png"
+          },
+          {
+            "frame": 43050,
+            "slot": 1,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0043050-slot1.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0054000-slot0.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0054000-slot1.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0054000-slot2.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0054000-slot3.png"
+          },
+          {
+            "frame": 54779,
+            "slot": 0,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0054779-slot0.png"
+          },
+          {
+            "frame": 60266,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0060266-slot3.png"
+          },
+          {
+            "frame": 61594,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0061594-slot3.png"
+          },
+          {
+            "frame": 62922,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0062922-slot3.png"
+          },
+          {
+            "frame": 82354,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0082354-slot0.png"
+          },
+          {
+            "frame": 82765,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0082765-slot0.png"
+          },
+          {
+            "frame": 83176,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0083176-slot0.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0090000-slot0.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0090000-slot1.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0090000-slot2.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/02-c52__2025-07-17__12-27-27/frame0090000-slot3.png"
+          }
+        ],
+        "offline_only_pairs": [],
+        "illumination_offset_percentiles": {
+          "p0": -11.0,
+          "p50": -1.0,
+          "p95": 0.0,
+          "p100": 0.0
+        }
+      },
+      {
+        "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+        "companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+        "frames": 108301,
+        "alignment": "Comparison.load verified source identities, array shape and original timestamps",
+        "slots": [
+          {
+            "slot": 0,
+            "original_missing": 14308,
+            "offline_missing": 238,
+            "newly_finite": 14078,
+            "newly_missing": 8,
+            "common_finite": 93985,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                4021,
+                4206
+              ],
+              [
+                0,
+                160
+              ],
+              [
+                843,
+                947
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                5122,
+                5130
+              ],
+              [
+                66495,
+                66499
+              ],
+              [
+                6939,
+                6942
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108063,
+              "no_candidate": 230,
+              "ambiguous": 8
+            }
+          },
+          {
+            "slot": 1,
+            "original_missing": 11175,
+            "offline_missing": 132,
+            "newly_finite": 11073,
+            "newly_missing": 30,
+            "common_finite": 97096,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                6725,
+                6925
+              ],
+              [
+                0,
+                160
+              ],
+              [
+                15499,
+                15643
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                38957,
+                38960
+              ],
+              [
+                46136,
+                46139
+              ],
+              [
+                4021,
+                4023
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108169,
+              "ambiguous": 33,
+              "no_candidate": 99
+            }
+          },
+          {
+            "slot": 2,
+            "original_missing": 6736,
+            "offline_missing": 159,
+            "newly_finite": 6591,
+            "newly_missing": 14,
+            "common_finite": 101551,
+            "common_disagreement_over_10px": 1,
+            "original_longest_gaps": [
+              [
+                0,
+                160
+              ],
+              [
+                37702,
+                37859
+              ],
+              [
+                84790,
+                84937
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                39744,
+                39748
+              ],
+              [
+                41145,
+                41149
+              ],
+              [
+                543,
+                546
+              ]
+            ],
+            "offline_reason_counts": {
+              "accepted": 108142,
+              "ambiguous": 21,
+              "no_candidate": 138
+            }
+          },
+          {
+            "slot": 3,
+            "original_missing": 843,
+            "offline_missing": 1134,
+            "newly_finite": 673,
+            "newly_missing": 964,
+            "common_finite": 106494,
+            "common_disagreement_over_10px": 0,
+            "original_longest_gaps": [
+              [
+                0,
+                160
+              ],
+              [
+                83514,
+                83534
+              ],
+              [
+                85762,
+                85778
+              ]
+            ],
+            "offline_longest_gaps": [
+              [
+                0,
+                615
+              ],
+              [
+                628,
+                796
+              ],
+              [
+                1029,
+                1071
+              ]
+            ],
+            "offline_reason_counts": {
+              "ambiguous": 1124,
+              "accepted": 107167,
+              "no_candidate": 10
+            }
+          }
+        ],
+        "review_points": [
+          {
+            "frame": 0,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000000-slot2.png"
+          },
+          {
+            "frame": 0,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000000-slot3.png"
+          },
+          {
+            "frame": 80,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000080-slot2.png"
+          },
+          {
+            "frame": 80,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000080-slot3.png"
+          },
+          {
+            "frame": 159,
+            "slot": 2,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000159-slot2.png"
+          },
+          {
+            "frame": 159,
+            "slot": 3,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000159-slot3.png"
+          },
+          {
+            "frame": 362,
+            "slot": 2,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000362-slot2.png"
+          },
+          {
+            "frame": 387,
+            "slot": 3,
+            "reasons": [
+              "longest run of newly missing measurements"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000387-slot3.png"
+          },
+          {
+            "frame": 400,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000400-slot0.png"
+          },
+          {
+            "frame": 400,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000400-slot1.png"
+          },
+          {
+            "frame": 400,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000400-slot2.png"
+          },
+          {
+            "frame": 400,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000400-slot3.png"
+          },
+          {
+            "frame": 544,
+            "slot": 2,
+            "reasons": [
+              "longest run of newly missing measurements"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0000544-slot2.png"
+          },
+          {
+            "frame": 4021,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0004021-slot0.png"
+          },
+          {
+            "frame": 4022,
+            "slot": 1,
+            "reasons": [
+              "longest run of newly missing measurements"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0004022-slot1.png"
+          },
+          {
+            "frame": 4113,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0004113-slot0.png"
+          },
+          {
+            "frame": 4205,
+            "slot": 0,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0004205-slot0.png"
+          },
+          {
+            "frame": 6725,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: start"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0006725-slot1.png"
+          },
+          {
+            "frame": 6825,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: middle"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0006825-slot1.png"
+          },
+          {
+            "frame": 6924,
+            "slot": 1,
+            "reasons": [
+              "longest original gap: end"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0006924-slot1.png"
+          },
+          {
+            "frame": 9767,
+            "slot": 3,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0009767-slot3.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0010000-slot0.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0010000-slot1.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0010000-slot2.png"
+          },
+          {
+            "frame": 10000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0010000-slot3.png"
+          },
+          {
+            "frame": 32923,
+            "slot": 0,
+            "reasons": [
+              "longest run of newly missing measurements"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0032923-slot0.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0054000-slot0.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0054000-slot1.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0054000-slot2.png"
+          },
+          {
+            "frame": 54000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0054000-slot3.png"
+          },
+          {
+            "frame": 82001,
+            "slot": 1,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0082001-slot1.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 0,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0090000-slot0.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 1,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0090000-slot1.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 2,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0090000-slot2.png"
+          },
+          {
+            "frame": 90000,
+            "slot": 3,
+            "reasons": [
+              "predetermined distributed frame"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0090000-slot3.png"
+          },
+          {
+            "frame": 96722,
+            "slot": 0,
+            "reasons": [
+              "largest original/offline center disagreement; either source may be wrong"
+            ],
+            "snapshot": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/review/03-c61__2025-07-27__12-52-43/frame0096722-slot0.png"
+          }
+        ],
+        "offline_only_pairs": [],
+        "illumination_offset_percentiles": {
+          "p0": -11.0,
+          "p50": -1.0,
+          "p95": 0.0,
+          "p100": 0.0
+        }
+      }
+    ],
+    "interpretation": "Unannotated review selection. Missingness, disagreement and jumps do not establish tracking accuracy."
+  },
+  "behavior": {
+    "input_manifests": [
+      {
+        "path": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-original-v2/manifest.json",
+        "size_bytes": 5983,
+        "mtime_ns": 1794755956550182577,
+        "sha256": "0f09192ff9458800e9b93b1b15dda48e353960e27dc3d890c1d4fe262a7340cc"
+      },
+      {
+        "path": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-offline/manifest.json",
+        "size_bytes": 6200,
+        "mtime_ns": 1794756729400990983,
+        "sha256": "0d5c4f337a24a2c5398dd4372f4ca522dc75a4dfe122e1949cf259cf4471c24e"
+      }
+    ],
+    "sli": [
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "sli_t2_sb5",
+        "original": 0.3434065934065934,
+        "offline": 0.3783405064558103,
+        "delta": 0.03493391304921689,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": 0.19275778252321957,
+        "offline": 0.20180383023372955,
+        "delta": 0.009046047710509986,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": -0.5604395604395604,
+        "offline": -0.5051546391752577,
+        "delta": 0.05528492126430273,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": -0.9038461538461539,
+        "offline": -0.883495145631068,
+        "delta": 0.020351008215085842,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.7159468438538206,
+        "offline": -0.6978979528899651,
+        "delta": 0.018048890963855424,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair0",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.9087046263770401,
+        "offline": -0.8997017831236948,
+        "delta": 0.009002843253345327,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "sli_t2_sb5",
+        "original": "",
+        "offline": "",
+        "delta": "",
+        "availability": "missing_both",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": "",
+        "offline": "",
+        "delta": "",
+        "availability": "missing_both",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": "",
+        "offline": "",
+        "delta": "",
+        "availability": "missing_both",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": "",
+        "offline": "",
+        "delta": "",
+        "availability": "missing_both",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.5652173913043478,
+        "offline": -0.5833333333333334,
+        "delta": -0.018115942028985588,
+        "availability": "paired",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-17::c52::pair1",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -1.0,
+        "offline": -1.0,
+        "delta": 0.0,
+        "availability": "paired",
+        "original_valid_buckets": "2",
+        "offline_valid_buckets": "2"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "sli_t2_sb5",
+        "original": 0.31818181818181823,
+        "offline": 0.3370786516853933,
+        "delta": 0.018896833503575072,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": 0.060420662319396544,
+        "offline": 0.030348968551215754,
+        "delta": -0.03007169376818079,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": -0.6818181818181818,
+        "offline": -0.6629213483146067,
+        "delta": 0.018896833503575072,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": -1.0,
+        "offline": -1.0,
+        "delta": 0.0,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.6145793376806035,
+        "offline": -0.614492301290054,
+        "delta": 8.703639054941092e-05,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair0",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.6749999999999999,
+        "offline": -0.6448412698412699,
+        "delta": 0.03015873015873005,
+        "availability": "paired",
+        "original_valid_buckets": "3",
+        "offline_valid_buckets": "3"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "sli_t2_sb5",
+        "original": 0.6181818181818182,
+        "offline": "",
+        "delta": "",
+        "availability": "no_longer_assessable",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": "",
+        "offline": "",
+        "delta": "",
+        "availability": "missing_both",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": -0.38181818181818183,
+        "offline": -0.3944954128440367,
+        "delta": -0.012677231025854885,
+        "availability": "paired",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": -1.0,
+        "offline": "",
+        "delta": "",
+        "availability": "no_longer_assessable",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.38181818181818183,
+        "offline": -0.8444444444444444,
+        "delta": -0.4626262626262626,
+        "availability": "paired",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-21::c42::pair1",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -1.0,
+        "offline": -0.8333333333333334,
+        "delta": 0.16666666666666663,
+        "availability": "paired",
+        "original_valid_buckets": "1",
+        "offline_valid_buckets": "1"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "sli_t2_sb5",
+        "original": 0.6822033898305084,
+        "offline": 0.6594262295081967,
+        "delta": -0.022777160322311696,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": 0.6489240045245219,
+        "offline": 0.6707079524317953,
+        "delta": 0.021783947907273338,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": -0.25,
+        "offline": -0.275,
+        "delta": -0.025000000000000022,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": -0.9322033898305084,
+        "offline": -0.9344262295081968,
+        "delta": -0.0022228396776883264,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.23697968367414465,
+        "offline": -0.23636382436635564,
+        "delta": 0.0006158593077890129,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair0",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.8859036881986666,
+        "offline": -0.9070717767981509,
+        "delta": -0.02116808859948427,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "sli_t2_sb5",
+        "original": -0.1428571428571428,
+        "offline": -0.15608465608465605,
+        "delta": -0.013227513227513255,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "sli_t2_sb2_sb5_mean",
+        "original": 0.06582394894894897,
+        "offline": 0.09778080011915108,
+        "delta": 0.03195685117020211,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "exp_reward_pi_t2_sb5",
+        "original": -0.7857142857142857,
+        "offline": -0.7857142857142857,
+        "delta": 0.0,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "yoked_reward_pi_t2_sb5",
+        "original": -0.6428571428571429,
+        "offline": -0.6296296296296297,
+        "delta": 0.013227513227513255,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "exp_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.7048208923208923,
+        "offline": -0.6865531305857473,
+        "delta": 0.018267761735144994,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      },
+      {
+        "pair_key": "2025-07-27::c61::pair1",
+        "metric": "yoked_reward_pi_t2_sb2_sb5_mean",
+        "original": -0.7706448412698412,
+        "offline": -0.7843339307048984,
+        "delta": -0.0136890894350572,
+        "availability": "paired",
+        "original_valid_buckets": "4",
+        "offline_valid_buckets": "4"
+      }
+    ],
+    "metric_cells": 2058,
+    "metric_availability": {
+      "paired": 1441,
+      "newly_assessable": 17,
+      "no_longer_assessable": 12,
+      "missing_both": 588
+    },
+    "interpretation": "Source-sensitive behavioral outputs, not localization ground truth. Analysis preprocessing and standard eligibility filters retained."
+  },
+  "upstream_analysis": {
+    "root": "/home/tracking/code/YL/nvsl-analysis",
+    "source_and_extensions_sha256": "fd0f64116484daeffadd5b6c89c2032a8a450a95528e20f23edbd3e08e6938a8",
+    "git_commit": "98fc66155203bb3f5e4c3c4f1b3aad7b93c8b613",
+    "git_status": []
+  },
+  "analysis_command": [
+    "/home/tracking/miniconda3/envs/analysis3.13/bin/python",
+    "/home/tracking/code/YL/nvsl-analysis/analyze.py",
+    "-v",
+    "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-original-v2/inputs/01/c42__2025-07-21__20-33-41.avi,/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-original-v2/inputs/02/c52__2025-07-17__12-27-27.avi,/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-original-v2/inputs/03/c61__2025-07-27__12-52-43.avi",
+    "-f",
+    "0-1",
+    "--rCC",
+    "15",
+    "--num-trainings",
+    "2",
+    "--rpd",
+    "--best-worst-trn",
+    "2",
+    "--sli-use-training-mean",
+    "--sli-select-skip-first-sync-buckets",
+    "1",
+    "--sli-min-valid-sync-buckets",
+    "3",
+    "--no-wall-cache",
+    "--hidePltTests",
+    "--cross-experiment-sli-export",
+    "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/analysis-original-v2/sli.csv"
+  ],
+  "startup_attribution": [
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "slot": 2,
+      "frame": 1113,
+      "none": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            104.76949310302734,
+            525.8800659179688
+          ],
+          [
+            12.738102619220099,
+            74.12775540099389
+          ],
+          111.28142406446165
+        ],
+        "offset": 0.0
+      },
+      "global_offset": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            108.44998168945312,
+            526.1500244140625
+          ],
+          [
+            11.699781381597926,
+            61.774454773069365
+          ],
+          115.60027017670566
+        ],
+        "offset": -5.0
+      }
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "slot": 3,
+      "frame": 293,
+      "none": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            533.8189697265625,
+            615.7675170898438
+          ],
+          [
+            20.323138916467652,
+            73.59285393307239
+          ],
+          63.11548869404797
+        ],
+        "offset": 0.0
+      },
+      "global_offset": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            530.7000122070312,
+            623.4000244140625
+          ],
+          [
+            13.602477979696168,
+            57.53353931661502
+          ],
+          88.10306606612792
+        ],
+        "offset": -8.0
+      }
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "slot": 2,
+      "frame": 362,
+      "none": {
+        "reason": "ambiguous",
+        "ellipse": null,
+        "offset": 0.0
+      },
+      "global_offset": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            285.6767578125,
+            520.4475708007812
+          ],
+          [
+            16.91841817397803,
+            61.74470815203298
+          ],
+          140.13601842181097
+        ],
+        "offset": -8.0
+      }
+    },
+    {
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "slot": 3,
+      "frame": 387,
+      "none": {
+        "reason": "accepted",
+        "ellipse": [
+          [
+            527.5008544921875,
+            661.298828125
+          ],
+          [
+            4.011529794455704,
+            307.25963199881437
+          ],
+          90.26219694588104
+        ],
+        "offset": 0.0
+      },
+      "global_offset": {
+        "reason": "ambiguous",
+        "ellipse": null,
+        "offset": -8.0
+      }
+    }
+  ],
+  "visual_review_scope": "Assistant spot checks of selected recovery, ordinary, disagreement and missing frames; not a completed manual localization benchmark.",
+  "interpretation": "Full-length compatibility and sensitivity check. Availability and suspicious-pair counts are not false-positive or localization-accuracy estimates."
+}

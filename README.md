@@ -119,6 +119,16 @@ PYTHONPATH=src python -m nvsl_offline track runs/c51-baseline \
 python -m pytest -q
 ```
 
+An experimental lighting correction is available on `inspect` and `track` with
+`--illumination global_offset` (default: `none`). It estimates a shared additive
+brightness change from spatially distributed chamber pixels, adjusts the stored
+background, then applies the existing thresholds and candidate-selection rules.
+It uses only the current image and stored background; no position prediction or
+interpolation is involved. See the [illumination pilot](docs/illumination_pilot.md)
+for the method, selected-interval results, and limitations. Full companions record
+the setting and one offset/tile-disagreement value per saved frame in
+`tracking_quality`. Existing audits/backgrounds can be reused; write a new companion.
+
 Output directories and companion filenames must be new. Acquisition video,
 `.trx`, and `.data` files are read-only inputs. Load only trusted acquisition
 pickles. `audit` discovers `experiment.trx`/`.data` or `experiment.avi.trx`/`.data`,
@@ -245,6 +255,9 @@ the large-chamber section of the local experiment list without decoding videos;
 `scripts/compare_jump_trajectories.py` compares completed companions. Both retain
 raw and analysis-interpolated diagnostic counts. Neither changes source data or
 fills tracking gaps. A suspicious jump is a review cue, not a false-positive label.
+The [three-recording full-length check](docs/full_recording_check.md) evaluates
+the optional illumination correction, documents remaining startup segmentation
+errors, and compares standard behavioral outputs using isolated tracking sources.
 The comparator also reports full-set totals, frame-weighted missingness and
 per-slot improvements/regressions; its aggregate includes every supplied paired
 slot and requires one companion per recording to avoid double-counted exposure.

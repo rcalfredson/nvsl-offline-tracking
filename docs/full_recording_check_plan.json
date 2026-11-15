@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "configuration": {
+    "layout": "large2",
+    "mode": "normalized",
+    "shape_fit": "weighted_moments",
+    "illumination": "global_offset",
+    "samples": 129,
+    "quantile": 0.8,
+    "noise_floor": 3,
+    "noise_smoothing": 3,
+    "sidewall_margin": 24,
+    "signal_floor": 6,
+    "score_threshold": 4,
+    "area_min": 40,
+    "area_max": 1000,
+    "ambiguity_ratio": 0.5
+  },
+  "recordings": [
+    {
+      "role": "known startup rim-lock",
+      "video": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+      "frames": 108330,
+      "fps": 7.5,
+      "cohort_source": "full_video_list.txt:369-370; control-genotype Flat AR large chamber",
+      "original_screen": [
+        {
+          "slot": 0,
+          "missing_percent": 22.631773285331857,
+          "raw_pairs": 1,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 1,
+          "missing_percent": 22.090833564109666,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 2,
+          "missing_percent": 12.323456106341734,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 3,
+          "missing_percent": 39.00766177420844,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        }
+      ],
+      "original_longest_gaps": [
+        {
+          "slot": 0,
+          "gaps": [
+            {
+              "first": 3803,
+              "stop": 4273,
+              "seconds": 62.666666666666664
+            },
+            {
+              "first": 13995,
+              "stop": 14406,
+              "seconds": 54.8
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "gaps": [
+            {
+              "first": 10301,
+              "stop": 11027,
+              "seconds": 96.8
+            },
+            {
+              "first": 4288,
+              "stop": 4973,
+              "seconds": 91.33333333333333
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "gaps": [
+            {
+              "first": 74134,
+              "stop": 74556,
+              "seconds": 56.266666666666666
+            },
+            {
+              "first": 62366,
+              "stop": 62719,
+              "seconds": 47.06666666666667
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "gaps": [
+            {
+              "first": 13004,
+              "stop": 24766,
+              "seconds": 1568.2666666666667
+            },
+            {
+              "first": 27143,
+              "stop": 30085,
+              "seconds": 392.26666666666665
+            }
+          ]
+        }
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.avi",
+          "size_bytes": 1283256250,
+          "mtime_ns": 1753158867083003000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.trx",
+          "size_bytes": 20479273,
+          "mtime_ns": 1753158867331005000,
+          "sha256": "dede891fd7b73e9fd90a809738391ec8eb86d0b3f9483ee0885e6cbd4e14c241"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-21/night/c42__2025-07-21__20-33-41.data",
+          "size_bytes": 530410,
+          "mtime_ns": 1753158866534997000,
+          "sha256": "8006f44aa4db8f03a83ce0291d5e8999249942e1b7dded78faf4db5bea1b7a8f"
+        }
+      }
+    },
+    {
+      "role": "high original loss",
+      "video": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+      "frames": 108294,
+      "fps": 7.5,
+      "cohort_source": "full_video_list.txt:369-370; control-genotype Flat AR large chamber",
+      "original_screen": [
+        {
+          "slot": 0,
+          "missing_percent": 15.914085729587974,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 1,
+          "missing_percent": 52.61787356640257,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 2,
+          "missing_percent": 11.679317413707132,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 3,
+          "missing_percent": 58.41413190019761,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        }
+      ],
+      "original_longest_gaps": [
+        {
+          "slot": 0,
+          "gaps": [
+            {
+              "first": 82354,
+              "stop": 83177,
+              "seconds": 109.73333333333333
+            },
+            {
+              "first": 36190,
+              "stop": 36488,
+              "seconds": 39.733333333333334
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "gaps": [
+            {
+              "first": 21789,
+              "stop": 24728,
+              "seconds": 391.8666666666667
+            },
+            {
+              "first": 104264,
+              "stop": 106991,
+              "seconds": 363.6
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "gaps": [
+            {
+              "first": 696,
+              "stop": 1033,
+              "seconds": 44.93333333333333
+            },
+            {
+              "first": 0,
+              "stop": 153,
+              "seconds": 20.4
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "gaps": [
+            {
+              "first": 60266,
+              "stop": 62923,
+              "seconds": 354.26666666666665
+            },
+            {
+              "first": 22243,
+              "stop": 23997,
+              "seconds": 233.86666666666667
+            }
+          ]
+        }
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.avi",
+          "size_bytes": 1113309748,
+          "mtime_ns": 1752786146918551700
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.trx",
+          "size_bytes": 20472469,
+          "mtime_ns": 1752786147237784700,
+          "sha256": "94ca1e14b3012e6935fa8dadc0c2ea1257e5be065bc29cf7e13067d637b1ae75"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/c52__2025-07-17__12-27-27.data",
+          "size_bytes": 523686,
+          "mtime_ns": 1752786147024028900,
+          "sha256": "6586994a26ebcd68e17dd4009018f823c10a0664c51694dfffa02200a99bc5b3"
+        }
+      }
+    },
+    {
+      "role": "ordinary control",
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+      "frames": 108301,
+      "fps": 7.5,
+      "cohort_source": "full_video_list.txt:369-370; control-genotype Flat AR large chamber",
+      "original_screen": [
+        {
+          "slot": 0,
+          "missing_percent": 13.211327688571666,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 1,
+          "missing_percent": 10.318464280108216,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 2,
+          "missing_percent": 6.21970249582183,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        },
+        {
+          "slot": 3,
+          "missing_percent": 0.7783861644860158,
+          "raw_pairs": 0,
+          "analysis_state": "eligible"
+        }
+      ],
+      "original_longest_gaps": [
+        {
+          "slot": 0,
+          "gaps": [
+            {
+              "first": 4021,
+              "stop": 4206,
+              "seconds": 24.666666666666668
+            },
+            {
+              "first": 0,
+              "stop": 160,
+              "seconds": 21.333333333333332
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "gaps": [
+            {
+              "first": 6725,
+              "stop": 6925,
+              "seconds": 26.666666666666668
+            },
+            {
+              "first": 0,
+              "stop": 160,
+              "seconds": 21.333333333333332
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "gaps": [
+            {
+              "first": 0,
+              "stop": 160,
+              "seconds": 21.333333333333332
+            },
+            {
+              "first": 37702,
+              "stop": 37859,
+              "seconds": 20.933333333333334
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "gaps": [
+            {
+              "first": 0,
+              "stop": 160,
+              "seconds": 21.333333333333332
+            },
+            {
+              "first": 83514,
+              "stop": 83534,
+              "seconds": 2.6666666666666665
+            }
+          ]
+        }
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.avi",
+          "size_bytes": 1173657080,
+          "mtime_ns": 1753649675702275500
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.trx",
+          "size_bytes": 20473792,
+          "mtime_ns": 1753649676063215200,
+          "sha256": "8313c988d9302b3e839d2bfaac5bacfa63d9baf85fa0bccab2fa1bbd5e387b46"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c61__2025-07-27__12-52-43.data",
+          "size_bytes": 528486,
+          "mtime_ns": 1753649675844954400,
+          "sha256": "29517b0518334c9af49109b2d78f32b924637579d8a128f23439c13eaaf9685d"
+        }
+      }
+    }
+  ],
+  "review_selection": "Startup frames 400 and previously reviewed rim frames; distributed frames 10000, 54000, 90000; longest-original-gap start/middle/end per slot; largest common-frame displacement; longest newly-missing run; offline-only jump pairs.",
+  "behavioral_analysis": "Same upstream analysis implementation and options, same .data and notes, isolated original/offline working directories; no wall caches. Six exp+yoked pairs, no learner-subset selection. Compare standard RPI/SLI and representative between-reward distance outputs.",
+  "success_criteria": [
+    "Exact frame shape, timestamps, saved calibration and acquisition-source identity checks pass.",
+    "Full corrected companions and upstream analysis complete without modifying acquisition or reference files.",
+    "Review rim-lock replacement as correct recovery versus abstention, and inspect new gaps and ordinary behavior before cohort expansion.",
+    "Keep newly/no-longer assessable behavioral cells separate from paired numeric changes; do not treat metric changes as accuracy evidence."
+  ]
+}
