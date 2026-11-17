@@ -1,0 +1,7278 @@
+{
+  "name": "agarose-ar-control",
+  "label": "Agarose AR-lower chamber",
+  "notebook_variable": "FIGURE_4T_ANTENNAE_REMOVED_VIDEO_GLOBS",
+  "figure": "4t",
+  "selection": {
+    "heading": "Agarose AR-lower chamber reward circle shrink in T2, T3, closer to the center  10d old flies",
+    "genotype": "Ctrl group: UAS>>CsC (X); ctrl-lexA/otd-flp; 0273Gal4/lexAop>>Kir",
+    "heading_line": 374,
+    "command_line": 375,
+    "original_command": "python analyze.py -v \"/media/Synology4/Yang Chen/2025-07-17/night/c5[12]_*,/media/Synology4/Yang Chen/2025-07-27/c3[12]_*,/media/Synology4/Yang Chen/2025-07-27/c4[12]_*,/media/Synology4/Yang Chen/2025-07-27/afternoon/c5[12]_*,/media/Synology4/Yang Chen/2025-07-27/afternoon/c6[12]_*,/media/Synology4/Yang Chen/2025-07-2[789]/night/c5[12]_*,/media/Synology4/Yang Chen/2025-07-2[789]/night/c6[12]_*,/media/Synology4/Yang Chen/2025-07-28/night/c3[12]_*,/media/Synology4/Yang Chen/2025-07-28/night/c4[12]_*,/media/Synology4/Yang Chen/2025-07-30/night/c5[12]_*,/media/Synology4/Yang Chen/2025-07-30/night/c6[12]_*,/media/Synology4/Yang Chen/2025-08-01/night/c3[12]_*,/media/Synology4/Yang Chen/2025-08-01/night/c4[12]_*,/media/Synology4/Yang Chen/2025-08-02/night/c5[12]_*\" -f 0-1 --rCC 15",
+    "patterns": [
+      "/media/Synology4/Yang Chen/2025-07-17/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-2[789]/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-2[789]/night/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-01/night/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-01/night/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-02/night/c5[12]_*"
+    ]
+  },
+  "notebook_crosscheck": {
+    "cell_index": 95,
+    "variable": "FIGURE_4T_ANTENNAE_REMOVED_VIDEO_GLOBS",
+    "patterns": [
+      "/media/Synology4/Yang Chen/2025-07-17/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-2[789]/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-2[789]/night/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c5[12]_*",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c6[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-01/night/c3[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-01/night/c4[12]_*",
+      "/media/Synology4/Yang Chen/2025-08-02/night/c5[12]_*"
+    ]
+  },
+  "matches_by_pattern": {
+    "/media/Synology4/Yang Chen/2025-07-17/night/c5[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-17/night/c52__2025-07-17__22-32-23.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-27/c3[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/c31__2025-07-27__12-50-19.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/c32__2025-07-27__12-50-23.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-27/c4[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/c41__2025-07-27__12-50-28.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/c42__2025-07-27__12-50-31.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-27/afternoon/c5[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c51__2025-07-27__17-03-51.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c52__2025-07-27__17-03-54.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-27/afternoon/c6[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c61__2025-07-27__17-03-56.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/afternoon/c62__2025-07-27__17-03-59.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-2[789]/night/c5[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/night/c51__2025-07-27__21-40-18.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/night/c52__2025-07-27__21-40-23.avi",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c51__2025-07-28__21-12-54.avi",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c52__2025-07-28__21-12-56.avi",
+      "/media/Synology4/Yang Chen/2025-07-29/night/c51__2025-07-29__20-06-51.avi",
+      "/media/Synology4/Yang Chen/2025-07-29/night/c52__2025-07-29__20-06-54.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-2[789]/night/c6[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-27/night/c61__2025-07-27__21-40-26.avi",
+      "/media/Synology4/Yang Chen/2025-07-27/night/c62__2025-07-27__21-40-28.avi",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c61__2025-07-28__21-12-59.avi",
+      "/media/Synology4/Yang Chen/2025-07-28/night/c62__2025-07-28__21-13-01.avi",
+      "/media/Synology4/Yang Chen/2025-07-29/night/c61__2025-07-29__20-06-56.avi",
+      "/media/Synology4/Yang Chen/2025-07-29/night/c62__2025-07-29__20-06-59.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-28/night/c3[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-28/night/c31__2025-07-28__21-10-34.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-28/night/c4[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-28/night/c42__2025-07-28__21-09-45.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-30/night/c5[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-30/night/c51__2025-07-30__21-00-45.avi",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c52__2025-07-30__21-00-50.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-07-30/night/c6[12]_*": [
+      "/media/Synology4/Yang Chen/2025-07-30/night/c61__2025-07-30__21-00-53.avi",
+      "/media/Synology4/Yang Chen/2025-07-30/night/c62__2025-07-30__21-00-55.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-08-01/night/c3[12]_*": [
+      "/media/Synology4/Yang Chen/2025-08-01/night/c31__2025-08-01__21-56-18.avi",
+      "/media/Synology4/Yang Chen/2025-08-01/night/c32__2025-08-01__21-56-23.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-08-01/night/c4[12]_*": [
+      "/media/Synology4/Yang Chen/2025-08-01/night/c41__2025-08-01__21-56-26.avi"
+    ],
+    "/media/Synology4/Yang Chen/2025-08-02/night/c5[12]_*": [
+      "/media/Synology4/Yang Chen/2025-08-02/night/c51__2025-08-02__22-03-50.avi",
+      "/media/Synology4/Yang Chen/2025-08-02/night/c52__2025-08-02__22-03-53.avi"
+    ]
+  },
+  "schema_version": 1,
+  "jobs": [
+    {
+      "index": 0,
+      "video": "/media/Synology4/Yang Chen/2025-07-17/night/c52__2025-07-17__22-32-23.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [
+        "Repeated timestamps"
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/night/c52__2025-07-17__22-32-23.avi",
+          "size_bytes": 1149258646,
+          "mtime_ns": 1752854716620612700
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/night/c52__2025-07-17__22-32-23.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1752854717206303200,
+          "sha256": "f8d441bb87a1b006783237adc144027904d17f84ecef27a7f7b1c194bbbe573b"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-17/night/c52__2025-07-17__22-32-23.data",
+          "size_bytes": 524846,
+          "mtime_ns": 1752854716758877700,
+          "sha256": "f799c823cd51479f1afd72d20e08b620a13309ded8d870fde4b71a2207926109"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 9732,
+            "missing_fraction": 0.08986813430354966,
+            "initial_missing": 5119,
+            "gap_count": 534,
+            "longest_gap": 5119,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 5119
+              },
+              {
+                "start": 13541,
+                "stop": 13977
+              },
+              {
+                "start": 11928,
+                "stop": 12291
+              },
+              {
+                "start": 12292,
+                "stop": 12573
+              },
+              {
+                "start": 17678,
+                "stop": 17840
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 25055,
+            "missing_fraction": 0.23136519779854467,
+            "initial_missing": 305,
+            "gap_count": 1708,
+            "longest_gap": 2229,
+            "longest_gaps": [
+              {
+                "start": 20617,
+                "stop": 22846
+              },
+              {
+                "start": 15449,
+                "stop": 16915
+              },
+              {
+                "start": 104375,
+                "stop": 105426
+              },
+              {
+                "start": 35619,
+                "stop": 36317
+              },
+              {
+                "start": 13867,
+                "stop": 14564
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 13232,
+            "missing_fraction": 0.12218815794333839,
+            "initial_missing": 152,
+            "gap_count": 1389,
+            "longest_gap": 861,
+            "longest_gaps": [
+              {
+                "start": 98249,
+                "stop": 99110
+              },
+              {
+                "start": 11433,
+                "stop": 12252
+              },
+              {
+                "start": 14473,
+                "stop": 14942
+              },
+              {
+                "start": 12748,
+                "stop": 13106
+              },
+              {
+                "start": 13977,
+                "stop": 14318
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 16957,
+            "missing_fraction": 0.1565858973885421,
+            "initial_missing": 152,
+            "gap_count": 872,
+            "longest_gap": 3025,
+            "longest_gaps": [
+              {
+                "start": 12072,
+                "stop": 15097
+              },
+              {
+                "start": 9308,
+                "stop": 10310
+              },
+              {
+                "start": 15365,
+                "stop": 16187
+              },
+              {
+                "start": 10423,
+                "stop": 10897
+              },
+              {
+                "start": 10898,
+                "stop": 11311
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1552,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.5854818820953369,
+          "last": 14439.3759765625,
+          "zero_steps": 1,
+          "negative_steps": 0,
+          "minimum_step": 0.0,
+          "maximum_step": 0.267578125
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 47.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 1,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c51__2025-07-27__17-03-51.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [
+        "Repeated timestamps"
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c51__2025-07-27__17-03-51.avi",
+          "size_bytes": 832709262,
+          "mtime_ns": 1753720926422876000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c51__2025-07-27__17-03-51.trx",
+          "size_bytes": 20472469,
+          "mtime_ns": 1753720926707984200,
+          "sha256": "8b0ff5eae71329d49b152699e861303ab7630087a77109b052150f28e6daec23"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c51__2025-07-27__17-03-51.data",
+          "size_bytes": 528850,
+          "mtime_ns": 1753720926458587400,
+          "sha256": "88f299d72a4aa66880f15146fbb6ff2ee97000385ddf97669ff0b216fb50f5af"
+        }
+      },
+      "frames": 108294,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108294
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 22854,
+            "missing_fraction": 0.21103662252756386,
+            "initial_missing": 166,
+            "gap_count": 1733,
+            "longest_gap": 1359,
+            "longest_gaps": [
+              {
+                "start": 100978,
+                "stop": 102337
+              },
+              {
+                "start": 10119,
+                "stop": 10730
+              },
+              {
+                "start": 64143,
+                "stop": 64535
+              },
+              {
+                "start": 8357,
+                "stop": 8668
+              },
+              {
+                "start": 53754,
+                "stop": 53967
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 9877,
+            "missing_fraction": 0.09120542227639573,
+            "initial_missing": 153,
+            "gap_count": 1374,
+            "longest_gap": 602,
+            "longest_gaps": [
+              {
+                "start": 4254,
+                "stop": 4856
+              },
+              {
+                "start": 97470,
+                "stop": 97975
+              },
+              {
+                "start": 96950,
+                "stop": 97325
+              },
+              {
+                "start": 99588,
+                "stop": 99776
+              },
+              {
+                "start": 100448,
+                "stop": 100623
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 6766,
+            "missing_fraction": 0.06247806896042255,
+            "initial_missing": 153,
+            "gap_count": 552,
+            "longest_gap": 505,
+            "longest_gaps": [
+              {
+                "start": 4803,
+                "stop": 5308
+              },
+              {
+                "start": 23036,
+                "stop": 23437
+              },
+              {
+                "start": 36956,
+                "stop": 37261
+              },
+              {
+                "start": 7045,
+                "stop": 7266
+              },
+              {
+                "start": 34088,
+                "stop": 34278
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 7420,
+            "missing_fraction": 0.06851718470090679,
+            "initial_missing": 153,
+            "gap_count": 1211,
+            "longest_gap": 523,
+            "longest_gaps": [
+              {
+                "start": 4754,
+                "stop": 5277
+              },
+              {
+                "start": 76423,
+                "stop": 76803
+              },
+              {
+                "start": 7766,
+                "stop": 8078
+              },
+              {
+                "start": 0,
+                "stop": 153
+              },
+              {
+                "start": 27887,
+                "stop": 28015
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2756,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108294
+          ]
+        },
+        "timestamps": {
+          "first": 0.6634800434112549,
+          "last": 14439.7578125,
+          "zero_steps": 1,
+          "negative_steps": 0,
+          "minimum_step": 0.0,
+          "maximum_step": 0.271484375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            153,
+            40701,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40746,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67746,
+            101543
+          ]
+        },
+        {
+          "startPre": [
+            153,
+            40701,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40746,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67746,
+            101543
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 48.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 2,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c52__2025-07-27__17-03-54.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [
+        "Original all-missing slots [3]; occupancy is unconfirmed, not excluded"
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c52__2025-07-27__17-03-54.avi",
+          "size_bytes": 1128196382,
+          "mtime_ns": 1753720936914979500
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c52__2025-07-27__17-03-54.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1753720937200982900,
+          "sha256": "a5c3cd3ef8e4332bb3c0054cd78f8f867a24d4cff4a191192425e47e9cfb5ac0"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c52__2025-07-27__17-03-54.data",
+          "size_bytes": 520484,
+          "mtime_ns": 1753720936950651100,
+          "sha256": "25f94b3d2e2299fe9aa7769abf8e8b8f8cab7decd26e00a221e26af55124c791"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 11843,
+            "missing_fraction": 0.10936172570457652,
+            "initial_missing": 152,
+            "gap_count": 2460,
+            "longest_gap": 1063,
+            "longest_gaps": [
+              {
+                "start": 34554,
+                "stop": 35617
+              },
+              {
+                "start": 4020,
+                "stop": 4410
+              },
+              {
+                "start": 28470,
+                "stop": 28702
+              },
+              {
+                "start": 0,
+                "stop": 152
+              },
+              {
+                "start": 98089,
+                "stop": 98234
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 16749,
+            "missing_fraction": 0.1546651645550918,
+            "initial_missing": 152,
+            "gap_count": 699,
+            "longest_gap": 5295,
+            "longest_gaps": [
+              {
+                "start": 75497,
+                "stop": 80792
+              },
+              {
+                "start": 52309,
+                "stop": 53808
+              },
+              {
+                "start": 3597,
+                "stop": 4269
+              },
+              {
+                "start": 82317,
+                "stop": 82947
+              },
+              {
+                "start": 2257,
+                "stop": 2811
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 33089,
+            "missing_fraction": 0.30555350349056254,
+            "initial_missing": 152,
+            "gap_count": 3037,
+            "longest_gap": 5486,
+            "longest_gaps": [
+              {
+                "start": 81907,
+                "stop": 87393
+              },
+              {
+                "start": 14685,
+                "stop": 20132
+              },
+              {
+                "start": 54216,
+                "stop": 57081
+              },
+              {
+                "start": 30190,
+                "stop": 33021
+              },
+              {
+                "start": 60314,
+                "stop": 62340
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 108292,
+            "missing_fraction": 1.0,
+            "initial_missing": 108292,
+            "gap_count": 1,
+            "longest_gap": 108292,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 108292
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 162,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.5985958576202393,
+          "last": 14439.38671875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0361328125,
+          "maximum_step": 0.24609375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 48.0,
+        "y": 28.0,
+        "scale": 0.9820675949367077,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 3,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c61__2025-07-27__17-03-56.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c61__2025-07-27__17-03-56.avi",
+          "size_bytes": 1079140638,
+          "mtime_ns": 1753720947029919200
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c61__2025-07-27__17-03-56.trx",
+          "size_bytes": 20473603,
+          "mtime_ns": 1753720947282173300,
+          "sha256": "e3d781c402d614f6cfc2f33dfa53e4f721b7499e4aa677fb780e670da971a37d"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c61__2025-07-27__17-03-56.data",
+          "size_bytes": 524182,
+          "mtime_ns": 1753720947101263300,
+          "sha256": "7612800a5dc064cb28b441e9f233b62e0db48d5a7e051efbd3ea507485addb7d"
+        }
+      },
+      "frames": 108300,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108300
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 15083,
+            "missing_fraction": 0.13927054478301015,
+            "initial_missing": 159,
+            "gap_count": 1420,
+            "longest_gap": 801,
+            "longest_gaps": [
+              {
+                "start": 12412,
+                "stop": 13213
+              },
+              {
+                "start": 107577,
+                "stop": 108026
+              },
+              {
+                "start": 71445,
+                "stop": 71702
+              },
+              {
+                "start": 63524,
+                "stop": 63698
+              },
+              {
+                "start": 84319,
+                "stop": 84482
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 7724,
+            "missing_fraction": 0.07132040627885504,
+            "initial_missing": 159,
+            "gap_count": 1643,
+            "longest_gap": 524,
+            "longest_gaps": [
+              {
+                "start": 52824,
+                "stop": 53348
+              },
+              {
+                "start": 7212,
+                "stop": 7420
+              },
+              {
+                "start": 0,
+                "stop": 159
+              },
+              {
+                "start": 69450,
+                "stop": 69576
+              },
+              {
+                "start": 84531,
+                "stop": 84586
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 10526,
+            "missing_fraction": 0.09719298245614034,
+            "initial_missing": 159,
+            "gap_count": 731,
+            "longest_gap": 6720,
+            "longest_gaps": [
+              {
+                "start": 411,
+                "stop": 7131
+              },
+              {
+                "start": 105480,
+                "stop": 105668
+              },
+              {
+                "start": 0,
+                "stop": 159
+              },
+              {
+                "start": 71164,
+                "stop": 71282
+              },
+              {
+                "start": 65606,
+                "stop": 65713
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 1023,
+            "missing_fraction": 0.009445983379501385,
+            "initial_missing": 159,
+            "gap_count": 330,
+            "longest_gap": 159,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 159
+              },
+              {
+                "start": 91495,
+                "stop": 91644
+              },
+              {
+                "start": 91230,
+                "stop": 91269
+              },
+              {
+                "start": 91377,
+                "stop": 91400
+              },
+              {
+                "start": 40152,
+                "stop": 40166
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1152,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108300
+          ]
+        },
+        "timestamps": {
+          "first": 0.6001400947570801,
+          "last": 14440.447265625,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.033203125,
+          "maximum_step": 0.24609375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            159,
+            40706,
+            74503
+          ],
+          "startTrain": [
+            6955,
+            40751,
+            74548
+          ],
+          "startPost": [
+            33955,
+            67752,
+            101548
+          ]
+        },
+        {
+          "startPre": [
+            159,
+            40706,
+            74503
+          ],
+          "startTrain": [
+            6955,
+            40751,
+            74548
+          ],
+          "startPost": [
+            33955,
+            67752,
+            101548
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 43.0,
+        "y": 21.0,
+        "scale": 0.9968354905063285,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 4,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c62__2025-07-27__17-03-59.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c62__2025-07-27__17-03-59.avi",
+          "size_bytes": 1230348788,
+          "mtime_ns": 1753720958335652800
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c62__2025-07-27__17-03-59.trx",
+          "size_bytes": 20472280,
+          "mtime_ns": 1753720958591772800,
+          "sha256": "4c61207a08be1d375eb3cee4760338dc58fb1b5a2d03306afd7ebdcda1de38d6"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/afternoon/c62__2025-07-27__17-03-59.data",
+          "size_bytes": 527590,
+          "mtime_ns": 1753720958399465700,
+          "sha256": "e67444f695c5430e0051319e9fbba83669845c84aa8a03d5f038f71b77f4ccaf"
+        }
+      },
+      "frames": 108293,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108293
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 3746,
+            "missing_fraction": 0.03459134016049052,
+            "initial_missing": 153,
+            "gap_count": 1032,
+            "longest_gap": 153,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 153
+              },
+              {
+                "start": 38295,
+                "stop": 38371
+              },
+              {
+                "start": 53886,
+                "stop": 53931
+              },
+              {
+                "start": 12549,
+                "stop": 12590
+              },
+              {
+                "start": 5776,
+                "stop": 5812
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 22421,
+            "missing_fraction": 0.20704015956710037,
+            "initial_missing": 1021,
+            "gap_count": 1792,
+            "longest_gap": 2674,
+            "longest_gaps": [
+              {
+                "start": 4272,
+                "stop": 6946
+              },
+              {
+                "start": 2044,
+                "stop": 3322
+              },
+              {
+                "start": 11294,
+                "stop": 12404
+              },
+              {
+                "start": 0,
+                "stop": 1021
+              },
+              {
+                "start": 17879,
+                "stop": 18833
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 1684,
+            "missing_fraction": 0.015550404919985595,
+            "initial_missing": 153,
+            "gap_count": 479,
+            "longest_gap": 153,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 153
+              },
+              {
+                "start": 81798,
+                "stop": 81914
+              },
+              {
+                "start": 82001,
+                "stop": 82081
+              },
+              {
+                "start": 81919,
+                "stop": 81994
+              },
+              {
+                "start": 83120,
+                "stop": 83160
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 14956,
+            "missing_fraction": 0.13810680284044213,
+            "initial_missing": 153,
+            "gap_count": 816,
+            "longest_gap": 957,
+            "longest_gaps": [
+              {
+                "start": 71440,
+                "stop": 72397
+              },
+              {
+                "start": 33393,
+                "stop": 34022
+              },
+              {
+                "start": 20513,
+                "stop": 21139
+              },
+              {
+                "start": 16906,
+                "stop": 17445
+              },
+              {
+                "start": 101068,
+                "stop": 101402
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2276,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108293
+          ]
+        },
+        "timestamps": {
+          "first": 0.5997500419616699,
+          "last": 14439.5322265625,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0322265625,
+          "maximum_step": 0.23046875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            153,
+            40700,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40745,
+            74541
+          ],
+          "startPost": [
+            33949,
+            67746,
+            101542
+          ]
+        },
+        {
+          "startPre": [
+            153,
+            40700,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40745,
+            74541
+          ],
+          "startPost": [
+            33949,
+            67746,
+            101542
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 43.0,
+        "y": 36.0,
+        "scale": 0.9883966930379737,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 5,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c31__2025-07-27__12-50-19.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c31__2025-07-27__12-50-19.avi",
+          "size_bytes": 1799776682,
+          "mtime_ns": 1753649465482783000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c31__2025-07-27__12-50-19.trx",
+          "size_bytes": 20477383,
+          "mtime_ns": 1753649465798786000,
+          "sha256": "037fd2151c3f5445027639628a2fdd903177d07f52167d900cab2fb54ef8be43"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c31__2025-07-27__12-50-19.data",
+          "size_bytes": 524750,
+          "mtime_ns": 1753649464566774000,
+          "sha256": "2fc5b60576e1712dc3fafe00b51169c54292697e7a224ffc6067dd6e5f13f6b4"
+        }
+      },
+      "frames": 108320,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108320
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 20465,
+            "missing_fraction": 0.18893094534711966,
+            "initial_missing": 179,
+            "gap_count": 1595,
+            "longest_gap": 2901,
+            "longest_gaps": [
+              {
+                "start": 101245,
+                "stop": 104146
+              },
+              {
+                "start": 95278,
+                "stop": 95903
+              },
+              {
+                "start": 77715,
+                "stop": 78140
+              },
+              {
+                "start": 1013,
+                "stop": 1309
+              },
+              {
+                "start": 16596,
+                "stop": 16841
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 29678,
+            "missing_fraction": 0.27398449039881834,
+            "initial_missing": 179,
+            "gap_count": 2515,
+            "longest_gap": 1082,
+            "longest_gaps": [
+              {
+                "start": 13118,
+                "stop": 14200
+              },
+              {
+                "start": 19913,
+                "stop": 20984
+              },
+              {
+                "start": 47401,
+                "stop": 48156
+              },
+              {
+                "start": 83362,
+                "stop": 84101
+              },
+              {
+                "start": 10827,
+                "stop": 11506
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 4165,
+            "missing_fraction": 0.038450886262924665,
+            "initial_missing": 179,
+            "gap_count": 488,
+            "longest_gap": 336,
+            "longest_gaps": [
+              {
+                "start": 45607,
+                "stop": 45943
+              },
+              {
+                "start": 0,
+                "stop": 179
+              },
+              {
+                "start": 21737,
+                "stop": 21871
+              },
+              {
+                "start": 31904,
+                "stop": 31996
+              },
+              {
+                "start": 55120,
+                "stop": 55205
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 5942,
+            "missing_fraction": 0.054855982274741505,
+            "initial_missing": 179,
+            "gap_count": 1073,
+            "longest_gap": 614,
+            "longest_gaps": [
+              {
+                "start": 86305,
+                "stop": 86919
+              },
+              {
+                "start": 17108,
+                "stop": 17338
+              },
+              {
+                "start": 0,
+                "stop": 179
+              },
+              {
+                "start": 23406,
+                "stop": 23567
+              },
+              {
+                "start": 87301,
+                "stop": 87418
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1414,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108320
+          ]
+        },
+        "timestamps": {
+          "first": 0.6160950660705566,
+          "last": 14443.1240234375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0755462646484375,
+          "maximum_step": 0.19289398193359375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            179,
+            40726,
+            74523
+          ],
+          "startTrain": [
+            6975,
+            40771,
+            74568
+          ],
+          "startPost": [
+            33976,
+            67772,
+            101569
+          ]
+        },
+        {
+          "startPre": [
+            179,
+            40726,
+            74523
+          ],
+          "startTrain": [
+            6975,
+            40771,
+            74568
+          ],
+          "startPost": [
+            33976,
+            67772,
+            101569
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 31.0,
+        "y": 20.0,
+        "scale": 1.0137130854430378,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 6,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c32__2025-07-27__12-50-23.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c32__2025-07-27__12-50-23.avi",
+          "size_bytes": 798151584,
+          "mtime_ns": 1753649468106808000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c32__2025-07-27__12-50-23.trx",
+          "size_bytes": 20477572,
+          "mtime_ns": 1753649468410811000,
+          "sha256": "34fb055a49340504908aa4ca841079ff59c0fdd695ac29f05d4d8f0878ae8108"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c32__2025-07-27__12-50-23.data",
+          "size_bytes": 522664,
+          "mtime_ns": 1753649467578803000,
+          "sha256": "21c98432904e2c6ddc556cd6dcd4ee7498715336b19390f50ed210213b0765fb"
+        }
+      },
+      "frames": 108321,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108321
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 32899,
+            "missing_fraction": 0.30371765400984113,
+            "initial_missing": 179,
+            "gap_count": 1216,
+            "longest_gap": 2633,
+            "longest_gaps": [
+              {
+                "start": 99422,
+                "stop": 102055
+              },
+              {
+                "start": 4818,
+                "stop": 6660
+              },
+              {
+                "start": 14760,
+                "stop": 16574
+              },
+              {
+                "start": 23632,
+                "stop": 25338
+              },
+              {
+                "start": 10386,
+                "stop": 11955
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 34157,
+            "missing_fraction": 0.3153312838692405,
+            "initial_missing": 186,
+            "gap_count": 1260,
+            "longest_gap": 1300,
+            "longest_gaps": [
+              {
+                "start": 27108,
+                "stop": 28408
+              },
+              {
+                "start": 18717,
+                "stop": 19579
+              },
+              {
+                "start": 4549,
+                "stop": 5278
+              },
+              {
+                "start": 6253,
+                "stop": 6969
+              },
+              {
+                "start": 95422,
+                "stop": 96133
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 13646,
+            "missing_fraction": 0.12597741896769787,
+            "initial_missing": 179,
+            "gap_count": 1322,
+            "longest_gap": 434,
+            "longest_gaps": [
+              {
+                "start": 34056,
+                "stop": 34490
+              },
+              {
+                "start": 92053,
+                "stop": 92371
+              },
+              {
+                "start": 103386,
+                "stop": 103579
+              },
+              {
+                "start": 0,
+                "stop": 179
+              },
+              {
+                "start": 66765,
+                "stop": 66887
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 22992,
+            "missing_fraction": 0.21225801091201152,
+            "initial_missing": 298,
+            "gap_count": 1806,
+            "longest_gap": 728,
+            "longest_gaps": [
+              {
+                "start": 103621,
+                "stop": 104349
+              },
+              {
+                "start": 11484,
+                "stop": 11967
+              },
+              {
+                "start": 45489,
+                "stop": 45828
+              },
+              {
+                "start": 0,
+                "stop": 298
+              },
+              {
+                "start": 42799,
+                "stop": 43085
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 808,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108321
+          ]
+        },
+        "timestamps": {
+          "first": 0.5663859844207764,
+          "last": 14443.17578125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.06051826477050781,
+          "maximum_step": 0.18951034545898438
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            179,
+            40727,
+            74523
+          ],
+          "startTrain": [
+            6975,
+            40772,
+            74568
+          ],
+          "startPost": [
+            33976,
+            67773,
+            101569
+          ]
+        },
+        {
+          "startPre": [
+            179,
+            40727,
+            74523
+          ],
+          "startTrain": [
+            6975,
+            40772,
+            74568
+          ],
+          "startPost": [
+            33976,
+            67773,
+            101569
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 40.0,
+        "y": 31.0,
+        "scale": 0.9968354905063285,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 7,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c41__2025-07-27__12-50-28.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c41__2025-07-27__12-50-28.avi",
+          "size_bytes": 925776216,
+          "mtime_ns": 1753649473818864000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c41__2025-07-27__12-50-28.trx",
+          "size_bytes": 20477950,
+          "mtime_ns": 1753649474086866000,
+          "sha256": "fd44762d47dc851057522f57b4c2df122411a93b15b463af5a6aaaf3f617c234"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c41__2025-07-27__12-50-28.data",
+          "size_bytes": 531467,
+          "mtime_ns": 1753649473390859000,
+          "sha256": "579a9a5f39204d144eb4e9954ecdd2fdb13bc4bd70177748288f406202fc5e46"
+        }
+      },
+      "frames": 108323,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108323
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 10143,
+            "missing_fraction": 0.09363662380103949,
+            "initial_missing": 183,
+            "gap_count": 1226,
+            "longest_gap": 1927,
+            "longest_gaps": [
+              {
+                "start": 9936,
+                "stop": 11863
+              },
+              {
+                "start": 8389,
+                "stop": 9677
+              },
+              {
+                "start": 7949,
+                "stop": 8195
+              },
+              {
+                "start": 7279,
+                "stop": 7481
+              },
+              {
+                "start": 0,
+                "stop": 183
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 13142,
+            "missing_fraction": 0.12132234151565226,
+            "initial_missing": 183,
+            "gap_count": 1542,
+            "longest_gap": 600,
+            "longest_gaps": [
+              {
+                "start": 81640,
+                "stop": 82240
+              },
+              {
+                "start": 8694,
+                "stop": 9276
+              },
+              {
+                "start": 5497,
+                "stop": 5753
+              },
+              {
+                "start": 1287,
+                "stop": 1538
+              },
+              {
+                "start": 3114,
+                "stop": 3365
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 5089,
+            "missing_fraction": 0.04697986577181208,
+            "initial_missing": 183,
+            "gap_count": 503,
+            "longest_gap": 664,
+            "longest_gaps": [
+              {
+                "start": 67460,
+                "stop": 68124
+              },
+              {
+                "start": 0,
+                "stop": 183
+              },
+              {
+                "start": 2962,
+                "stop": 3049
+              },
+              {
+                "start": 95287,
+                "stop": 95368
+              },
+              {
+                "start": 58248,
+                "stop": 58328
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 1850,
+            "missing_fraction": 0.017078552108047228,
+            "initial_missing": 183,
+            "gap_count": 460,
+            "longest_gap": 183,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 183
+              },
+              {
+                "start": 5222,
+                "stop": 5347
+              },
+              {
+                "start": 6720,
+                "stop": 6812
+              },
+              {
+                "start": 44135,
+                "stop": 44190
+              },
+              {
+                "start": 40682,
+                "stop": 40734
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 3358,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108323
+          ]
+        },
+        "timestamps": {
+          "first": 0.5994250774383545,
+          "last": 14443.529296875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.07375144958496094,
+          "maximum_step": 0.20250892639160156
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            182,
+            40730,
+            74526
+          ],
+          "startTrain": [
+            6978,
+            40775,
+            74571
+          ],
+          "startPost": [
+            33979,
+            67775,
+            101572
+          ]
+        },
+        {
+          "startPre": [
+            182,
+            40730,
+            74526
+          ],
+          "startTrain": [
+            6978,
+            40775,
+            74571
+          ],
+          "startPost": [
+            33979,
+            67775,
+            101572
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 35.0,
+        "y": 58.0,
+        "scale": 1.0094936867088606,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 8,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/c42__2025-07-27__12-50-31.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c42__2025-07-27__12-50-31.avi",
+          "size_bytes": 1445118078,
+          "mtime_ns": 1753649477898903000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c42__2025-07-27__12-50-31.trx",
+          "size_bytes": 20479840,
+          "mtime_ns": 1753649478206906000,
+          "sha256": "d0696d4633315d7d732d86661f0eaf848c2f676d921339b46817e24fd6392935"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/c42__2025-07-27__12-50-31.data",
+          "size_bytes": 524102,
+          "mtime_ns": 1753649477526899000,
+          "sha256": "40fa44b3bd533dc661f945a8e63e2a11c0aadba768964a85bfb2811cabd4f6e3"
+        }
+      },
+      "frames": 108333,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108333
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 9700,
+            "missing_fraction": 0.08953873704226782,
+            "initial_missing": 253,
+            "gap_count": 530,
+            "longest_gap": 1988,
+            "longest_gaps": [
+              {
+                "start": 2004,
+                "stop": 3992
+              },
+              {
+                "start": 4861,
+                "stop": 6567
+              },
+              {
+                "start": 15528,
+                "stop": 16018
+              },
+              {
+                "start": 107282,
+                "stop": 107651
+              },
+              {
+                "start": 6600,
+                "stop": 6960
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 33154,
+            "missing_fraction": 0.3060378647318915,
+            "initial_missing": 193,
+            "gap_count": 1366,
+            "longest_gap": 4373,
+            "longest_gaps": [
+              {
+                "start": 2595,
+                "stop": 6968
+              },
+              {
+                "start": 7101,
+                "stop": 8528
+              },
+              {
+                "start": 9874,
+                "stop": 10772
+              },
+              {
+                "start": 11528,
+                "stop": 12294
+              },
+              {
+                "start": 86525,
+                "stop": 87250
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 18391,
+            "missing_fraction": 0.16976359927261314,
+            "initial_missing": 193,
+            "gap_count": 1507,
+            "longest_gap": 2011,
+            "longest_gaps": [
+              {
+                "start": 61928,
+                "stop": 63939
+              },
+              {
+                "start": 71142,
+                "stop": 72635
+              },
+              {
+                "start": 51568,
+                "stop": 52734
+              },
+              {
+                "start": 7841,
+                "stop": 8621
+              },
+              {
+                "start": 50021,
+                "stop": 50541
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 36538,
+            "missing_fraction": 0.33727488392271976,
+            "initial_missing": 193,
+            "gap_count": 1236,
+            "longest_gap": 3707,
+            "longest_gaps": [
+              {
+                "start": 2358,
+                "stop": 6065
+              },
+              {
+                "start": 15062,
+                "stop": 16974
+              },
+              {
+                "start": 38006,
+                "stop": 39128
+              },
+              {
+                "start": 57548,
+                "stop": 58341
+              },
+              {
+                "start": 58433,
+                "stop": 59177
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1254,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108333
+          ]
+        },
+        "timestamps": {
+          "first": 0.5767018795013428,
+          "last": 14444.84765625,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.06763076782226562,
+          "maximum_step": 0.22396278381347656
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            192,
+            40740,
+            74536
+          ],
+          "startTrain": [
+            6988,
+            40785,
+            74581
+          ],
+          "startPost": [
+            33989,
+            67785,
+            101582
+          ]
+        },
+        {
+          "startPre": [
+            192,
+            40740,
+            74536
+          ],
+          "startTrain": [
+            6988,
+            40785,
+            74581
+          ],
+          "startPost": [
+            33989,
+            67785,
+            101582
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 39.0,
+        "y": 36.0,
+        "scale": 1.0116033860759492,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 9,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/night/c51__2025-07-27__21-40-18.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c51__2025-07-27__21-40-18.avi",
+          "size_bytes": 834163066,
+          "mtime_ns": 1753721003250482600
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c51__2025-07-27__21-40-18.trx",
+          "size_bytes": 20471713,
+          "mtime_ns": 1753721003543041200,
+          "sha256": "b8dafab46ec7e70cfdbbb088634f9d37f08aa00a49cc0dc7335069948f5d8652"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c51__2025-07-27__21-40-18.data",
+          "size_bytes": 525345,
+          "mtime_ns": 1753721003321941500,
+          "sha256": "ae912c0901dfde2ca50fcda993ea3d96b983e335bf2350f7be48d5d582d97afc"
+        }
+      },
+      "frames": 108290,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108290
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 16765,
+            "missing_fraction": 0.1548157724628313,
+            "initial_missing": 149,
+            "gap_count": 1370,
+            "longest_gap": 849,
+            "longest_gaps": [
+              {
+                "start": 102029,
+                "stop": 102878
+              },
+              {
+                "start": 76631,
+                "stop": 76969
+              },
+              {
+                "start": 72298,
+                "stop": 72620
+              },
+              {
+                "start": 65802,
+                "stop": 66050
+              },
+              {
+                "start": 76971,
+                "stop": 77174
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 16700,
+            "missing_fraction": 0.15421553236679286,
+            "initial_missing": 149,
+            "gap_count": 712,
+            "longest_gap": 3014,
+            "longest_gaps": [
+              {
+                "start": 15808,
+                "stop": 18822
+              },
+              {
+                "start": 12536,
+                "stop": 13461
+              },
+              {
+                "start": 94606,
+                "stop": 95529
+              },
+              {
+                "start": 95585,
+                "stop": 96354
+              },
+              {
+                "start": 50741,
+                "stop": 51437
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 24428,
+            "missing_fraction": 0.22557946255425246,
+            "initial_missing": 149,
+            "gap_count": 2348,
+            "longest_gap": 178,
+            "longest_gaps": [
+              {
+                "start": 69851,
+                "stop": 70029
+              },
+              {
+                "start": 0,
+                "stop": 149
+              },
+              {
+                "start": 94573,
+                "stop": 94715
+              },
+              {
+                "start": 58622,
+                "stop": 58746
+              },
+              {
+                "start": 27876,
+                "stop": 27991
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 17195,
+            "missing_fraction": 0.1587865915597008,
+            "initial_missing": 149,
+            "gap_count": 1678,
+            "longest_gap": 1096,
+            "longest_gaps": [
+              {
+                "start": 83614,
+                "stop": 84710
+              },
+              {
+                "start": 18026,
+                "stop": 18994
+              },
+              {
+                "start": 5875,
+                "stop": 6786
+              },
+              {
+                "start": 92533,
+                "stop": 93121
+              },
+              {
+                "start": 91848,
+                "stop": 92432
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1600,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108290
+          ]
+        },
+        "timestamps": {
+          "first": 0.5890209674835205,
+          "last": 14439.0810546875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0360107421875,
+          "maximum_step": 0.234619140625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            149,
+            40696,
+            74493
+          ],
+          "startTrain": [
+            6945,
+            40741,
+            74538
+          ],
+          "startPost": [
+            33945,
+            67742,
+            101539
+          ]
+        },
+        {
+          "startPre": [
+            149,
+            40696,
+            74493
+          ],
+          "startTrain": [
+            6945,
+            40741,
+            74538
+          ],
+          "startPost": [
+            33945,
+            67742,
+            101539
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 46.0,
+        "y": 29.0,
+        "scale": 0.9820675949367077,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 10,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/night/c52__2025-07-27__21-40-23.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c52__2025-07-27__21-40-23.avi",
+          "size_bytes": 1111430336,
+          "mtime_ns": 1753721013560046300
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c52__2025-07-27__21-40-23.trx",
+          "size_bytes": 20471713,
+          "mtime_ns": 1753721013932784200,
+          "sha256": "0e9517c908d146db1bcca1e27a0e600e80e08dae3caf3bd61138c8c40d602a55"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c52__2025-07-27__21-40-23.data",
+          "size_bytes": 522569,
+          "mtime_ns": 1753721013631387400,
+          "sha256": "d3e1133ee53613837397e17ee5fef03c705ce4e9ea1a81f42e0fd126c735620f"
+        }
+      },
+      "frames": 108290,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108290
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 13010,
+            "missing_fraction": 0.12014036383784282,
+            "initial_missing": 149,
+            "gap_count": 1154,
+            "longest_gap": 1615,
+            "longest_gaps": [
+              {
+                "start": 99338,
+                "stop": 100953
+              },
+              {
+                "start": 9227,
+                "stop": 10318
+              },
+              {
+                "start": 105304,
+                "stop": 106002
+              },
+              {
+                "start": 100954,
+                "stop": 101594
+              },
+              {
+                "start": 21382,
+                "stop": 21556
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 51312,
+            "missing_fraction": 0.47383876627574106,
+            "initial_missing": 149,
+            "gap_count": 2127,
+            "longest_gap": 3492,
+            "longest_gaps": [
+              {
+                "start": 8868,
+                "stop": 12360
+              },
+              {
+                "start": 13165,
+                "stop": 16397
+              },
+              {
+                "start": 51123,
+                "stop": 54070
+              },
+              {
+                "start": 4138,
+                "stop": 6923
+              },
+              {
+                "start": 70680,
+                "stop": 73121
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 23347,
+            "missing_fraction": 0.21559700803398282,
+            "initial_missing": 149,
+            "gap_count": 1836,
+            "longest_gap": 919,
+            "longest_gaps": [
+              {
+                "start": 3707,
+                "stop": 4626
+              },
+              {
+                "start": 100047,
+                "stop": 100769
+              },
+              {
+                "start": 15629,
+                "stop": 16311
+              },
+              {
+                "start": 28479,
+                "stop": 29057
+              },
+              {
+                "start": 16318,
+                "stop": 16667
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 30869,
+            "missing_fraction": 0.2850586388401514,
+            "initial_missing": 149,
+            "gap_count": 2642,
+            "longest_gap": 1893,
+            "longest_gaps": [
+              {
+                "start": 5042,
+                "stop": 6935
+              },
+              {
+                "start": 23857,
+                "stop": 24244
+              },
+              {
+                "start": 4470,
+                "stop": 4828
+              },
+              {
+                "start": 21804,
+                "stop": 22091
+              },
+              {
+                "start": 34774,
+                "stop": 35027
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 782,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108290
+          ]
+        },
+        "timestamps": {
+          "first": 0.5995299816131592,
+          "last": 14439.1240234375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0386962890625,
+          "maximum_step": 0.2340087890625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            149,
+            40696,
+            74493
+          ],
+          "startTrain": [
+            6945,
+            40741,
+            74538
+          ],
+          "startPost": [
+            33946,
+            67742,
+            101539
+          ]
+        },
+        {
+          "startPre": [
+            149,
+            40696,
+            74493
+          ],
+          "startTrain": [
+            6945,
+            40741,
+            74538
+          ],
+          "startPost": [
+            33946,
+            67742,
+            101538
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 46.0,
+        "y": 28.0,
+        "scale": 0.9841772943037964,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 11,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/night/c61__2025-07-27__21-40-26.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c61__2025-07-27__21-40-26.avi",
+          "size_bytes": 1134593270,
+          "mtime_ns": 1753721024195573500
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c61__2025-07-27__21-40-26.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1753721024461973000,
+          "sha256": "871f677c750d1c64447a6898c8287e655c41d67f362274562df0e135cc01dcab"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c61__2025-07-27__21-40-26.data",
+          "size_bytes": 527336,
+          "mtime_ns": 1753721024266795800,
+          "sha256": "c2cfadc42982147c6b32f97009e1f33f18b22ba193b4c7d37eef6cfc1a576051"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 22132,
+            "missing_fraction": 0.20437336091308683,
+            "initial_missing": 151,
+            "gap_count": 2400,
+            "longest_gap": 151,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 151
+              },
+              {
+                "start": 71010,
+                "stop": 71151
+              },
+              {
+                "start": 4444,
+                "stop": 4578
+              },
+              {
+                "start": 91353,
+                "stop": 91480
+              },
+              {
+                "start": 48385,
+                "stop": 48509
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 20859,
+            "missing_fraction": 0.19261810660067225,
+            "initial_missing": 151,
+            "gap_count": 2434,
+            "longest_gap": 378,
+            "longest_gaps": [
+              {
+                "start": 13007,
+                "stop": 13385
+              },
+              {
+                "start": 4361,
+                "stop": 4694
+              },
+              {
+                "start": 37186,
+                "stop": 37445
+              },
+              {
+                "start": 2184,
+                "stop": 2420
+              },
+              {
+                "start": 49976,
+                "stop": 50171
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 11102,
+            "missing_fraction": 0.10251911498540982,
+            "initial_missing": 151,
+            "gap_count": 1050,
+            "longest_gap": 1372,
+            "longest_gaps": [
+              {
+                "start": 8575,
+                "stop": 9947
+              },
+              {
+                "start": 89474,
+                "stop": 90022
+              },
+              {
+                "start": 68404,
+                "stop": 68847
+              },
+              {
+                "start": 48339,
+                "stop": 48723
+              },
+              {
+                "start": 74230,
+                "stop": 74602
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 11032,
+            "missing_fraction": 0.10187271451261404,
+            "initial_missing": 151,
+            "gap_count": 1694,
+            "longest_gap": 853,
+            "longest_gaps": [
+              {
+                "start": 55602,
+                "stop": 56455
+              },
+              {
+                "start": 97926,
+                "stop": 98394
+              },
+              {
+                "start": 60713,
+                "stop": 61154
+              },
+              {
+                "start": 61497,
+                "stop": 61899
+              },
+              {
+                "start": 27028,
+                "stop": 27408
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2132,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.5993928909301758,
+          "last": 14439.3798828125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.03466796875,
+          "maximum_step": 0.2197265625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74540
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            151,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 46.0,
+        "y": 22.0,
+        "scale": 0.986286993670885,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 12,
+      "video": "/media/Synology4/Yang Chen/2025-07-27/night/c62__2025-07-27__21-40-28.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c62__2025-07-27__21-40-28.avi",
+          "size_bytes": 1323080228,
+          "mtime_ns": 1753721036351367900
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c62__2025-07-27__21-40-28.trx",
+          "size_bytes": 20471902,
+          "mtime_ns": 1753721036639628700,
+          "sha256": "fb0e4677acdf8b97a8d705b36e7b8369c76dcb4dc4d8a89a12b5dc30151c07ac"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-27/night/c62__2025-07-27__21-40-28.data",
+          "size_bytes": 522870,
+          "mtime_ns": 1753721036447819100,
+          "sha256": "5a3202ef625f29b1e93f96c2fb027407c08d74db34d6642c9664811c23950e0c"
+        }
+      },
+      "frames": 108291,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108291
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 12907,
+            "missing_fraction": 0.1191881135089712,
+            "initial_missing": 151,
+            "gap_count": 1226,
+            "longest_gap": 319,
+            "longest_gaps": [
+              {
+                "start": 8497,
+                "stop": 8816
+              },
+              {
+                "start": 56652,
+                "stop": 56823
+              },
+              {
+                "start": 89522,
+                "stop": 89679
+              },
+              {
+                "start": 86436,
+                "stop": 86591
+              },
+              {
+                "start": 0,
+                "stop": 151
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 30321,
+            "missing_fraction": 0.2799955674986841,
+            "initial_missing": 153,
+            "gap_count": 2290,
+            "longest_gap": 1078,
+            "longest_gaps": [
+              {
+                "start": 93336,
+                "stop": 94414
+              },
+              {
+                "start": 3564,
+                "stop": 4495
+              },
+              {
+                "start": 31058,
+                "stop": 31967
+              },
+              {
+                "start": 2645,
+                "stop": 3489
+              },
+              {
+                "start": 59769,
+                "stop": 60203
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 5535,
+            "missing_fraction": 0.05111228079895836,
+            "initial_missing": 151,
+            "gap_count": 730,
+            "longest_gap": 394,
+            "longest_gaps": [
+              {
+                "start": 10728,
+                "stop": 11122
+              },
+              {
+                "start": 16122,
+                "stop": 16442
+              },
+              {
+                "start": 11212,
+                "stop": 11425
+              },
+              {
+                "start": 11700,
+                "stop": 11898
+              },
+              {
+                "start": 94324,
+                "stop": 94522
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 27425,
+            "missing_fraction": 0.25325280955942786,
+            "initial_missing": 164,
+            "gap_count": 1586,
+            "longest_gap": 1296,
+            "longest_gaps": [
+              {
+                "start": 93410,
+                "stop": 94706
+              },
+              {
+                "start": 75987,
+                "stop": 77083
+              },
+              {
+                "start": 58919,
+                "stop": 59511
+              },
+              {
+                "start": 80982,
+                "stop": 81570
+              },
+              {
+                "start": 46228,
+                "stop": 46699
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 892,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108291
+          ]
+        },
+        "timestamps": {
+          "first": 0.5997660160064697,
+          "last": 14439.2626953125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.03515625,
+          "maximum_step": 0.2333984375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74540
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        },
+        {
+          "startPre": [
+            151,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67743,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 44.0,
+        "y": 37.0,
+        "scale": 0.979957895569619,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 13,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c31__2025-07-28__21-10-34.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c31__2025-07-28__21-10-34.avi",
+          "size_bytes": 1742669426,
+          "mtime_ns": 1753765881677138000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c31__2025-07-28__21-10-34.trx",
+          "size_bytes": 20479462,
+          "mtime_ns": 1753765881977141000,
+          "sha256": "97bc5044466ecc5d6df5dc9b8986769254e1368cad508d1cc2c48375d50626b5"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c31__2025-07-28__21-10-34.data",
+          "size_bytes": 528012,
+          "mtime_ns": 1753765881245134000,
+          "sha256": "b6dcfb28b50e7dd920c6a345077d5a075a3087ce2ec09eed8f81fad5045d6c0d"
+        }
+      },
+      "frames": 108331,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108331
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 13149,
+            "missing_fraction": 0.12137799891074577,
+            "initial_missing": 498,
+            "gap_count": 1215,
+            "longest_gap": 1028,
+            "longest_gaps": [
+              {
+                "start": 27260,
+                "stop": 28288
+              },
+              {
+                "start": 1905,
+                "stop": 2575
+              },
+              {
+                "start": 948,
+                "stop": 1510
+              },
+              {
+                "start": 0,
+                "stop": 498
+              },
+              {
+                "start": 2966,
+                "stop": 3205
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 12910,
+            "missing_fraction": 0.11917179754640869,
+            "initial_missing": 190,
+            "gap_count": 1248,
+            "longest_gap": 1436,
+            "longest_gaps": [
+              {
+                "start": 2699,
+                "stop": 4135
+              },
+              {
+                "start": 4812,
+                "stop": 5470
+              },
+              {
+                "start": 2183,
+                "stop": 2518
+              },
+              {
+                "start": 4136,
+                "stop": 4452
+              },
+              {
+                "start": 15387,
+                "stop": 15625
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 17653,
+            "missing_fraction": 0.16295427901524032,
+            "initial_missing": 190,
+            "gap_count": 1029,
+            "longest_gap": 1116,
+            "longest_gaps": [
+              {
+                "start": 1286,
+                "stop": 2402
+              },
+              {
+                "start": 24450,
+                "stop": 25379
+              },
+              {
+                "start": 7690,
+                "stop": 8518
+              },
+              {
+                "start": 89661,
+                "stop": 90132
+              },
+              {
+                "start": 34168,
+                "stop": 34570
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 7852,
+            "missing_fraction": 0.07248156114131689,
+            "initial_missing": 190,
+            "gap_count": 1408,
+            "longest_gap": 198,
+            "longest_gaps": [
+              {
+                "start": 29609,
+                "stop": 29807
+              },
+              {
+                "start": 0,
+                "stop": 190
+              },
+              {
+                "start": 3777,
+                "stop": 3945
+              },
+              {
+                "start": 5075,
+                "stop": 5165
+              },
+              {
+                "start": 3458,
+                "stop": 3542
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2348,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108331
+          ]
+        },
+        "timestamps": {
+          "first": 0.6325690746307373,
+          "last": 14444.60546875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.07756614685058594,
+          "maximum_step": 0.18999290466308594
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            190,
+            40737,
+            74534
+          ],
+          "startTrain": [
+            6986,
+            40782,
+            74579
+          ],
+          "startPost": [
+            33986,
+            67783,
+            101580
+          ]
+        },
+        {
+          "startPre": [
+            190,
+            40737,
+            74533
+          ],
+          "startTrain": [
+            6986,
+            40782,
+            74578
+          ],
+          "startPost": [
+            33986,
+            67783,
+            101579
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 33.0,
+        "y": 21.0,
+        "scale": 1.0073839873417718,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 14,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c42__2025-07-28__21-09-45.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c42__2025-07-28__21-09-45.avi",
+          "size_bytes": 1252385114,
+          "mtime_ns": 1753765827604616000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c42__2025-07-28__21-09-45.trx",
+          "size_bytes": 20473225,
+          "mtime_ns": 1753765827848618000,
+          "sha256": "8e7af76c4dc39d296882661f573de717f450d29176c1853a4401e9f15fccc32d"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c42__2025-07-28__21-09-45.data",
+          "size_bytes": 528368,
+          "mtime_ns": 1753765827160612000,
+          "sha256": "c2ce813206221b82ee83c9fc31752334056164dcd1514c6e6d760fa2730df6a2"
+        }
+      },
+      "frames": 108298,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108298
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 44555,
+            "missing_fraction": 0.4114111063916231,
+            "initial_missing": 293,
+            "gap_count": 2211,
+            "longest_gap": 707,
+            "longest_gaps": [
+              {
+                "start": 10587,
+                "stop": 11294
+              },
+              {
+                "start": 2897,
+                "stop": 3556
+              },
+              {
+                "start": 5358,
+                "stop": 5901
+              },
+              {
+                "start": 105039,
+                "stop": 105505
+              },
+              {
+                "start": 6287,
+                "stop": 6732
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 30494,
+            "missing_fraction": 0.28157491366414894,
+            "initial_missing": 157,
+            "gap_count": 2130,
+            "longest_gap": 383,
+            "longest_gaps": [
+              {
+                "start": 95734,
+                "stop": 96117
+              },
+              {
+                "start": 35569,
+                "stop": 35888
+              },
+              {
+                "start": 88831,
+                "stop": 89137
+              },
+              {
+                "start": 39905,
+                "stop": 40175
+              },
+              {
+                "start": 79706,
+                "stop": 79944
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 12649,
+            "missing_fraction": 0.11679809414762969,
+            "initial_missing": 157,
+            "gap_count": 1871,
+            "longest_gap": 1150,
+            "longest_gaps": [
+              {
+                "start": 11960,
+                "stop": 13110
+              },
+              {
+                "start": 56165,
+                "stop": 56347
+              },
+              {
+                "start": 0,
+                "stop": 157
+              },
+              {
+                "start": 8707,
+                "stop": 8834
+              },
+              {
+                "start": 65564,
+                "stop": 65687
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 13109,
+            "missing_fraction": 0.12104563334502945,
+            "initial_missing": 421,
+            "gap_count": 854,
+            "longest_gap": 800,
+            "longest_gaps": [
+              {
+                "start": 90841,
+                "stop": 91641
+              },
+              {
+                "start": 26234,
+                "stop": 26957
+              },
+              {
+                "start": 12213,
+                "stop": 12823
+              },
+              {
+                "start": 11553,
+                "stop": 12156
+              },
+              {
+                "start": 68063,
+                "stop": 68571
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2480,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108298
+          ]
+        },
+        "timestamps": {
+          "first": 0.5982229709625244,
+          "last": 14440.1494140625,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.068359375,
+          "maximum_step": 0.200347900390625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            157,
+            40704,
+            74501
+          ],
+          "startTrain": [
+            6953,
+            40749,
+            74546
+          ],
+          "startPost": [
+            33953,
+            67750,
+            101546
+          ]
+        },
+        {
+          "startPre": [
+            157,
+            40704,
+            74501
+          ],
+          "startTrain": [
+            6953,
+            40749,
+            74546
+          ],
+          "startPost": [
+            33953,
+            67750,
+            101546
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 37.0,
+        "y": 35.0,
+        "scale": 1.0137130854430378,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 15,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c51__2025-07-28__21-12-54.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c51__2025-07-28__21-12-54.avi",
+          "size_bytes": 826452808,
+          "mtime_ns": 1753808032460213700
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c51__2025-07-28__21-12-54.trx",
+          "size_bytes": 20473036,
+          "mtime_ns": 1753808033259399200,
+          "sha256": "c1565a61294d65440f59c05c67f3b9606e492002b92609cbd4cb1ebd5a336e6a"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c51__2025-07-28__21-12-54.data",
+          "size_bytes": 526084,
+          "mtime_ns": 1753808032567281400,
+          "sha256": "b0353e70ecc1f37bac6131e5fa5c8c371956a9e4c17e7909f270f0dd8c0e5242"
+        }
+      },
+      "frames": 108297,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108297
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 32550,
+            "missing_fraction": 0.3005623424471592,
+            "initial_missing": 215,
+            "gap_count": 1703,
+            "longest_gap": 1166,
+            "longest_gaps": [
+              {
+                "start": 22121,
+                "stop": 23287
+              },
+              {
+                "start": 10129,
+                "stop": 11244
+              },
+              {
+                "start": 8233,
+                "stop": 9033
+              },
+              {
+                "start": 15829,
+                "stop": 16251
+              },
+              {
+                "start": 85645,
+                "stop": 85912
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 4898,
+            "missing_fraction": 0.04522747629204872,
+            "initial_missing": 156,
+            "gap_count": 1375,
+            "longest_gap": 156,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 156
+              },
+              {
+                "start": 1170,
+                "stop": 1246
+              },
+              {
+                "start": 89613,
+                "stop": 89673
+              },
+              {
+                "start": 83283,
+                "stop": 83330
+              },
+              {
+                "start": 73764,
+                "stop": 73805
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 27100,
+            "missing_fraction": 0.2502377720527808,
+            "initial_missing": 156,
+            "gap_count": 1750,
+            "longest_gap": 788,
+            "longest_gaps": [
+              {
+                "start": 9564,
+                "stop": 10352
+              },
+              {
+                "start": 84320,
+                "stop": 85106
+              },
+              {
+                "start": 18503,
+                "stop": 19172
+              },
+              {
+                "start": 101143,
+                "stop": 101775
+              },
+              {
+                "start": 24224,
+                "stop": 24818
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 15525,
+            "missing_fraction": 0.14335577162802293,
+            "initial_missing": 156,
+            "gap_count": 1383,
+            "longest_gap": 1338,
+            "longest_gaps": [
+              {
+                "start": 96023,
+                "stop": 97361
+              },
+              {
+                "start": 64369,
+                "stop": 65624
+              },
+              {
+                "start": 39411,
+                "stop": 40205
+              },
+              {
+                "start": 63600,
+                "stop": 64274
+              },
+              {
+                "start": 98746,
+                "stop": 99280
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1796,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108297
+          ]
+        },
+        "timestamps": {
+          "first": 0.5886940956115723,
+          "last": 14440.017578125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.035400390625,
+          "maximum_step": 0.248046875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            156,
+            40703,
+            74500
+          ],
+          "startTrain": [
+            6952,
+            40748,
+            74545
+          ],
+          "startPost": [
+            33952,
+            67749,
+            101545
+          ]
+        },
+        {
+          "startPre": [
+            156,
+            40703,
+            74499
+          ],
+          "startTrain": [
+            6951,
+            40748,
+            74544
+          ],
+          "startPost": [
+            33952,
+            67748,
+            101545
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 48.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 16,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c52__2025-07-28__21-12-56.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c52__2025-07-28__21-12-56.avi",
+          "size_bytes": 1093314286,
+          "mtime_ns": 1753808042645856100
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c52__2025-07-28__21-12-56.trx",
+          "size_bytes": 20472469,
+          "mtime_ns": 1753808042944127700,
+          "sha256": "e0628777ce149dc2401c1e37e4c6bb579c7109fcf1ed0a63cca665e7ba32e9c0"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c52__2025-07-28__21-12-56.data",
+          "size_bytes": 526120,
+          "mtime_ns": 1753808042752840400,
+          "sha256": "c6fa0f4a7beb5d349d0fe9762b6a89206e98c20fa290e587edfa5f17b1fe0976"
+        }
+      },
+      "frames": 108294,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108294
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 6541,
+            "missing_fraction": 0.06040039152676972,
+            "initial_missing": 154,
+            "gap_count": 1337,
+            "longest_gap": 154,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 154
+              },
+              {
+                "start": 106792,
+                "stop": 106924
+              },
+              {
+                "start": 100397,
+                "stop": 100478
+              },
+              {
+                "start": 107612,
+                "stop": 107686
+              },
+              {
+                "start": 6924,
+                "stop": 6990
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 38440,
+            "missing_fraction": 0.3549596468871775,
+            "initial_missing": 388,
+            "gap_count": 3433,
+            "longest_gap": 554,
+            "longest_gaps": [
+              {
+                "start": 42168,
+                "stop": 42722
+              },
+              {
+                "start": 73974,
+                "stop": 74477
+              },
+              {
+                "start": 66792,
+                "stop": 67239
+              },
+              {
+                "start": 80321,
+                "stop": 80744
+              },
+              {
+                "start": 0,
+                "stop": 388
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 15238,
+            "missing_fraction": 0.14070954992889725,
+            "initial_missing": 154,
+            "gap_count": 1725,
+            "longest_gap": 650,
+            "longest_gaps": [
+              {
+                "start": 4338,
+                "stop": 4988
+              },
+              {
+                "start": 64315,
+                "stop": 64694
+              },
+              {
+                "start": 2881,
+                "stop": 3151
+              },
+              {
+                "start": 58345,
+                "stop": 58578
+              },
+              {
+                "start": 102706,
+                "stop": 102924
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 28020,
+            "missing_fraction": 0.2587400964042329,
+            "initial_missing": 154,
+            "gap_count": 2795,
+            "longest_gap": 369,
+            "longest_gaps": [
+              {
+                "start": 73331,
+                "stop": 73700
+              },
+              {
+                "start": 71428,
+                "stop": 71788
+              },
+              {
+                "start": 89248,
+                "stop": 89533
+              },
+              {
+                "start": 87285,
+                "stop": 87529
+              },
+              {
+                "start": 57911,
+                "stop": 58135
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1860,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108294
+          ]
+        },
+        "timestamps": {
+          "first": 0.5984108448028564,
+          "last": 14439.654296875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.03515625,
+          "maximum_step": 0.232421875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            153,
+            40701,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40746,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67747,
+            101543
+          ]
+        },
+        {
+          "startPre": [
+            153,
+            40701,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40746,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67746,
+            101543
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 48.0,
+        "y": 27.0,
+        "scale": 0.9820675949367077,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 17,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c61__2025-07-28__21-12-59.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c61__2025-07-28__21-12-59.avi",
+          "size_bytes": 1071230096,
+          "mtime_ns": 1753808052576768000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c61__2025-07-28__21-12-59.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1753808053147093800,
+          "sha256": "832c43cd04369dd6eaad14160c9d2a9b81627d75fe60c85ab2a44b5dee382099"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c61__2025-07-28__21-12-59.data",
+          "size_bytes": 529235,
+          "mtime_ns": 1753808052861722300,
+          "sha256": "3750009f45d0e62aff9c00c23fad10fb942f58150196ac0e12d3a48ae961ee3e"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 18108,
+            "missing_fraction": 0.1672145680197983,
+            "initial_missing": 151,
+            "gap_count": 1531,
+            "longest_gap": 1501,
+            "longest_gaps": [
+              {
+                "start": 87933,
+                "stop": 89434
+              },
+              {
+                "start": 89923,
+                "stop": 90668
+              },
+              {
+                "start": 18040,
+                "stop": 18733
+              },
+              {
+                "start": 28824,
+                "stop": 29383
+              },
+              {
+                "start": 17121,
+                "stop": 17616
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 10543,
+            "missing_fraction": 0.09735714549551214,
+            "initial_missing": 151,
+            "gap_count": 2286,
+            "longest_gap": 310,
+            "longest_gaps": [
+              {
+                "start": 102899,
+                "stop": 103209
+              },
+              {
+                "start": 0,
+                "stop": 151
+              },
+              {
+                "start": 13531,
+                "stop": 13591
+              },
+              {
+                "start": 3873,
+                "stop": 3914
+              },
+              {
+                "start": 1761,
+                "stop": 1799
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 15250,
+            "missing_fraction": 0.1408229601447937,
+            "initial_missing": 151,
+            "gap_count": 1230,
+            "longest_gap": 1781,
+            "longest_gaps": [
+              {
+                "start": 102890,
+                "stop": 104671
+              },
+              {
+                "start": 84382,
+                "stop": 85237
+              },
+              {
+                "start": 94906,
+                "stop": 95564
+              },
+              {
+                "start": 93720,
+                "stop": 94276
+              },
+              {
+                "start": 25615,
+                "stop": 26084
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 11533,
+            "missing_fraction": 0.10649909503933809,
+            "initial_missing": 155,
+            "gap_count": 2630,
+            "longest_gap": 277,
+            "longest_gaps": [
+              {
+                "start": 10761,
+                "stop": 11038
+              },
+              {
+                "start": 11093,
+                "stop": 11291
+              },
+              {
+                "start": 34026,
+                "stop": 34200
+              },
+              {
+                "start": 0,
+                "stop": 155
+              },
+              {
+                "start": 67145,
+                "stop": 67283
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2790,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.5997681617736816,
+          "last": 14439.3486328125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.03125,
+          "maximum_step": 0.2392578125
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74540
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        },
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40743,
+            74540
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 43.0,
+        "y": 19.0,
+        "scale": 0.9968354905063285,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 18,
+      "video": "/media/Synology4/Yang Chen/2025-07-28/night/c62__2025-07-28__21-13-01.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c62__2025-07-28__21-13-01.avi",
+          "size_bytes": 1219090036,
+          "mtime_ns": 1753808064127898300
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c62__2025-07-28__21-13-01.trx",
+          "size_bytes": 20471902,
+          "mtime_ns": 1753808064415758800,
+          "sha256": "f75ad0c506a9476b1d86a99d7fa2a82a62da5a6d0ee11b49d21a9ed24a6117aa"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-28/night/c62__2025-07-28__21-13-01.data",
+          "size_bytes": 532678,
+          "mtime_ns": 1753808064223852700,
+          "sha256": "4b39bc75d783806ef6eaf5d8a3a18b4c78fe718245af63efdd3a7a82e564430e"
+        }
+      },
+      "frames": 108291,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108291
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 17858,
+            "missing_fraction": 0.16490751770691933,
+            "initial_missing": 152,
+            "gap_count": 1175,
+            "longest_gap": 1358,
+            "longest_gaps": [
+              {
+                "start": 106057,
+                "stop": 107415
+              },
+              {
+                "start": 2057,
+                "stop": 2647
+              },
+              {
+                "start": 103181,
+                "stop": 103748
+              },
+              {
+                "start": 73667,
+                "stop": 74165
+              },
+              {
+                "start": 6416,
+                "stop": 6895
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 21702,
+            "missing_fraction": 0.20040446574507575,
+            "initial_missing": 150,
+            "gap_count": 2105,
+            "longest_gap": 487,
+            "longest_gaps": [
+              {
+                "start": 4415,
+                "stop": 4902
+              },
+              {
+                "start": 379,
+                "stop": 738
+              },
+              {
+                "start": 43452,
+                "stop": 43703
+              },
+              {
+                "start": 21874,
+                "stop": 22061
+              },
+              {
+                "start": 33630,
+                "stop": 33783
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 5773,
+            "missing_fraction": 0.05331006270142487,
+            "initial_missing": 150,
+            "gap_count": 1055,
+            "longest_gap": 229,
+            "longest_gaps": [
+              {
+                "start": 4512,
+                "stop": 4741
+              },
+              {
+                "start": 81409,
+                "stop": 81574
+              },
+              {
+                "start": 82197,
+                "stop": 82353
+              },
+              {
+                "start": 0,
+                "stop": 150
+              },
+              {
+                "start": 67760,
+                "stop": 67903
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 23753,
+            "missing_fraction": 0.2193441744928018,
+            "initial_missing": 150,
+            "gap_count": 1896,
+            "longest_gap": 894,
+            "longest_gaps": [
+              {
+                "start": 10033,
+                "stop": 10927
+              },
+              {
+                "start": 16241,
+                "stop": 16949
+              },
+              {
+                "start": 22627,
+                "stop": 23056
+              },
+              {
+                "start": 28620,
+                "stop": 28994
+              },
+              {
+                "start": 65816,
+                "stop": 66144
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 3754,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108291
+          ]
+        },
+        "timestamps": {
+          "first": 0.5987789630889893,
+          "last": 14439.263671875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0322265625,
+          "maximum_step": 0.24951171875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67743,
+            101540
+          ]
+        },
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67743,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 42.0,
+        "y": 34.0,
+        "scale": 0.9905063924050624,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 19,
+      "video": "/media/Synology4/Yang Chen/2025-07-29/night/c51__2025-07-29__20-06-51.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c51__2025-07-29__20-06-51.avi",
+          "size_bytes": 849294252,
+          "mtime_ns": 1753889535032558700
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c51__2025-07-29__20-06-51.trx",
+          "size_bytes": 20471902,
+          "mtime_ns": 1753889535282020600,
+          "sha256": "31226e31e7c35d1e36ca663d7e2993f8123cc0d002817315c1a3a8cdcc69235e"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c51__2025-07-29__20-06-51.data",
+          "size_bytes": 521820,
+          "mtime_ns": 1753889535068304800,
+          "sha256": "4fc0d8394107e5c4fd000b63bb7563e97d248d2565339ae3638d59e2b352d8d5"
+        }
+      },
+      "frames": 108291,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108291
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 26955,
+            "missing_fraction": 0.24891265202094356,
+            "initial_missing": 382,
+            "gap_count": 1649,
+            "longest_gap": 1371,
+            "longest_gaps": [
+              {
+                "start": 4331,
+                "stop": 5702
+              },
+              {
+                "start": 3246,
+                "stop": 3802
+              },
+              {
+                "start": 3818,
+                "stop": 4290
+              },
+              {
+                "start": 36962,
+                "stop": 37359
+              },
+              {
+                "start": 37725,
+                "stop": 38117
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 25245,
+            "missing_fraction": 0.233121866083054,
+            "initial_missing": 159,
+            "gap_count": 1999,
+            "longest_gap": 2222,
+            "longest_gaps": [
+              {
+                "start": 23864,
+                "stop": 26086
+              },
+              {
+                "start": 22009,
+                "stop": 23859
+              },
+              {
+                "start": 4487,
+                "stop": 5796
+              },
+              {
+                "start": 35673,
+                "stop": 36956
+              },
+              {
+                "start": 101611,
+                "stop": 102714
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 30673,
+            "missing_fraction": 0.28324606846367656,
+            "initial_missing": 151,
+            "gap_count": 932,
+            "longest_gap": 2828,
+            "longest_gaps": [
+              {
+                "start": 64683,
+                "stop": 67511
+              },
+              {
+                "start": 105323,
+                "stop": 107943
+              },
+              {
+                "start": 25591,
+                "stop": 27614
+              },
+              {
+                "start": 79355,
+                "stop": 81108
+              },
+              {
+                "start": 97145,
+                "stop": 98565
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 10944,
+            "missing_fraction": 0.10106103000249328,
+            "initial_missing": 151,
+            "gap_count": 1564,
+            "longest_gap": 527,
+            "longest_gaps": [
+              {
+                "start": 26481,
+                "stop": 27008
+              },
+              {
+                "start": 57793,
+                "stop": 58103
+              },
+              {
+                "start": 92504,
+                "stop": 92764
+              },
+              {
+                "start": 65527,
+                "stop": 65777
+              },
+              {
+                "start": 56727,
+                "stop": 56950
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 552,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108291
+          ]
+        },
+        "timestamps": {
+          "first": 0.587277889251709,
+          "last": 14439.248046875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.037109375,
+          "maximum_step": 0.2451171875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        },
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 47.0,
+        "y": 30.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 20,
+      "video": "/media/Synology4/Yang Chen/2025-07-29/night/c52__2025-07-29__20-06-54.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c52__2025-07-29__20-06-54.avi",
+          "size_bytes": 1064791492,
+          "mtime_ns": 1753889544893094000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c52__2025-07-29__20-06-54.trx",
+          "size_bytes": 20472469,
+          "mtime_ns": 1753889545145505900,
+          "sha256": "a9aadf6a225c742b9f1fa4ba15eccbddbf68a70a264d6b8a7ab82cb9da3bbcce"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c52__2025-07-29__20-06-54.data",
+          "size_bytes": 523307,
+          "mtime_ns": 1753889544964560100,
+          "sha256": "e28f0188f4e43e1c91a30a8273345387d416b16fb379ba8d9eede4a9f3a8d70e"
+        }
+      },
+      "frames": 108294,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108294
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 12976,
+            "missing_fraction": 0.11982196612924077,
+            "initial_missing": 153,
+            "gap_count": 1280,
+            "longest_gap": 350,
+            "longest_gaps": [
+              {
+                "start": 15851,
+                "stop": 16201
+              },
+              {
+                "start": 14763,
+                "stop": 15109
+              },
+              {
+                "start": 91361,
+                "stop": 91693
+              },
+              {
+                "start": 17645,
+                "stop": 17869
+              },
+              {
+                "start": 16728,
+                "stop": 16947
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 49380,
+            "missing_fraction": 0.45598094077234197,
+            "initial_missing": 153,
+            "gap_count": 1591,
+            "longest_gap": 8691,
+            "longest_gaps": [
+              {
+                "start": 32014,
+                "stop": 40705
+              },
+              {
+                "start": 24902,
+                "stop": 30750
+              },
+              {
+                "start": 8145,
+                "stop": 10174
+              },
+              {
+                "start": 13936,
+                "stop": 15497
+              },
+              {
+                "start": 84297,
+                "stop": 85508
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 28171,
+            "missing_fraction": 0.26013444881526215,
+            "initial_missing": 153,
+            "gap_count": 1381,
+            "longest_gap": 3451,
+            "longest_gaps": [
+              {
+                "start": 2269,
+                "stop": 5720
+              },
+              {
+                "start": 23464,
+                "stop": 25505
+              },
+              {
+                "start": 42075,
+                "stop": 43241
+              },
+              {
+                "start": 14242,
+                "stop": 15396
+              },
+              {
+                "start": 33833,
+                "stop": 34708
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 44614,
+            "missing_fraction": 0.41197111566661127,
+            "initial_missing": 154,
+            "gap_count": 2174,
+            "longest_gap": 2769,
+            "longest_gaps": [
+              {
+                "start": 4154,
+                "stop": 6923
+              },
+              {
+                "start": 525,
+                "stop": 2113
+              },
+              {
+                "start": 40708,
+                "stop": 41863
+              },
+              {
+                "start": 13328,
+                "stop": 14329
+              },
+              {
+                "start": 27400,
+                "stop": 28255
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 834,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108294
+          ]
+        },
+        "timestamps": {
+          "first": 0.5987238883972168,
+          "last": 14439.6552734375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0341796875,
+          "maximum_step": 0.2431640625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            153,
+            40700,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40745,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67746,
+            101543
+          ]
+        },
+        {
+          "startPre": [
+            153,
+            40700,
+            74497
+          ],
+          "startTrain": [
+            6949,
+            40745,
+            74542
+          ],
+          "startPost": [
+            33950,
+            67746,
+            101543
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 48.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 21,
+      "video": "/media/Synology4/Yang Chen/2025-07-29/night/c61__2025-07-29__20-06-56.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c61__2025-07-29__20-06-56.avi",
+          "size_bytes": 1033868704,
+          "mtime_ns": 1753889554468987000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c61__2025-07-29__20-06-56.trx",
+          "size_bytes": 20472847,
+          "mtime_ns": 1753889554740629400,
+          "sha256": "7b1e06f6dee829816e9050968a3a9089ad3278ef3af2fe3ae8aef65662625b67"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c61__2025-07-29__20-06-56.data",
+          "size_bytes": 522227,
+          "mtime_ns": 1753889554527091000,
+          "sha256": "b639fa2472e13edeb46340bf07d555cd7a552ef99448fce3bfb8c11a2148131f"
+        }
+      },
+      "frames": 108296,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108296
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 27786,
+            "missing_fraction": 0.2565745733914457,
+            "initial_missing": 3467,
+            "gap_count": 1622,
+            "longest_gap": 3467,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 3467
+              },
+              {
+                "start": 7652,
+                "stop": 9977
+              },
+              {
+                "start": 11330,
+                "stop": 12753
+              },
+              {
+                "start": 92169,
+                "stop": 92744
+              },
+              {
+                "start": 13312,
+                "stop": 13756
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 13974,
+            "missing_fraction": 0.1290352367585137,
+            "initial_missing": 156,
+            "gap_count": 1473,
+            "longest_gap": 1251,
+            "longest_gaps": [
+              {
+                "start": 13819,
+                "stop": 15070
+              },
+              {
+                "start": 10755,
+                "stop": 11159
+              },
+              {
+                "start": 10590,
+                "stop": 10751
+              },
+              {
+                "start": 12964,
+                "stop": 13124
+              },
+              {
+                "start": 11854,
+                "stop": 12012
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 18675,
+            "missing_fraction": 0.17244404225456159,
+            "initial_missing": 156,
+            "gap_count": 1113,
+            "longest_gap": 1212,
+            "longest_gaps": [
+              {
+                "start": 69742,
+                "stop": 70954
+              },
+              {
+                "start": 106336,
+                "stop": 107454
+              },
+              {
+                "start": 55568,
+                "stop": 56537
+              },
+              {
+                "start": 38097,
+                "stop": 38517
+              },
+              {
+                "start": 104330,
+                "stop": 104675
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 5206,
+            "missing_fraction": 0.0480719509492502,
+            "initial_missing": 156,
+            "gap_count": 1611,
+            "longest_gap": 156,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 156
+              },
+              {
+                "start": 22079,
+                "stop": 22200
+              },
+              {
+                "start": 13295,
+                "stop": 13350
+              },
+              {
+                "start": 22019,
+                "stop": 22064
+              },
+              {
+                "start": 27073,
+                "stop": 27110
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 660,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108296
+          ]
+        },
+        "timestamps": {
+          "first": 0.5995850563049316,
+          "last": 14439.9130859375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.033203125,
+          "maximum_step": 0.220703125
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            155,
+            40702,
+            74499
+          ],
+          "startTrain": [
+            6951,
+            40747,
+            74544
+          ],
+          "startPost": [
+            33952,
+            67748,
+            101545
+          ]
+        },
+        {
+          "startPre": [
+            155,
+            40703,
+            74499
+          ],
+          "startTrain": [
+            6951,
+            40748,
+            74544
+          ],
+          "startPost": [
+            33952,
+            67749,
+            101545
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 42.0,
+        "y": 20.0,
+        "scale": 0.9989451898734172,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 22,
+      "video": "/media/Synology4/Yang Chen/2025-07-29/night/c62__2025-07-29__20-06-59.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c62__2025-07-29__20-06-59.avi",
+          "size_bytes": 1215733198,
+          "mtime_ns": 1753889568895054800
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c62__2025-07-29__20-06-59.trx",
+          "size_bytes": 20471902,
+          "mtime_ns": 1753889569343504500,
+          "sha256": "a151c3d25bf1bda71be398406367e56611deae2e44c855e2b46c6a6386162458"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-29/night/c62__2025-07-29__20-06-59.data",
+          "size_bytes": 527107,
+          "mtime_ns": 1753889568991025600,
+          "sha256": "1f1b316f32a932988a6951d313997ce016363431c941398b4dc1f5ad691711db"
+        }
+      },
+      "frames": 108291,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108291
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 14381,
+            "missing_fraction": 0.13279958629987718,
+            "initial_missing": 151,
+            "gap_count": 1719,
+            "longest_gap": 683,
+            "longest_gaps": [
+              {
+                "start": 27840,
+                "stop": 28523
+              },
+              {
+                "start": 7418,
+                "stop": 7711
+              },
+              {
+                "start": 27605,
+                "stop": 27808
+              },
+              {
+                "start": 9989,
+                "stop": 10169
+              },
+              {
+                "start": 2019,
+                "stop": 2189
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 29071,
+            "missing_fraction": 0.2684525953218642,
+            "initial_missing": 1283,
+            "gap_count": 1830,
+            "longest_gap": 1345,
+            "longest_gaps": [
+              {
+                "start": 2206,
+                "stop": 3551
+              },
+              {
+                "start": 0,
+                "stop": 1283
+              },
+              {
+                "start": 18348,
+                "stop": 19073
+              },
+              {
+                "start": 4890,
+                "stop": 5300
+              },
+              {
+                "start": 69146,
+                "stop": 69516
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 7973,
+            "missing_fraction": 0.07362569373262783,
+            "initial_missing": 151,
+            "gap_count": 1686,
+            "longest_gap": 503,
+            "longest_gaps": [
+              {
+                "start": 62162,
+                "stop": 62665
+              },
+              {
+                "start": 80722,
+                "stop": 81139
+              },
+              {
+                "start": 101706,
+                "stop": 101887
+              },
+              {
+                "start": 0,
+                "stop": 151
+              },
+              {
+                "start": 42160,
+                "stop": 42311
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 19352,
+            "missing_fraction": 0.1787036780526544,
+            "initial_missing": 151,
+            "gap_count": 813,
+            "longest_gap": 1779,
+            "longest_gaps": [
+              {
+                "start": 100773,
+                "stop": 102552
+              },
+              {
+                "start": 52579,
+                "stop": 53873
+              },
+              {
+                "start": 68942,
+                "stop": 69823
+              },
+              {
+                "start": 92040,
+                "stop": 92906
+              },
+              {
+                "start": 72610,
+                "stop": 73284
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2214,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108291
+          ]
+        },
+        "timestamps": {
+          "first": 0.5679018497467041,
+          "last": 14439.2646484375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.03515625,
+          "maximum_step": 0.232421875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67744,
+            101540
+          ]
+        },
+        {
+          "startPre": [
+            150,
+            40698,
+            74494
+          ],
+          "startTrain": [
+            6946,
+            40743,
+            74539
+          ],
+          "startPost": [
+            33947,
+            67743,
+            101540
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 42.0,
+        "y": 36.0,
+        "scale": 0.9905063924050624,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 23,
+      "video": "/media/Synology4/Yang Chen/2025-07-30/night/c51__2025-07-30__21-00-45.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [
+        "Repeated timestamps"
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c51__2025-07-30__21-00-45.avi",
+          "size_bytes": 836315830,
+          "mtime_ns": 1753974908235523400
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c51__2025-07-30__21-00-45.trx",
+          "size_bytes": 20472280,
+          "mtime_ns": 1753974908664147100,
+          "sha256": "24b99e64629815d8b30e12915ab6f5db71ab60381cf408f5736e6d9d2127464a"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c51__2025-07-30__21-00-45.data",
+          "size_bytes": 522270,
+          "mtime_ns": 1753974908514368900,
+          "sha256": "5969444badfb443c735cc169a101099240a4b19f238040843b66d29ba6f08d65"
+        }
+      },
+      "frames": 108293,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108293
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 18297,
+            "missing_fraction": 0.1689582890860905,
+            "initial_missing": 152,
+            "gap_count": 1187,
+            "longest_gap": 2100,
+            "longest_gaps": [
+              {
+                "start": 104415,
+                "stop": 106515
+              },
+              {
+                "start": 2819,
+                "stop": 4513
+              },
+              {
+                "start": 963,
+                "stop": 2215
+              },
+              {
+                "start": 59914,
+                "stop": 60770
+              },
+              {
+                "start": 303,
+                "stop": 903
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 31464,
+            "missing_fraction": 0.29054509525084726,
+            "initial_missing": 425,
+            "gap_count": 730,
+            "longest_gap": 4613,
+            "longest_gaps": [
+              {
+                "start": 6444,
+                "stop": 11057
+              },
+              {
+                "start": 80736,
+                "stop": 84145
+              },
+              {
+                "start": 11060,
+                "stop": 13810
+              },
+              {
+                "start": 17322,
+                "stop": 19424
+              },
+              {
+                "start": 2747,
+                "stop": 4582
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 17564,
+            "missing_fraction": 0.16218961521058609,
+            "initial_missing": 152,
+            "gap_count": 1245,
+            "longest_gap": 412,
+            "longest_gaps": [
+              {
+                "start": 21355,
+                "stop": 21767
+              },
+              {
+                "start": 40386,
+                "stop": 40736
+              },
+              {
+                "start": 30868,
+                "stop": 31205
+              },
+              {
+                "start": 8392,
+                "stop": 8676
+              },
+              {
+                "start": 54024,
+                "stop": 54280
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 13608,
+            "missing_fraction": 0.12565909153869595,
+            "initial_missing": 152,
+            "gap_count": 1571,
+            "longest_gap": 664,
+            "longest_gaps": [
+              {
+                "start": 38760,
+                "stop": 39424
+              },
+              {
+                "start": 85923,
+                "stop": 86461
+              },
+              {
+                "start": 97642,
+                "stop": 98164
+              },
+              {
+                "start": 85643,
+                "stop": 85915
+              },
+              {
+                "start": 87292,
+                "stop": 87516
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 672,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108293
+          ]
+        },
+        "timestamps": {
+          "first": 0.5682001113891602,
+          "last": 14439.4921875,
+          "zero_steps": 1,
+          "negative_steps": 0,
+          "minimum_step": 0.0,
+          "maximum_step": 0.2685546875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33949,
+            67745,
+            101542
+          ]
+        },
+        {
+          "startPre": [
+            152,
+            40699,
+            74495
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74540
+          ],
+          "startPost": [
+            33949,
+            67745,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 47.0,
+        "y": 29.0,
+        "scale": 0.9841772943037964,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 24,
+      "video": "/media/Synology4/Yang Chen/2025-07-30/night/c52__2025-07-30__21-00-50.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c52__2025-07-30__21-00-50.avi",
+          "size_bytes": 1124329074,
+          "mtime_ns": 1753974918745589400
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c52__2025-07-30__21-00-50.trx",
+          "size_bytes": 20472280,
+          "mtime_ns": 1753974919064414800,
+          "sha256": "e4f5718693819d003e14f7df8a4631b427597e3c26756245281eb728783b73ec"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c52__2025-07-30__21-00-50.data",
+          "size_bytes": 523384,
+          "mtime_ns": 1753974918850460400,
+          "sha256": "00797a8d544c99c1cee7be7be9f175e20749ffd4caf23688515c8ed6fbf632f8"
+        }
+      },
+      "frames": 108293,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108293
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 5352,
+            "missing_fraction": 0.04942147691909911,
+            "initial_missing": 152,
+            "gap_count": 876,
+            "longest_gap": 672,
+            "longest_gaps": [
+              {
+                "start": 106293,
+                "stop": 106965
+              },
+              {
+                "start": 5936,
+                "stop": 6529
+              },
+              {
+                "start": 6554,
+                "stop": 6771
+              },
+              {
+                "start": 0,
+                "stop": 152
+              },
+              {
+                "start": 52258,
+                "stop": 52319
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 29621,
+            "missing_fraction": 0.2735264513865162,
+            "initial_missing": 152,
+            "gap_count": 1910,
+            "longest_gap": 2920,
+            "longest_gaps": [
+              {
+                "start": 14827,
+                "stop": 17747
+              },
+              {
+                "start": 3026,
+                "stop": 4313
+              },
+              {
+                "start": 7836,
+                "stop": 9085
+              },
+              {
+                "start": 1378,
+                "stop": 2351
+              },
+              {
+                "start": 4663,
+                "stop": 5538
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 16541,
+            "missing_fraction": 0.15274302124791075,
+            "initial_missing": 1618,
+            "gap_count": 986,
+            "longest_gap": 1618,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 1618
+              },
+              {
+                "start": 8116,
+                "stop": 9194
+              },
+              {
+                "start": 10538,
+                "stop": 11578
+              },
+              {
+                "start": 96425,
+                "stop": 97036
+              },
+              {
+                "start": 61452,
+                "stop": 62020
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 29879,
+            "missing_fraction": 0.2759088768433786,
+            "initial_missing": 644,
+            "gap_count": 1122,
+            "longest_gap": 5240,
+            "longest_gaps": [
+              {
+                "start": 6991,
+                "stop": 12231
+              },
+              {
+                "start": 15767,
+                "stop": 17220
+              },
+              {
+                "start": 22160,
+                "stop": 22977
+              },
+              {
+                "start": 61274,
+                "stop": 61985
+              },
+              {
+                "start": 0,
+                "stop": 644
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1062,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108293
+          ]
+        },
+        "timestamps": {
+          "first": 0.5994198322296143,
+          "last": 14439.5205078125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0322265625,
+          "maximum_step": 0.2333984375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33949,
+            67745,
+            101542
+          ]
+        },
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33949,
+            67745,
+            101542
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 47.0,
+        "y": 28.0,
+        "scale": 0.986286993670885,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 25,
+      "video": "/media/Synology4/Yang Chen/2025-07-30/night/c61__2025-07-30__21-00-53.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c61__2025-07-30__21-00-53.avi",
+          "size_bytes": 1177041836,
+          "mtime_ns": 1753974929833179600
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c61__2025-07-30__21-00-53.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1753974930046927900,
+          "sha256": "b64851bcc354c203380e7fb98da4cd000d2e3d6a9f1a32bcfce43ac147a2f3e2"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c61__2025-07-30__21-00-53.data",
+          "size_bytes": 521344,
+          "mtime_ns": 1753974929868720400,
+          "sha256": "50b8763a7fc34c041bb837db3a59824b7353c87a8211232b9a9ffe33242af9d0"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 13916,
+            "missing_fraction": 0.12850441399179996,
+            "initial_missing": 151,
+            "gap_count": 974,
+            "longest_gap": 1761,
+            "longest_gaps": [
+              {
+                "start": 106074,
+                "stop": 107835
+              },
+              {
+                "start": 47937,
+                "stop": 48794
+              },
+              {
+                "start": 10794,
+                "stop": 11625
+              },
+              {
+                "start": 98364,
+                "stop": 99082
+              },
+              {
+                "start": 14189,
+                "stop": 14744
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 26041,
+            "missing_fraction": 0.2404702101724966,
+            "initial_missing": 151,
+            "gap_count": 1707,
+            "longest_gap": 3060,
+            "longest_gaps": [
+              {
+                "start": 51758,
+                "stop": 54818
+              },
+              {
+                "start": 20798,
+                "stop": 23357
+              },
+              {
+                "start": 14501,
+                "stop": 15759
+              },
+              {
+                "start": 66829,
+                "stop": 67836
+              },
+              {
+                "start": 1429,
+                "stop": 2435
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 7358,
+            "missing_fraction": 0.0679459239833044,
+            "initial_missing": 151,
+            "gap_count": 684,
+            "longest_gap": 1015,
+            "longest_gaps": [
+              {
+                "start": 74837,
+                "stop": 75852
+              },
+              {
+                "start": 26345,
+                "stop": 27286
+              },
+              {
+                "start": 24732,
+                "stop": 25431
+              },
+              {
+                "start": 93311,
+                "stop": 93578
+              },
+              {
+                "start": 46011,
+                "stop": 46196
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 5667,
+            "missing_fraction": 0.05233073541905219,
+            "initial_missing": 151,
+            "gap_count": 1067,
+            "longest_gap": 738,
+            "longest_gaps": [
+              {
+                "start": 11283,
+                "stop": 12021
+              },
+              {
+                "start": 75642,
+                "stop": 75917
+              },
+              {
+                "start": 0,
+                "stop": 151
+              },
+              {
+                "start": 65036,
+                "stop": 65154
+              },
+              {
+                "start": 49841,
+                "stop": 49944
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 316,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.5998940467834473,
+          "last": 14439.380859375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.037109375,
+          "maximum_step": 0.267578125
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74540
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            151,
+            40698,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74540
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 43.0,
+        "y": 21.0,
+        "scale": 0.9968354905063285,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 26,
+      "video": "/media/Synology4/Yang Chen/2025-07-30/night/c62__2025-07-30__21-00-55.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c62__2025-07-30__21-00-55.avi",
+          "size_bytes": 1311613786,
+          "mtime_ns": 1753974941857347500
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c62__2025-07-30__21-00-55.trx",
+          "size_bytes": 20474170,
+          "mtime_ns": 1753974942145755900,
+          "sha256": "6cc225a7f87b03c7cf6ffb84f078d20177669db87001c4f8914fd1a164f6fe95"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-07-30/night/c62__2025-07-30__21-00-55.data",
+          "size_bytes": 527422,
+          "mtime_ns": 1753974941953286200,
+          "sha256": "c5795af5de3e3d408baacd4884f94127c9b053b85d8d32984601d25603485c41"
+        }
+      },
+      "frames": 108303,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108303
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 10179,
+            "missing_fraction": 0.09398631616852719,
+            "initial_missing": 1457,
+            "gap_count": 766,
+            "longest_gap": 1457,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 1457
+              },
+              {
+                "start": 21450,
+                "stop": 22186
+              },
+              {
+                "start": 13127,
+                "stop": 13490
+              },
+              {
+                "start": 9794,
+                "stop": 10080
+              },
+              {
+                "start": 23752,
+                "stop": 23940
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 17964,
+            "missing_fraction": 0.16586798149635745,
+            "initial_missing": 186,
+            "gap_count": 1284,
+            "longest_gap": 1283,
+            "longest_gaps": [
+              {
+                "start": 106484,
+                "stop": 107767
+              },
+              {
+                "start": 97869,
+                "stop": 98851
+              },
+              {
+                "start": 2604,
+                "stop": 3341
+              },
+              {
+                "start": 45500,
+                "stop": 46145
+              },
+              {
+                "start": 14778,
+                "stop": 15361
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 4375,
+            "missing_fraction": 0.040395926243963695,
+            "initial_missing": 162,
+            "gap_count": 1099,
+            "longest_gap": 526,
+            "longest_gaps": [
+              {
+                "start": 17969,
+                "stop": 18495
+              },
+              {
+                "start": 0,
+                "stop": 162
+              },
+              {
+                "start": 67157,
+                "stop": 67283
+              },
+              {
+                "start": 90396,
+                "stop": 90440
+              },
+              {
+                "start": 90737,
+                "stop": 90779
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 20541,
+            "missing_fraction": 0.1896623362233733,
+            "initial_missing": 162,
+            "gap_count": 1410,
+            "longest_gap": 2439,
+            "longest_gaps": [
+              {
+                "start": 49197,
+                "stop": 51636
+              },
+              {
+                "start": 48349,
+                "stop": 49158
+              },
+              {
+                "start": 61893,
+                "stop": 62694
+              },
+              {
+                "start": 45736,
+                "stop": 46511
+              },
+              {
+                "start": 80527,
+                "stop": 81199
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 2222,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108303
+          ]
+        },
+        "timestamps": {
+          "first": 0.6000730991363525,
+          "last": 14440.8642578125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0654296875,
+          "maximum_step": 0.232421875
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            162,
+            40709,
+            74506
+          ],
+          "startTrain": [
+            6958,
+            40754,
+            74551
+          ],
+          "startPost": [
+            33959,
+            67755,
+            101552
+          ]
+        },
+        {
+          "startPre": [
+            162,
+            40709,
+            74506
+          ],
+          "startTrain": [
+            6958,
+            40754,
+            74551
+          ],
+          "startPost": [
+            33959,
+            67755,
+            101552
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 43.0,
+        "y": 36.0,
+        "scale": 0.9883966930379737,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 27,
+      "video": "/media/Synology4/Yang Chen/2025-08-01/night/c31__2025-08-01__21-56-18.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c31__2025-08-01__21-56-18.avi",
+          "size_bytes": 1717863266,
+          "mtime_ns": 1754114220920288000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c31__2025-08-01__21-56-18.trx",
+          "size_bytes": 20472091,
+          "mtime_ns": 1754114221180290000,
+          "sha256": "7cd9d891bd4812c7bb751ee83a0a5eafc67fcf61533bb54c7a24a9080b4c3746"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c31__2025-08-01__21-56-18.data",
+          "size_bytes": 524807,
+          "mtime_ns": 1754114220416283000,
+          "sha256": "394c2ac264cd370ad9ded3a583cc4506db1e4fd99dce180fb518610a11c22064"
+        }
+      },
+      "frames": 108292,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108292
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 22774,
+            "missing_fraction": 0.21030177667787095,
+            "initial_missing": 157,
+            "gap_count": 1361,
+            "longest_gap": 2212,
+            "longest_gaps": [
+              {
+                "start": 66334,
+                "stop": 68546
+              },
+              {
+                "start": 4826,
+                "stop": 5808
+              },
+              {
+                "start": 100687,
+                "stop": 101394
+              },
+              {
+                "start": 52383,
+                "stop": 53050
+              },
+              {
+                "start": 72917,
+                "stop": 73580
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 18292,
+            "missing_fraction": 0.16891367783400435,
+            "initial_missing": 152,
+            "gap_count": 1287,
+            "longest_gap": 1761,
+            "longest_gaps": [
+              {
+                "start": 33274,
+                "stop": 35035
+              },
+              {
+                "start": 26843,
+                "stop": 28318
+              },
+              {
+                "start": 14598,
+                "stop": 15893
+              },
+              {
+                "start": 36682,
+                "stop": 37271
+              },
+              {
+                "start": 28319,
+                "stop": 28852
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 8286,
+            "missing_fraction": 0.07651534739408267,
+            "initial_missing": 152,
+            "gap_count": 1124,
+            "longest_gap": 388,
+            "longest_gaps": [
+              {
+                "start": 100217,
+                "stop": 100605
+              },
+              {
+                "start": 0,
+                "stop": 152
+              },
+              {
+                "start": 31031,
+                "stop": 31168
+              },
+              {
+                "start": 41424,
+                "stop": 41556
+              },
+              {
+                "start": 43524,
+                "stop": 43649
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 36941,
+            "missing_fraction": 0.3411239980792672,
+            "initial_missing": 152,
+            "gap_count": 2547,
+            "longest_gap": 1995,
+            "longest_gaps": [
+              {
+                "start": 64426,
+                "stop": 66421
+              },
+              {
+                "start": 20288,
+                "stop": 22080
+              },
+              {
+                "start": 106280,
+                "stop": 108015
+              },
+              {
+                "start": 1594,
+                "stop": 2995
+              },
+              {
+                "start": 14539,
+                "stop": 15601
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1366,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108292
+          ]
+        },
+        "timestamps": {
+          "first": 0.6545460224151611,
+          "last": 14439.4423828125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.080078125,
+          "maximum_step": 0.189453125
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            151,
+            40699,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74540
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            151,
+            40699,
+            74495
+          ],
+          "startTrain": [
+            6947,
+            40744,
+            74540
+          ],
+          "startPost": [
+            33948,
+            67744,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 32.0,
+        "y": 20.0,
+        "scale": 1.0158227848101267,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 28,
+      "video": "/media/Synology4/Yang Chen/2025-08-01/night/c32__2025-08-01__21-56-23.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [
+        "Original all-missing slots [3]; occupancy is unconfirmed, not excluded"
+      ],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c32__2025-08-01__21-56-23.avi",
+          "size_bytes": 825329108,
+          "mtime_ns": 1754114224416322000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c32__2025-08-01__21-56-23.trx",
+          "size_bytes": 20472658,
+          "mtime_ns": 1754114224676324000,
+          "sha256": "9f48432877ceaf96b05c1869eb985092cec63e0d15db6644dbf94dd0b4753476"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c32__2025-08-01__21-56-23.data",
+          "size_bytes": 523995,
+          "mtime_ns": 1754114224080318000,
+          "sha256": "6a3c4767cf34c3abc56d43f6c38d5c7a9046a76b968ded362bd1739471ac508c"
+        }
+      },
+      "frames": 108295,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108295
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 6007,
+            "missing_fraction": 0.0554688582113671,
+            "initial_missing": 154,
+            "gap_count": 857,
+            "longest_gap": 165,
+            "longest_gaps": [
+              {
+                "start": 42080,
+                "stop": 42245
+              },
+              {
+                "start": 10713,
+                "stop": 10876
+              },
+              {
+                "start": 7720,
+                "stop": 7877
+              },
+              {
+                "start": 0,
+                "stop": 154
+              },
+              {
+                "start": 30558,
+                "stop": 30678
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 18863,
+            "missing_fraction": 0.174181633501085,
+            "initial_missing": 154,
+            "gap_count": 1247,
+            "longest_gap": 2698,
+            "longest_gaps": [
+              {
+                "start": 93642,
+                "stop": 96340
+              },
+              {
+                "start": 49925,
+                "stop": 50506
+              },
+              {
+                "start": 93150,
+                "stop": 93634
+              },
+              {
+                "start": 59580,
+                "stop": 59839
+              },
+              {
+                "start": 59840,
+                "stop": 60095
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 20879,
+            "missing_fraction": 0.1927974514058821,
+            "initial_missing": 170,
+            "gap_count": 1398,
+            "longest_gap": 1304,
+            "longest_gaps": [
+              {
+                "start": 94408,
+                "stop": 95712
+              },
+              {
+                "start": 82659,
+                "stop": 83592
+              },
+              {
+                "start": 80091,
+                "stop": 80567
+              },
+              {
+                "start": 1782,
+                "stop": 2245
+              },
+              {
+                "start": 30182,
+                "stop": 30587
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 108295,
+            "missing_fraction": 1.0,
+            "initial_missing": 108295,
+            "gap_count": 1,
+            "longest_gap": 108295,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 108295
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1300,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108295
+          ]
+        },
+        "timestamps": {
+          "first": 0.6015551090240479,
+          "last": 14439.7744140625,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0605621337890625,
+          "maximum_step": 0.2253570556640625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            154,
+            40702,
+            74498
+          ],
+          "startTrain": [
+            6950,
+            40747,
+            74543
+          ],
+          "startPost": [
+            33951,
+            67747,
+            101544
+          ]
+        },
+        {
+          "startPre": [
+            154,
+            40702,
+            74498
+          ],
+          "startTrain": [
+            6950,
+            40747,
+            74543
+          ],
+          "startPost": [
+            33951,
+            67747,
+            101544
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 40.0,
+        "y": 30.0,
+        "scale": 1.0010548892405058,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 29,
+      "video": "/media/Synology4/Yang Chen/2025-08-01/night/c41__2025-08-01__21-56-26.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c41__2025-08-01__21-56-26.avi",
+          "size_bytes": 926276190,
+          "mtime_ns": 1754114227532352000
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c41__2025-08-01__21-56-26.trx",
+          "size_bytes": 20472847,
+          "mtime_ns": 1754114227840355000,
+          "sha256": "ac0f2b2ed6c314c407b7e0b25b0af27839bf233a8e1c8717631483b49d1d342d"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-08-01/night/c41__2025-08-01__21-56-26.data",
+          "size_bytes": 523751,
+          "mtime_ns": 1754114227136348000,
+          "sha256": "b78dd52aa401ffe8074db065a80d4f001ea19f7780689063b485195ceaff387e"
+        }
+      },
+      "frames": 108296,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108296
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 22753,
+            "missing_fraction": 0.21010009603309449,
+            "initial_missing": 155,
+            "gap_count": 1462,
+            "longest_gap": 2304,
+            "longest_gaps": [
+              {
+                "start": 103317,
+                "stop": 105621
+              },
+              {
+                "start": 67925,
+                "stop": 69059
+              },
+              {
+                "start": 8400,
+                "stop": 8651
+              },
+              {
+                "start": 54001,
+                "stop": 54189
+              },
+              {
+                "start": 48811,
+                "stop": 48981
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 19586,
+            "missing_fraction": 0.18085617197311074,
+            "initial_missing": 155,
+            "gap_count": 2105,
+            "longest_gap": 759,
+            "longest_gaps": [
+              {
+                "start": 84453,
+                "stop": 85212
+              },
+              {
+                "start": 40212,
+                "stop": 40708
+              },
+              {
+                "start": 105502,
+                "stop": 105832
+              },
+              {
+                "start": 105833,
+                "stop": 106096
+              },
+              {
+                "start": 3611,
+                "stop": 3773
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 25902,
+            "missing_fraction": 0.2391778089680136,
+            "initial_missing": 155,
+            "gap_count": 1445,
+            "longest_gap": 720,
+            "longest_gaps": [
+              {
+                "start": 106916,
+                "stop": 107636
+              },
+              {
+                "start": 103598,
+                "stop": 104310
+              },
+              {
+                "start": 18771,
+                "stop": 19466
+              },
+              {
+                "start": 81543,
+                "stop": 81781
+              },
+              {
+                "start": 96783,
+                "stop": 97020
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 10709,
+            "missing_fraction": 0.09888638546206693,
+            "initial_missing": 155,
+            "gap_count": 1858,
+            "longest_gap": 155,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 155
+              },
+              {
+                "start": 72842,
+                "stop": 72992
+              },
+              {
+                "start": 14962,
+                "stop": 15049
+              },
+              {
+                "start": 88487,
+                "stop": 88570
+              },
+              {
+                "start": 106847,
+                "stop": 106927
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1144,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108296
+          ]
+        },
+        "timestamps": {
+          "first": 0.5996429920196533,
+          "last": 14439.927734375,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.0614013671875,
+          "maximum_step": 0.2099609375
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            155,
+            40703,
+            74499
+          ],
+          "startTrain": [
+            6951,
+            40748,
+            74544
+          ],
+          "startPost": [
+            33952,
+            67748,
+            101545
+          ]
+        },
+        {
+          "startPre": [
+            155,
+            40703,
+            74499
+          ],
+          "startTrain": [
+            6951,
+            40748,
+            74544
+          ],
+          "startPost": [
+            33952,
+            67748,
+            101545
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 34.0,
+        "y": 60.0,
+        "scale": 1.0094936867088606,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 30,
+      "video": "/media/Synology4/Yang Chen/2025-08-02/night/c51__2025-08-02__22-03-50.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c51__2025-08-02__22-03-50.avi",
+          "size_bytes": 826034640,
+          "mtime_ns": 1754234781067022300
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c51__2025-08-02__22-03-50.trx",
+          "size_bytes": 20471524,
+          "mtime_ns": 1754234781316200100,
+          "sha256": "0877cf534296b7e21ee8ed0d6bb9b4f6dfbec6a91f16b93240a1091eb78bd66d"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c51__2025-08-02__22-03-50.data",
+          "size_bytes": 525101,
+          "mtime_ns": 1754234781137870100,
+          "sha256": "de5d412b2e4d2916af041f39ba0034b5ff638183b6bad523d1d654f476b09a32"
+        }
+      },
+      "frames": 108289,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108289
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 5683,
+            "missing_fraction": 0.05247993794383548,
+            "initial_missing": 149,
+            "gap_count": 719,
+            "longest_gap": 578,
+            "longest_gaps": [
+              {
+                "start": 47828,
+                "stop": 48406
+              },
+              {
+                "start": 2194,
+                "stop": 2499
+              },
+              {
+                "start": 0,
+                "stop": 149
+              },
+              {
+                "start": 90255,
+                "stop": 90385
+              },
+              {
+                "start": 1247,
+                "stop": 1367
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 8116,
+            "missing_fraction": 0.0749475939384425,
+            "initial_missing": 155,
+            "gap_count": 995,
+            "longest_gap": 588,
+            "longest_gaps": [
+              {
+                "start": 8102,
+                "stop": 8690
+              },
+              {
+                "start": 43096,
+                "stop": 43563
+              },
+              {
+                "start": 39999,
+                "stop": 40320
+              },
+              {
+                "start": 85127,
+                "stop": 85334
+              },
+              {
+                "start": 65355,
+                "stop": 65556
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 20181,
+            "missing_fraction": 0.18636241908227058,
+            "initial_missing": 148,
+            "gap_count": 2140,
+            "longest_gap": 668,
+            "longest_gaps": [
+              {
+                "start": 47854,
+                "stop": 48522
+              },
+              {
+                "start": 27577,
+                "stop": 27923
+              },
+              {
+                "start": 98709,
+                "stop": 98928
+              },
+              {
+                "start": 37610,
+                "stop": 37827
+              },
+              {
+                "start": 99039,
+                "stop": 99210
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 11799,
+            "missing_fraction": 0.1089584352981374,
+            "initial_missing": 432,
+            "gap_count": 1810,
+            "longest_gap": 432,
+            "longest_gaps": [
+              {
+                "start": 0,
+                "stop": 432
+              },
+              {
+                "start": 7823,
+                "stop": 8218
+              },
+              {
+                "start": 12808,
+                "stop": 13096
+              },
+              {
+                "start": 15446,
+                "stop": 15618
+              },
+              {
+                "start": 33202,
+                "stop": 33372
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 1634,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108289
+          ]
+        },
+        "timestamps": {
+          "first": 0.5825440883636475,
+          "last": 14438.9453125,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.057861328125,
+          "maximum_step": 0.230712890625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            148,
+            40695,
+            74492
+          ],
+          "startTrain": [
+            6944,
+            40740,
+            74537
+          ],
+          "startPost": [
+            33944,
+            67741,
+            101537
+          ]
+        },
+        {
+          "startPre": [
+            148,
+            40695,
+            74492
+          ],
+          "startTrain": [
+            6944,
+            40740,
+            74537
+          ],
+          "startPost": [
+            33944,
+            67741,
+            101537
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 49.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    },
+    {
+      "index": 31,
+      "video": "/media/Synology4/Yang Chen/2025-08-02/night/c52__2025-08-02__22-03-53.avi",
+      "disposition": "ready_for_audit",
+      "hold_reasons": [],
+      "warnings": [],
+      "sources": {
+        "video": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c52__2025-08-02__22-03-53.avi",
+          "size_bytes": 1124390730,
+          "mtime_ns": 1754234791382336400
+        },
+        "trx": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c52__2025-08-02__22-03-53.trx",
+          "size_bytes": 20472280,
+          "mtime_ns": 1754234791701254000,
+          "sha256": "d6037e661f84b8458fed6b3b0c50aee565d9cc4c2e0d8e8f5e1b95236ce06b82"
+        },
+        "data": {
+          "path": "/media/Synology4/Yang Chen/2025-08-02/night/c52__2025-08-02__22-03-53.data",
+          "size_bytes": 532180,
+          "mtime_ns": 1754234791487794400,
+          "sha256": "0a6f61c3692c757693900de2a4f5cd950bd5baa18272592252cf28cdcc675d31"
+        }
+      },
+      "frames": 108293,
+      "slots": 4,
+      "video_header": {
+        "width": 720,
+        "height": 720,
+        "fps": 7.5,
+        "header_frames": 108293
+      },
+      "original": {
+        "flies": [
+          {
+            "slot": 0,
+            "missing_frames": 8163,
+            "missing_fraction": 0.07537883335026271,
+            "initial_missing": 187,
+            "gap_count": 1662,
+            "longest_gap": 315,
+            "longest_gaps": [
+              {
+                "start": 376,
+                "stop": 691
+              },
+              {
+                "start": 2647,
+                "stop": 2898
+              },
+              {
+                "start": 1255,
+                "stop": 1474
+              },
+              {
+                "start": 0,
+                "stop": 187
+              },
+              {
+                "start": 1559,
+                "stop": 1673
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "missing_frames": 10478,
+            "missing_fraction": 0.09675602301164433,
+            "initial_missing": 305,
+            "gap_count": 1035,
+            "longest_gap": 565,
+            "longest_gaps": [
+              {
+                "start": 3757,
+                "stop": 4322
+              },
+              {
+                "start": 328,
+                "stop": 756
+              },
+              {
+                "start": 1322,
+                "stop": 1749
+              },
+              {
+                "start": 0,
+                "stop": 305
+              },
+              {
+                "start": 1750,
+                "stop": 2026
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "missing_frames": 14636,
+            "missing_fraction": 0.13515185653735698,
+            "initial_missing": 152,
+            "gap_count": 1939,
+            "longest_gap": 991,
+            "longest_gaps": [
+              {
+                "start": 62521,
+                "stop": 63512
+              },
+              {
+                "start": 24367,
+                "stop": 25231
+              },
+              {
+                "start": 36477,
+                "stop": 36800
+              },
+              {
+                "start": 48690,
+                "stop": 48985
+              },
+              {
+                "start": 36853,
+                "stop": 37062
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "missing_frames": 17861,
+            "missing_fraction": 0.164932174748137,
+            "initial_missing": 152,
+            "gap_count": 1417,
+            "longest_gap": 694,
+            "longest_gaps": [
+              {
+                "start": 64741,
+                "stop": 65435
+              },
+              {
+                "start": 902,
+                "stop": 1470
+              },
+              {
+                "start": 21738,
+                "stop": 22235
+              },
+              {
+                "start": 1843,
+                "stop": 2062
+              },
+              {
+                "start": 18260,
+                "stop": 18460
+              }
+            ]
+          }
+        ],
+        "events": {
+          "count": 3714,
+          "endpoint_events": 0,
+          "valid_index_interval": [
+            0,
+            108293
+          ]
+        },
+        "timestamps": {
+          "first": 0.6049590110778809,
+          "last": 14439.4873046875,
+          "zero_steps": 0,
+          "negative_steps": 0,
+          "minimum_step": 0.06396484375,
+          "maximum_step": 0.2066650390625
+        }
+      },
+      "phase_events": [
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        },
+        {
+          "startPre": [
+            152,
+            40699,
+            74496
+          ],
+          "startTrain": [
+            6948,
+            40744,
+            74541
+          ],
+          "startPost": [
+            33948,
+            67745,
+            101541
+          ]
+        }
+      ],
+      "ef2yc": {},
+      "calibration": {
+        "layout": "large2",
+        "width": 720,
+        "height": 720,
+        "x": 49.0,
+        "y": 29.0,
+        "scale": 0.9778481962025303,
+        "floor_width": 295,
+        "offset": 337,
+        "separator": 321,
+        "margin": 24
+      },
+      "acquisition_note": null
+    }
+  ],
+  "input_list": {
+    "path": "/home/tracking/code/YL/nvsl-offline-tracking/full_video_list.txt",
+    "size_bytes": 90534,
+    "mtime_ns": 1794245196576558000,
+    "sha256": "18926db48933cbc59fac88be7793c352aacc241a7fb59985bbdae6122040e4d3"
+  },
+  "notebook": {
+    "path": "/home/tracking/code/YL/nvsl-analysis/notebooks/manuscript_figure_panels.ipynb",
+    "size_bytes": 387185,
+    "mtime_ns": 1794249354169914963,
+    "sha256": "7cb8fd6a6d919f6f10b12394447ca9ad8d949b827d20cf6c02e94cda148b060c"
+  },
+  "freeze": "/home/tracking/code/YL/nvsl-offline-tracking/docs/ar_cohort_comparison/freeze.json",
+  "counts": {
+    "recordings": 32,
+    "ready_for_audit": 32,
+    "held": 0
+  }
+}

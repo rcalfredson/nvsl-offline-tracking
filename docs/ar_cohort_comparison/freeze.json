@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "producer": {
+    "name": "nvsl-offline-tracking",
+    "version": "0.1.0",
+    "git_commit": "17d140d653d9b20d7c9f1405d4ee79d2d5f64955",
+    "working_tree_dirty": true,
+    "package_sha256": "4e0d0c661682008a0a1a70e209cdf91e871bfb6b497d77f5d09f4d4d1860a47c",
+    "numpy_version": "2.2.6",
+    "opencv_version": "4.12.0"
+  },
+  "tracker_package_matches_commit": true,
+  "detector": {
+    "mode": "normalized",
+    "threshold": 25.0,
+    "signal_floor": 6.0,
+    "score_threshold": 4.0,
+    "area_min": 40.0,
+    "area_max": 1000.0,
+    "ambiguity_ratio": 0.5,
+    "reject_ambiguous": true,
+    "reject_truncated": true,
+    "shape_fit": "weighted_moments",
+    "illumination": "global_offset",
+    "segmentation": "body_core",
+    "core_radius": 2.0,
+    "core_growth": 2
+  },
+  "background": {
+    "quantile": 0.8,
+    "noise_floor": 3.0,
+    "noise_smoothing": 3.0,
+    "tile_rows": 32
+  },
+  "audit": {
+    "layout": "large2",
+    "margin": 24,
+    "samples": 129,
+    "hash_video": false
+  },
+  "contracts": {
+    "saved_frame_alignment": true,
+    "unresolved": "NaN",
+    "interpolation": false,
+    "source_sidecars": "preserved",
+    "events": "unchanged acquisition history"
+  },
+  "manual_qa": {
+    "recordings": 3,
+    "flies": 12,
+    "accepted_for_reviewed_intervals": 12,
+    "scope": "User completed fixed-window QA; not a full accuracy benchmark."
+  },
+  "input_list": {
+    "path": "/home/tracking/code/YL/nvsl-offline-tracking/full_video_list.txt",
+    "size_bytes": 90534,
+    "mtime_ns": 1794245196576558000,
+    "sha256": "18926db48933cbc59fac88be7793c352aacc241a7fb59985bbdae6122040e4d3"
+  },
+  "notebook": {
+    "path": "/home/tracking/code/YL/nvsl-analysis/notebooks/manuscript_figure_panels.ipynb",
+    "size_bytes": 387185,
+    "mtime_ns": 1794249354169914963,
+    "sha256": "7cb8fd6a6d919f6f10b12394447ca9ad8d949b827d20cf6c02e94cda148b060c"
+  },
+  "execution": "Preparation only: no tracking or behavioral analysis launched.",
+  "validated_plan": {
+    "path": "/home/tracking/code/YL/nvsl-offline-tracking/docs/body_core_full_check_plan.json",
+    "size_bytes": 8264,
+    "mtime_ns": 1794840657669483438,
+    "sha256": "230315ac9530b6bbe2534bbcf8e9686dfc182b592f028eb915bcb3701b8c0ba0"
+  }
+}

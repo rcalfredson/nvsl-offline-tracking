@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "analysis": {
+    "root": "/home/tracking/code/YL/nvsl-analysis",
+    "source_and_extensions_sha256": "fd0f64116484daeffadd5b6c89c2032a8a450a95528e20f23edbd3e08e6938a8",
+    "git_commit": "98fc66155203bb3f5e4c3c4f1b3aad7b93c8b613",
+    "git_status": []
+  },
+  "cohort_order": [
+    "flat-ar-control",
+    "agarose-ar-control"
+  ],
+  "sources": [
+    "original acquisition",
+    "frozen body-core offline"
+  ],
+  "standard_options": [
+    "-f",
+    "0-1",
+    "--rCC",
+    "15",
+    "--num-trainings",
+    "2",
+    "--rpd",
+    "--best-worst-trn",
+    "2",
+    "--sli-use-training-mean",
+    "--sli-select-skip-first-sync-buckets",
+    "1",
+    "--sli-min-valid-sync-buckets",
+    "3",
+    "--no-wall-cache",
+    "--hidePltTests"
+  ],
+  "sli_summary": "Mean T2 sync buckets 2-5, at least 3 paired valid buckets; no best/worst subset selected.",
+  "exports": [
+    "learning_stats.csv",
+    "sli.csv"
+  ],
+  "primary_metrics": [
+    "reward preference indices",
+    "spatial learning index",
+    "between-actual-reward distance by sync bucket"
+  ],
+  "additional_recipe_candidates": [
+    {
+      "notebook_cell": 83,
+      "recipe": "figure_4j",
+      "description": "T2 SB2-5 tortuosity, full trajectory, path_over_max_radius; >=5 trajectories; final-bucket SLI eligibility"
+    },
+    {
+      "notebook_cell": 190,
+      "recipe": "extended_data_figure_15e_15f",
+      "description": "Experimental-fly COM distance to reward and return-leg length; additional export/profile setup required"
+    }
+  ],
+  "policies": {
+    "staging": "Isolated source-specific directories, unchanged video/.data/notes, selected .trx symlink.",
+    "pairing": "Same recording and experimental/yoked pair; common-assessable paired deltas plus separate newly/lost-assessable results.",
+    "events": "Recorded stimulus/reward history never rewritten; reconstructed behavioral events may differ.",
+    "incomplete": "Held acquisitions stay in cohort inventory and are excluded from both analysis variants with reasons.",
+    "occupancy": "All-missing original slots are not assumed empty; inspect before interpreting new finite detections there.",
+    "scope": "Flat first, agarose separately; control genotype only, PFNd-silenced groups excluded.",
+    "validity": "Metric differences are sensitivity results; inspect large changes before attributing improved accuracy."
+  },
+  "status": "Prepared; no cohort tracking or analysis launched."
+}
