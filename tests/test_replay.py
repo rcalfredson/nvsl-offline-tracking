@@ -169,6 +169,8 @@ def test_player_loop_navigation_and_snapshot_without_a_desktop(pair, tmp_path, m
     monkeypatch.setenv("DISPLAY", ":mock")
     monkeypatch.setattr(replay.cv2, "getBuildInformation", lambda: "GUI: MOCK\n")
     monkeypatch.setattr(replay.cv2, "namedWindow", lambda *args: None)
+    resized = []
+    monkeypatch.setattr(replay.cv2, "resizeWindow", lambda *args: resized.append(args))
     monkeypatch.setattr(replay.cv2, "createTrackbar", lambda *args: None)
     monkeypatch.setattr(replay.cv2, "setTrackbarPos", lambda *args: None)
     displayed = []
@@ -182,3 +184,5 @@ def test_player_loop_navigation_and_snapshot_without_a_desktop(pair, tmp_path, m
     assert len(metadata) == 1
     assert json.loads(metadata[0].read_text())["frame"] == 2
     assert len(displayed) == 4
+    height, width = displayed[0][:2]
+    assert resized == [(replay.WINDOW, 2500, round(2500*height/width))]

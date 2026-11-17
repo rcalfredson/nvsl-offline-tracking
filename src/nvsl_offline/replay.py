@@ -417,6 +417,9 @@ def play(comparison, *, start, stop, fly=None, scale=None, speed=1., autoplay=Fa
             if view != previous_view:
                 image = comparison.render(reader.read(state.index), state.index, fly=state.fly,
                                           scale=scale, ellipses=state.ellipses, centers=state.centers)
+                if previous_view is None:
+                    # Size once from the rendered aspect ratio; retain subsequent user resizing.
+                    cv2.resizeWindow(WINDOW, 2500, round(2500*image.shape[0]/image.shape[1]))
                 previous_view = view
                 slider["setting"] = True
                 cv2.setTrackbarPos("saved frame", WINDOW, state.index)
