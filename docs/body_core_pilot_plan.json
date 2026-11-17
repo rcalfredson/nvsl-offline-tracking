@@ -1,0 +1,221 @@
+{
+  "recordings": [
+    {
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/jump-batch-2/03-c42__2025-07-21__20-33-41/audit",
+      "label": "jul21-c42",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "baseline_companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/01-c42__2025-07-21__20-33-41/c42__2025-07-21__20-33-41.global-offset.offline.trx",
+      "intervals": [
+        [
+          0,
+          1300
+        ],
+        [
+          10000,
+          10100
+        ],
+        [
+          54000,
+          54100
+        ],
+        [
+          90000,
+          90100
+        ]
+      ],
+      "snapshots": [
+        293,
+        362,
+        387,
+        400,
+        1005,
+        1113,
+        10000,
+        54000,
+        90000
+      ]
+    },
+    {
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/audit",
+      "label": "jul17-c52",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "baseline_companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/02-c52__2025-07-17__12-27-27/c52__2025-07-17__12-27-27.global-offset.offline.trx",
+      "intervals": [
+        [
+          0,
+          1300
+        ],
+        [
+          10000,
+          10100
+        ],
+        [
+          54000,
+          54100
+        ],
+        [
+          90000,
+          90100
+        ],
+        [
+          23230,
+          23290
+        ],
+        [
+          61570,
+          61620
+        ]
+      ],
+      "snapshots": [
+        293,
+        362,
+        387,
+        400,
+        1005,
+        1113,
+        10000,
+        54000,
+        90000,
+        23258,
+        61594
+      ]
+    },
+    {
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/audit",
+      "label": "jul27-c61",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "baseline_companion": "/home/tracking/code/YL/nvsl-offline-tracking/runs/full-recording-check/03-c61__2025-07-27__12-52-43/c61__2025-07-27__12-52-43.global-offset.offline.trx",
+      "intervals": [
+        [
+          0,
+          1300
+        ],
+        [
+          10000,
+          10100
+        ],
+        [
+          54000,
+          54100
+        ],
+        [
+          90000,
+          90100
+        ]
+      ],
+      "snapshots": [
+        293,
+        362,
+        387,
+        400,
+        1005,
+        1113,
+        10000,
+        54000,
+        90000
+      ]
+    },
+    {
+      "label": "jump-aug04",
+      "intervals": [
+        [
+          44270,
+          44310
+        ],
+        [
+          60530,
+          60570
+        ]
+      ],
+      "slots": [
+        2
+      ],
+      "snapshots": [
+        44288,
+        60549,
+        60550,
+        60551
+      ],
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/jump-batch-2/05-c31__2025-08-04__14-48-45/audit"
+    },
+    {
+      "label": "jump-aug02",
+      "intervals": [
+        [
+          74610,
+          74660
+        ]
+      ],
+      "slots": [
+        0
+      ],
+      "snapshots": [
+        74630,
+        74631,
+        74632
+      ],
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/jump-batch-2/07-c52__2025-08-02__22-03-53/audit"
+    },
+    {
+      "label": "may30-c51",
+      "intervals": [
+        [
+          0,
+          300
+        ],
+        [
+          10000,
+          10100
+        ]
+      ],
+      "slots": [
+        1
+      ],
+      "snapshots": [
+        49,
+        212,
+        10000
+      ],
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/c51-baseline"
+    },
+    {
+      "label": "jul17-c61",
+      "intervals": [
+        [
+          0,
+          1300
+        ],
+        [
+          10000,
+          10100
+        ]
+      ],
+      "slots": [
+        3
+      ],
+      "snapshots": [
+        159,
+        513,
+        668,
+        787,
+        10000
+      ],
+      "audit": "/home/tracking/code/YL/nvsl-offline-tracking/runs/jump-batch-2/01-c61__2025-07-17__12-27-30/audit"
+    }
+  ]
+}

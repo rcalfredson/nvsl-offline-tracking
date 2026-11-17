@@ -129,6 +129,14 @@ for the method, selected-interval results, and limitations. Full companions reco
 the setting and one offset/tile-disagreement value per saved frame in
 `tracking_quality`. Existing audits/backgrounds can be reused; write a new companion.
 
+Experimental body-core segmentation is available with `--segmentation body_core`
+(default: `components`), using `--core-radius 2 --core-growth 2`. It removes thin
+attachments using distance-transform seeds and bounded foreground growth, then
+recalculates the weighted center and ellipse before candidate selection. It uses
+no well-location prior or trajectory interpolation and requires weighted-moment
+geometry. See the [body-core pilot](docs/body_core_pilot.md) for results, controls,
+and remaining small-body/ambiguity failures. The previous detector remains default.
+
 Output directories and companion filenames must be new. Acquisition video,
 `.trx`, and `.data` files are read-only inputs. Load only trusted acquisition
 pickles. `audit` discovers `experiment.trx`/`.data` or `experiment.avi.trx`/`.data`,

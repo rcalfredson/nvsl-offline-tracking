@@ -1,0 +1,30 @@
+Body-core QA checklist, 17 Nov 2026.
+
+Primary review: original acquisition tracking (yellow) versus latest full body-core tracking (green). The illumination-only source remains available in the three-panel images to diagnose individual method changes; it is not the primary comparison in these commands. All frame and fly indices are zero-based.
+
+[One row per fly: ready-to-paste HTML](body_core_qa_checklist.html). [One row per review window: ready-to-paste HTML](body_core_qa_intervals.html). [Editable interval CSV](body_core_qa_intervals.csv). Notes and QA fields are intentionally blank.
+
+Run commands from the repository root in the same Python environment as the existing player. Commands open paused. Space plays; comma/period step; type a frame and Enter to seek. A window labeled A–B uses --start A --end B+1: end is exclusive. The full-fly command permits navigation throughout the recording; omit --end from an interval command to explore farther.
+
+For each fly, review startup frames 0–1299; one 80-frame window sampled independently of the tracking result in pre-training and each training/post-training phase; and targeted windows for the longest realtime gap outside startup, longest newly missing run relative to realtime, greatest shared-frame center disagreement, known pilot cases, and any raw jump pair. Random seed: 20261117, fixed recording/fly/phase order. Overlapping windows need not be watched twice. Only list the intervals actually inspected in your log.
+
+QA scope: a pass applies to the reviewed intervals, not all four hours of the recording. Suggested outcomes: pending, satisfactory on reviewed intervals, issue found, or unassessable. Record the frame range and whether the issue is a wrong object, a shifted center, a contaminated ellipse, a missed visible fly, or an image that does not support a reliable measurement. A missing result can be justified; a finite original result is not ground truth. A suspicious jump may be genuine motion.
+
+Useful targeted anchors (the HTML/CSV include exact bounded commands):
+
+| Video index / recording | Fly | Targeted anchors |
+|---|---:|---|
+| 0: c42__2025-07-21__20-33-41 | 0 | 4038: longest realtime gap outside startup (3803–4272); inspect recovery or unresolved measurement; 851: longest realtime-finite/body-core-missing run (851–851); inspect whether rejection is justified; 30910: largest realtime/body-core center disagreement (6.38 px); either source may be wrong; 1005: previous startup rim-lock; 93914: flagged pair 93914/93921 |
+| 0: c42__2025-07-21__20-33-41 | 1 | 10664: longest realtime gap outside startup (10301–11026); inspect recovery or unresolved measurement; 42830: largest realtime/body-core center disagreement (5.94 px); either source may be wrong |
+| 0: c42__2025-07-21__20-33-41 | 2 | 74345: longest realtime gap outside startup (74134–74555); inspect recovery or unresolved measurement; 103635: largest realtime/body-core center disagreement (6.81 px); either source may be wrong |
+| 0: c42__2025-07-21__20-33-41 | 3 | 18885: longest realtime gap outside startup (13004–24765); inspect recovery or unresolved measurement; 85054: largest realtime/body-core center disagreement (6.18 px); either source may be wrong |
+| 1: c52__2025-07-17__12-27-27 | 0 | 82765: longest realtime gap outside startup (82354–83176); inspect recovery or unresolved measurement; 8870: largest realtime/body-core center disagreement (6.64 px); either source may be wrong |
+| 1: c52__2025-07-17__12-27-27 | 1 | 23258: longest realtime gap outside startup (21789–24727); inspect recovery or unresolved measurement; 56580: largest realtime/body-core center disagreement (3.27 px); either source may be wrong; 54002: previous 39 px² sidewall rejection |
+| 1: c52__2025-07-17__12-27-27 | 2 | 45178: longest realtime gap outside startup (45138–45217); inspect recovery or unresolved measurement; 21778: longest realtime-finite/body-core-missing run (21778–21778); inspect whether rejection is justified; 59737: largest realtime/body-core center disagreement (4.95 px); either source may be wrong; 1113: previous well-rim contamination |
+| 1: c52__2025-07-17__12-27-27 | 3 | 61594: longest realtime gap outside startup (60266–62922); inspect recovery or unresolved measurement; 11658: largest realtime/body-core center disagreement (3.04 px); either source may be wrong; 293: previous well-rim contamination; 61592: previous small-body rejection |
+| 2: c61__2025-07-27__12-52-43 | 0 | 4113: longest realtime gap outside startup (4021–4205); inspect recovery or unresolved measurement; 32832: longest realtime-finite/body-core-missing run (32832–32832); inspect whether rejection is justified; 11961: largest realtime/body-core center disagreement (5.17 px); either source may be wrong |
+| 2: c61__2025-07-27__12-52-43 | 1 | 6825: longest realtime gap outside startup (6725–6924); inspect recovery or unresolved measurement; 69110: longest realtime-finite/body-core-missing run (69109–69110); inspect whether rejection is justified; 18397: largest realtime/body-core center disagreement (6.19 px); either source may be wrong |
+| 2: c61__2025-07-27__12-52-43 | 2 | 37780: longest realtime gap outside startup (37702–37858); inspect recovery or unresolved measurement; 46983: longest realtime-finite/body-core-missing run (46983–46983); inspect whether rejection is justified; 64356: largest realtime/body-core center disagreement (5.62 px); either source may be wrong; 362: previous well-rim contamination |
+| 2: c61__2025-07-27__12-52-43 | 3 | 83524: longest realtime gap outside startup (83514–83533); inspect recovery or unresolved measurement; 48470: longest realtime-finite/body-core-missing run (48470–48470); inspect whether rejection is justified; 75297: largest realtime/body-core center disagreement (4.93 px); either source may be wrong; 387: previous ambiguity rejection |
+
+Generated 12 fly rows and 134 interval rows from the completed body-core companions and unchanged acquisition data. Frame selection does not constitute manual QA or an accuracy estimate.
