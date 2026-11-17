@@ -12,6 +12,34 @@ def canonical_ellipse(ellipse):
     return center, (w, h), theta % 180
 
 
+def weighted_body_ellipse(mask, residual, origin=(0, 0)):
+    """Fit positive-D² moments to a refined body mask, including its centroid.
+
+    mask/residual are matching local crops; origin maps them to saved-image pixels.
+    Unlike weighted_moment_ellipse, this deliberately recalculates the center.
+    """
+    ys, xs = np.nonzero(mask)
+    if len(xs) < 5:
+        return None
+    weights = np.maximum(residual[ys, xs].astype(np.float64), 0)**2
+    total = weights.sum()
+    if not np.isfinite(weights).all() or total <= 0:
+        return None
+    points = np.column_stack((xs, ys)).astype(np.float64)
+    center = (points*weights[:, None]).sum(axis=0)/total
+    delta = points-center
+    moments = (delta.T*weights)@delta/total
+    try:
+        values, axes = np.linalg.eigh(moments)
+    except np.linalg.LinAlgError:
+        return None
+    if not np.isfinite(values).all() or values[0] <= 1e-8:
+        return None
+    minor, major = 4*np.sqrt(values)
+    theta = (np.degrees(np.arctan2(axes[1, 1], axes[0, 1]))-90) % 180
+    return tuple(map(float, center+origin)), (float(minor), float(major)), float(theta)
+
+
 def weighted_moment_ellipse(contour, residual, mask, center):
     """Use D²-weighted second moments of accepted foreground about fixed center.
 

@@ -129,6 +129,8 @@ class Comparison:
             mode += " + " + detector["shape_fit"].replace("_", " ")
         if detector.get("illumination", "none") != "none":
             mode += " + " + detector["illumination"].replace("_", " ")
+        if detector.get("segmentation", "components") != "components":
+            mode += " + " + detector["segmentation"].replace("_", " ")
         return cls(base, other, info.fps, info.width, info.height, calibration,
                    label or mode, status, names, reasons, reason_names)
 

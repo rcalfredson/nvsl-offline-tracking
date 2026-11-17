@@ -145,7 +145,7 @@ def diagnostic_sheet(frame, rec, cal, index, background, results, residual, mask
              (cv2.cvtColor(background.estimate.astype(np.uint8), cv2.COLOR_GRAY2BGR), "recording-wide background"),
              (residual_image, f"residual; {config.illumination}; offset {results[0].illumination_offset:+.2f}"),
              (score_image, "residual / temporal noise: 0 to 10"),
-             (cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR), f"{config.mode} mask (before chamber ROI)"),
+             (cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR), f"{config.mode} threshold mask; {config.segmentation}"),
              (noise_image, "temporal MAD noise scale: 0 to 25 gray levels")]
     canvas = np.zeros((2*(cal.height+42), 3*cal.width, 3), np.uint8)
     for j, (tile, label) in enumerate(tiles):
@@ -205,13 +205,15 @@ def inspect(run, output, *, indices, configs):
                     (x, y), (w, h), theta = candidate.ellipse
                     candidates.append(dict(frame=index, slot=result.slot, mode=config.mode, rank=rank,
                                            area=candidate.area, truncated=candidate.truncated,
+                                           core_pixels=int(candidate.core_mask.sum()) if candidate.core_mask is not None else 0,
+                                           body_pixels=int(candidate.body_mask.sum()) if candidate.body_mask is not None else 0,
                                            x=x, y=y, w=w, h=h, theta=theta))
     if wanted:
         raise ValueError(f"Video ended before review frames {sorted(wanted)}")
     assert_sources(manifest["sources"])
     csv_write(out/"detections.csv", rows, list(rows[0]))
     csv_write(out/"candidates.csv", candidates,
-              ["frame", "slot", "mode", "rank", "area", "truncated", *FIELDS])
+              ["frame", "slot", "mode", "rank", "area", "truncated", "core_pixels", "body_pixels", *FIELDS])
     csv_write(out/"annotations.csv", annotations, list(annotations[0]))
     result = dict(schema_version=1, producer=producer(), audit=str(Path(run).resolve()),
                   source_recording=manifest["sources"], frames=indices,
@@ -243,8 +245,8 @@ def track(run, output, *, config=DetectionConfig(), exclude_slots=()):
     shape_method = np.zeros(rec.shape, np.uint8)
     illumination_offsets = np.zeros(rec.shape[1], np.float32)
     illumination_tile_mad = np.zeros(rec.shape[1], np.float32)
-    shape_codes = {"missing": 0, "box": 1, "weighted_moments": 2, "box_fallback": 3}
-    reason_codes = {"accepted": 0, "no_candidate": 1, "ambiguous": 2, "truncated": 3, "excluded": 4}
+    shape_codes = {"missing": 0, "box": 1, "weighted_moments": 2, "box_fallback": 3, "core_weighted_moments": 4}
+    reason_codes = {"accepted": 0, "no_candidate": 1, "ambiguous": 2, "truncated": 3, "excluded": 4, "no_core": 5}
     start = last_report = time.monotonic()
     decoded = 0
     for index, frame in frames(rec.video):
