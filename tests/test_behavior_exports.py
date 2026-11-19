@@ -59,3 +59,16 @@ def test_behavior_sources_cannot_be_swapped_or_compared_against_themselves():
     for sources in [('offline','original'),('original','original'),('offline','offline')]:
         with pytest.raises(ValueError, match='original analysis first'):
             exports.validate_source_order([dict(source=source) for source in sources])
+
+
+def test_repeat_camera_sessions_pair_by_acquisition_path(tmp_path):
+    path = tmp_path/'sli.csv'
+    path.write_text('pair_key,closed_video,exp_fly_id,sli_t2_sb5\n'
+                    '2025-07-27::c41::pair0,stage/a.avi,0,0.2\n'
+                    '2025-07-27::c41::pair0,stage/b.avi,0,0.4\n')
+    rows = exports.sli_rows(path, {'stage/a.avi': '/acquisition/a.avi',
+                                  'stage/b.avi': '/acquisition/b.avi'})
+    assert {key: row['sli_t2_sb5'] for key, row in rows.items()} == {
+        '/acquisition/a.avi::pair0': '0.2',
+        '/acquisition/b.avi::pair0': '0.4',
+    }
