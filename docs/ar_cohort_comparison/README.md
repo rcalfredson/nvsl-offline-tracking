@@ -74,6 +74,34 @@ every job's explicit frozen configuration and source identities. Tracking still
 produces all four physical slots, preserves acquisition order/timestamps, and
 writes separate companions with NaNs for unresolved measurements.
 
+Launch the flat batch from the repository root in the analysis environment:
+
+```bash
+PYTHONPATH=src python scripts/run_cohort_tracking.py \
+  --cohort docs/ar_cohort_comparison/flat-ar-control.json \
+  --output runs/flat-ar-control-body-core --workers 3
+```
+
+The output directory must be new. Add `--dry-run` to validate the local frozen
+plan/runtime and list jobs without creating outputs or decoding videos. On an
+interrupted/failed run, repeat the launch command with `--resume` and the same
+output directory. Completed companions and valid completed audits are reused
+after identity/configuration checks; partial attempts are retained and retried
+in new attempt directories. The runner rejects changed inputs, package/library
+versions, or changed runner/diagnostic code on resume. A batch lock prevents two
+launchers from writing to the same output directory. Ctrl-C or SIGTERM stops the
+worker process groups and preserves completed work.
+
+`status.json` records each job's stage, output paths, warnings, and errors.
+Each recording has an append-only `job.log` with decode/tracking progress.
+After each companion, the runner computes original/offline missingness and jump
+diagnostics; the final status includes their pooled aggregate. The held recording
+remains in `held`, outside the processing jobs. All-missing-slot warnings remain
+visible and no physical slots are automatically excluded. This launcher does not
+run behavioral analysis. The completed status has the `jobs/video/companion`
+fields expected by `scripts/run_analysis_comparison.py`; wait for
+`complete: true` before using it as analysis input.
+
 [analysis_plan.json](analysis_plan.json) records the upstream code identity and
 standard options used for the earlier comparisons. Analyze original and offline
 sources in isolated directories with the same acquisition metadata/notes and
