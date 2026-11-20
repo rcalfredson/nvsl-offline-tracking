@@ -1,6 +1,7 @@
 """Conservative per-frame detections; no motion prediction or interpolation."""
 
 from dataclasses import dataclass
+from functools import lru_cache
 
 import cv2
 import numpy as np
@@ -28,6 +29,9 @@ class DetectionConfig:
     segmentation: str = "components"
     core_radius: float = 2.0
     core_growth: int = 2
+    min_concentration: float | None = None
+    concentration_radius: int = 10
+    ambiguity_darkness_ratio: float | None = None
 
     def validate(self):
         if self.mode not in ("absolute", "normalized"):
@@ -44,6 +48,17 @@ class DetectionConfig:
             raise ValueError("Core growth must be an integer in [0,20]")
         if self.segmentation == "body_core" and self.shape_fit != "weighted_moments":
             raise ValueError("Body-core segmentation requires weighted_moments geometry")
+        if (self.min_concentration is not None or self.ambiguity_darkness_ratio is not None
+                ) and self.segmentation != "body_core":
+            raise ValueError("Candidate concentration and darkness require body_core segmentation")
+        if self.min_concentration is not None and not 0 < self.min_concentration <= 1:
+            raise ValueError("Minimum concentration must be in (0, 1]")
+        if (type(self.concentration_radius) is not int
+                or not 1 <= self.concentration_radius <= 64):
+            raise ValueError("Concentration radius must be an integer in [1, 64]")
+        if self.ambiguity_darkness_ratio is not None and (
+                not np.isfinite(self.ambiguity_darkness_ratio) or self.ambiguity_darkness_ratio <= 1):
+            raise ValueError("Ambiguity darkness ratio must be finite and greater than 1")
         vals = [self.threshold, self.signal_floor, self.score_threshold, self.area_min,
                 self.area_max, self.ambiguity_ratio]
         if (not np.isfinite(vals).all() or min(vals[:4]) <= 0 or self.area_max < self.area_min
@@ -60,6 +75,8 @@ class Candidate:
     body_mask: np.ndarray | None = None
     core_mask: np.ndarray | None = None
     mask_origin: tuple[int, int] | None = None
+    concentration: float | None = None
+    median_darkness: float | None = None
 
 
 @dataclass
@@ -73,6 +90,21 @@ class Detection:
     shape_method: str = "missing"
     illumination_offset: float = 0.0
     illumination_tile_mad: float = 0.0
+    darkness_ratio: float | None = None
+
+
+@lru_cache(maxsize=8)
+def _disk(radius):
+    offsets = np.arange(-radius, radius+1)
+    return (offsets[:, None]**2 + offsets[None, :]**2 <= radius**2).astype(np.float64)
+
+
+def _concentration(darkness, body_mask, core_mask, radius):
+    weights = darkness**2 * body_mask
+    local_mass = cv2.filter2D(weights, -1, _disk(radius), borderType=cv2.BORDER_CONSTANT)
+    # FFT convolution can put a fully contained disk a rounding step above or below 1.
+    score = float(local_mass[core_mask].max() / weights.sum())
+    return 1.0 if abs(score - 1.0) <= 1e-12 else score
 
 
 def detect(frame, background: Background, calibration: Calibration, config: DetectionConfig):
@@ -93,7 +125,7 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
     for slot in range(4):
         x0, y0, x1, y1 = calibration.roi(slot)
         crop = mask[y0:y1, x0:x1]
-        counts = dict(small=0, large=0, few_points=0, truncated=0, no_core=0)
+        counts = dict(small=0, large=0, few_points=0, truncated=0, no_core=0, low_concentration=0)
         candidates = []
         if config.segmentation == "body_core":
             regions = body_core_regions(crop, config.core_radius, config.core_growth)
@@ -110,13 +142,26 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
                     continue
                 ox, oy = region.origin[0]+x0, region.origin[1]+y0
                 height, width = region.mask.shape
-                ellipse = weighted_body_ellipse(region.mask, residual[oy:oy+height, ox:ox+width], (ox, oy))
+                local_residual = residual[oy:oy+height, ox:ox+width]
+                ellipse = weighted_body_ellipse(region.mask, local_residual, (ox, oy))
                 if ellipse is None:
                     counts['few_points'] += 1
                     continue
+                concentration = median_darkness = None
+                if config.min_concentration is not None or config.ambiguity_darkness_ratio is not None:
+                    darkness = np.maximum(local_residual, 0).astype(np.float64)
+                    if config.min_concentration is not None:
+                        concentration = _concentration(darkness, region.mask, region.core,
+                                                       config.concentration_radius)
+                        if concentration < config.min_concentration:
+                            counts["low_concentration"] += 1
+                            continue
+                    if config.ambiguity_darkness_ratio is not None:
+                        median_darkness = float(np.median(darkness[region.mask.astype(bool)]))
                 contour = contour + np.array([[[ox, oy]]], dtype=contour.dtype)
                 candidates.append(Candidate(ellipse, area, contour, region.truncated,
-                                            region.mask, region.core, (ox, oy)))
+                                            region.mask, region.core, (ox, oy),
+                                            concentration, median_darkness))
                 counts['truncated'] += int(region.truncated)
             contours, hierarchy = [], None
         else:
@@ -142,14 +187,26 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
             counts["truncated"] += int(truncated)
         candidates.sort(key=lambda c: c.area, reverse=True)
         ratio = candidates[1].area/candidates[0].area if len(candidates) > 1 else None
-        reason, ellipse = "no_core" if counts['no_core'] else "no_candidate", None
+        reason = "no_candidate"
+        if counts["no_core"]:
+            reason = "no_core"
+        elif counts["low_concentration"]:
+            reason = "low_concentration"
+        ellipse = darkness_ratio = None
         if candidates:
-            if config.reject_truncated and candidates[0].truncated:
+            first = candidates[0]
+            if config.reject_truncated and first.truncated:
                 reason = "truncated"
             elif config.reject_ambiguous and ratio is not None and ratio >= config.ambiguity_ratio:
                 reason = "ambiguous"
+                if config.ambiguity_darkness_ratio is not None:
+                    strongest_rival = max(c.median_darkness for c in candidates[1:]
+                                          if c.area/first.area >= config.ambiguity_ratio)
+                    darkness_ratio = first.median_darkness / strongest_rival
+                    if darkness_ratio >= config.ambiguity_darkness_ratio:
+                        reason, ellipse = "accepted", first.ellipse
             else:
-                reason, ellipse = "accepted", candidates[0].ellipse
+                reason, ellipse = "accepted", first.ellipse
         shape_method = "missing"
         if ellipse is not None:
             shape_method = "box"
@@ -162,5 +219,5 @@ def detect(frame, background: Background, calibration: Calibration, config: Dete
                 else:
                     shape_method = "box_fallback"
         results.append(Detection(slot, ellipse, candidates, counts, reason, ratio, shape_method,
-                                 offset, tile_mad))
+                                 offset, tile_mad, darkness_ratio))
     return results, residual, mask

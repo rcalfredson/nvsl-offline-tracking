@@ -56,6 +56,12 @@ def parser():
                              help="Foreground components or experimental body-core reconstruction")
         command.add_argument("--core-radius", type=float, default=2., help="Core distance threshold in saved-image pixels")
         command.add_argument("--core-growth", type=int, default=2, help="Bounded 8-neighbor expansion steps")
+        command.add_argument("--min-concentration", type=float,
+                             help="Optional minimum fraction of body-mask weight in one disk (body_core)")
+        command.add_argument("--concentration-radius", type=int, default=10,
+                             help="Disk radius in saved-image pixels (default: 10)")
+        command.add_argument("--ambiguity-darkness-ratio", type=float,
+                             help="Optional lead-to-rival median residual ratio that resolves ambiguity (body_core)")
         command.add_argument("--illumination", choices=["none", "global_offset"], default="none",
                              help="Optional per-frame additive background correction (default: none)")
         command.add_argument("--threshold", type=float, default=25)
@@ -98,7 +104,9 @@ def main(argv=None):
                    ambiguity_ratio=args.ambiguity_ratio, reject_ambiguous=not args.largest_only,
                    reject_truncated=not args.allow_truncated, shape_fit=args.shape_fit,
                    illumination=args.illumination, segmentation=args.segmentation,
-                   core_radius=args.core_radius, core_growth=args.core_growth) for mode in modes]
+                   core_radius=args.core_radius, core_growth=args.core_growth,
+                   min_concentration=args.min_concentration, concentration_radius=args.concentration_radius,
+                   ambiguity_darkness_ratio=args.ambiguity_darkness_ratio) for mode in modes]
         if args.command == "inspect":
             result = inspect(args.run, args.output, indices=integer_list(args.frames), configs=configs)
         else:

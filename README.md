@@ -166,6 +166,21 @@ no well-location prior or trajectory interpolation and requires weighted-moment
 geometry. See the [body-core pilot](docs/body_core_pilot.md) for results, controls,
 and remaining small-body/ambiguity failures. The previous detector remains default.
 
+Two opt-in candidate rules are available for `inspect` and `track` with
+`--segmentation body_core`:
+
+- `--min-concentration 0.90 --concentration-radius 10` requires at least
+  90% of the squared positive residual weight to fall inside one 10-pixel
+  disk centered on a core pixel. Candidates are screened before ranking.
+- `--ambiguity-darkness-ratio 2` lets the largest remaining candidate
+  resolve an area-based ambiguity if its median positive residual is at
+  least twice as high as the median of every candidate that could veto it.
+  A single candidate does not need to pass a contrast comparison.
+
+These options use the body mask and the lighting-corrected residual when
+illumination correction is enabled. They can be enabled independently.
+Inspection CSVs report the screening counts and the candidate scores used.
+
 Output directories and companion filenames must be new. Acquisition video,
 `.trx`, and `.data` files are read-only inputs. Load only trusted acquisition
 pickles. `audit` discovers `experiment.trx`/`.data` or `experiment.avi.trx`/`.data`,

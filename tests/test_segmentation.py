@@ -92,6 +92,40 @@ def test_core_configuration_is_explicit_and_validated():
     assert parser().parse_args(['track','audit','--output','new','--segmentation','body_core']).core_radius == 2
     for kwargs in [dict(core_radius=0),dict(core_radius=float('nan')),dict(core_growth=-1),
                    dict(core_growth=2.5),dict(segmentation='unknown'),
-                   dict(segmentation='body_core',shape_fit='box')]:
+                   dict(segmentation='body_core',shape_fit='box'),
+                   dict(min_concentration=.9), dict(ambiguity_darkness_ratio=2),
+                   dict(segmentation='body_core', min_concentration=1.1),
+                   dict(segmentation='body_core', ambiguity_darkness_ratio=float('inf'))]:
         with pytest.raises(ValueError):
             DetectionConfig(**kwargs).validate()
+
+
+def test_concentration_and_darkness_resolve_different_competitors():
+    bg = Background.fit(np.full((3, 240, 240), 150, np.uint8))
+    cal = SimpleNamespace(roi=lambda slot: [(0, 0, 120, 120), (120, 0, 240, 120),
+                                          (0, 120, 120, 240), (120, 120, 240, 240)][slot])
+    frame = np.full((240, 240, 3), 150, np.uint8)
+    cv2.rectangle(frame, (10, 10), (100, 15), (125,)*3, -1)
+    cv2.ellipse(frame, (35, 40), (5, 8), 0, 0, 360, (70,)*3, -1)
+    cv2.ellipse(frame, (75, 70), (5, 8), 0, 0, 360, (120,)*3, -1)
+
+    def result(**options):
+        return detect(frame, bg, cal, DetectionConfig(
+            mode="normalized", segmentation="body_core", **options))[0][0]
+
+    assert result().ellipse[0][1] < 20
+    compact = result(min_concentration=.9)
+    assert compact.reason == "ambiguous"
+    assert compact.rejected_counts["low_concentration"] == 1
+    resolved = result(min_concentration=.9, ambiguity_darkness_ratio=2)
+    assert resolved.reason == "accepted"
+    assert resolved.darkness_ratio == pytest.approx(80/30)
+    np.testing.assert_allclose(resolved.ellipse[0], (35, 40), atol=.2)
+    assert result(min_concentration=.9, ambiguity_darkness_ratio=3).reason == "ambiguous"
+
+    # A single faint body stays eligible even with the darkness tie-break enabled.
+    frame[:]=150
+    cv2.ellipse(frame, (75, 70), (5, 8), 0, 0, 360, (120,)*3, -1)
+    faint = result(min_concentration=.9, ambiguity_darkness_ratio=2)
+    assert faint.reason == "accepted" and faint.darkness_ratio is None
+    np.testing.assert_allclose(faint.ellipse[0], (75, 70), atol=.2)

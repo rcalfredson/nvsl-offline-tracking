@@ -153,7 +153,7 @@ def main():
     config.validate()
     root = Path(__file__).resolve().parents[1]
     validated_plan = root/'docs/body_core_full_check_plan.json'
-    if asdict(config) != json.loads(validated_plan.read_text())['configuration']:
+    if config != DetectionConfig(**json.loads(validated_plan.read_text())['configuration']):
         raise ValueError('Configuration differs from the manually reviewed full-recording check')
     frozen_producer = producer()
     tracked = subprocess.check_output(['git','diff','HEAD','--','src/nvsl_offline'],cwd=root,text=True)
