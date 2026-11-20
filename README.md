@@ -99,6 +99,35 @@ from the real recording. The clip has 200 consecutive saved frames (4800–4999)
 at 7.5 fps. The interactive controls were tested without creating a desktop
 window; frame seeking, rendering and MP4 export were also exercised on actual data.
 
+To label a benchmark, first use `compare` to choose saved frames. Make a
+selection CSV with one row per frame and physical fly slot (both zero-based).
+Companion paths may be absolute or relative to the selection CSV. Optional
+columns such as `split`, `window`, and `notes` are copied to the output.
+
+```csv
+companion,fly,frame,split,window
+/path/to/c62.body-core.offline.trx,2,45934,tune,ambiguous-gap
+/path/to/c62.body-core.offline.trx,2,90375,evaluation,wall-lock
+```
+
+```bash
+PYTHONPATH=src python scripts/annotate_benchmark.py selection.csv \
+  --output runs/benchmark/labels.csv
+```
+
+Click the visible body center in the crop, or press `a` for no fly and `u`
+for unclear. Coordinates are saved in the original full-frame pixel system.
+Each label is saved immediately. Press `n` or `p` to navigate targets, `,`
+or `.` to view nearby frames, and `t` to return to the target. Labels can
+only be entered on the target frame. Tracker centers are hidden by default.
+Press `o` to show them temporarily, `x` to clear a label, or `q` to quit.
+This requires a desktop with GUI-enabled OpenCV. Use `--scale 1` if the window
+is too large for your display.
+
+Rerun the same command with the same selection and output to resume at the
+first unlabeled row. An empty `status` means pending, while `no_fly` and
+`unclear` are explicit labels. Use one annotation session per output CSV.
+
 Example for the reviewed 39 mm large-chamber recording:
 
 ```bash
