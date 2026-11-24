@@ -42,6 +42,23 @@ def test_competing_cores_never_claim_the_same_pixels():
         x, y = region.origin
         occupancy[y:y+region.mask.shape[0], x:x+region.mask.shape[1]] += region.mask
     assert occupancy.max() == 1
+    np.testing.assert_array_equal(occupancy[30, 39:42], [1, 0, 1])
+
+
+def test_tight_foreground_crop_keeps_seed_order_on_the_original_grid():
+    mask = np.zeros((40, 60), np.uint8)
+    mask[4:11, 3:10] = 255
+    mask[3:10, 13:20] = 255
+
+    regions = body_core_regions(mask)
+
+    # Starting the label grid at foreground row 3 would put the first seed
+    # pixels in one 2-row block and swap the left and right seeds.
+    assert [region.origin for region in regions] == [(13, 3), (3, 4)]
+    for region in regions:
+        np.testing.assert_array_equal(region.mask, np.ones((7, 7), dtype=np.uint8))
+        assert region.core.sum() == 9
+        assert not region.truncated
 
 
 def test_erosion_cannot_disguise_roi_truncation():
