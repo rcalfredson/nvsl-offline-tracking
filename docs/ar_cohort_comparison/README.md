@@ -1,5 +1,41 @@
 Antennae-removed large-chamber comparison plan, 17 Nov 2026.
 
+## Reproduce the three-way behavioral comparison
+
+Use the four completed cohort tracking batches to generate native trajectory
+selection inputs. The preparation script checks that the recording lists match
+within each cohort and verifies the saved companion hashes. It writes two
+explicit video lists and a version 1 manifest with absolute companion paths.
+The held flat recording is outside both completed flat batch lists.
+
+From the offline tracker repository root, using the analysis environment:
+
+```bash
+PYTHONPATH=src python scripts/prepare_ar_three_way.py \
+  --output runs/ar-three-way-behavior-inputs
+
+bash scripts/run_ar_three_way.sh \
+  runs/ar-three-way-behavior-inputs runs/ar-three-way-behavior
+```
+
+If the inputs already exist, start with the Bash command. Choose a new results
+directory if the earlier command has already written to the default location.
+Set `ANALYSIS_PYTHON` and `NVSL_ANALYSIS_ROOT` to absolute paths if your
+interpreter or freestanding `nvsl-analysis` checkout is elsewhere. Native
+tracking selection was added in analysis commit `5b7bbba`. Use a checkout
+with that interface and the analysis dependencies installed.
+
+The launcher runs the same options for three trajectory sources within each
+cohort: original real-time, Nov 17 body-core, and Nov 20 two-rule. It starts
+with agarose, then runs flat. Offline selections are strict. Each run has
+its own working directory with `command.sh`, `process.log`,
+`learning_stats.csv`, and `sli.csv`. The result directory also records the
+analysis commit, worktree status, manifest, and video lists. If an analysis
+fails, the launcher reports the affected variant, continues, and returns a
+nonzero exit status when the batch ends.
+
+## Original cohort preparation
+
 The tracker configuration is frozen for the first cohort comparison. This is
 preparation only: no cohort-wide tracking or behavioral analysis has been launched.
 
