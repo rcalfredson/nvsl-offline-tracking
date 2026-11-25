@@ -25,6 +25,7 @@ from nvsl_offline.jumps import aggregate_comparisons
 from nvsl_offline.pipeline import assert_sources, audit, load_run, producer, track
 from nvsl_offline.recording import identity
 from nvsl_offline.replay import Comparison
+from nvsl_offline.video import sample_indices
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,9 +57,9 @@ def verify_audit(path, job, frozen):
         raise ValueError('Audit differs from frozen recording identity or shape')
     if manifest['background_config'] != frozen['background'] or asdict(cal) != job['calibration']:
         raise ValueError('Audit background/calibration differs from frozen plan')
-    expected_samples = min(job['frames'], frozen['audit']['samples'])
-    if len(manifest['sample_indices']) != expected_samples:
-        raise ValueError('Audit sample count differs from frozen plan')
+    expected_samples = sample_indices(job['frames'], frozen['audit']['samples']).tolist()
+    if manifest['decoded_frames'] != job['frames'] or manifest['sample_indices'] != expected_samples:
+        raise ValueError('Audit decoded frame count or sample indices differ from frozen plan')
     return manifest
 
 
@@ -105,16 +106,17 @@ def execute_job(directory):
         work = directory/f'attempt-{attempt:03d}'
         work.mkdir()
         update(attempts=attempt, stage='checking', error=None)
-        audit_path = Path(progress.get('audit', work/'audit'))
-        if not (audit_path/'manifest.json').is_file():
+        audit_path = Path(job.get('reuse_audit') or progress.get('audit', work/'audit'))
+        if not job.get('reuse_audit') and not (audit_path/'manifest.json').is_file():
             audit_path = work/'audit'
             update(stage='auditing', audit=str(audit_path))
             audit(job['video'], audit_path, **frozen['audit'],
                   config=BackgroundConfig(**frozen['background']))
         manifest = verify_audit(audit_path, job, frozen)
         verify_runtime(frozen)
-        companion = Path(progress.get('companion', work/(Path(job['video']).stem+'.body-core.offline.trx')))
-        if not companion.exists():
+        companion = Path(job.get('reuse_companion') or progress.get(
+            'companion', work/(Path(job['video']).stem+'.body-core.offline.trx')))
+        if not job.get('reuse_companion') and not companion.exists():
             companion = work/(Path(job['video']).stem+'.body-core.offline.trx')
             update(stage='tracking', companion=str(companion), audit=str(audit_path))
             track(audit_path, companion, config=DetectionConfig(**frozen['detector']))
@@ -122,7 +124,8 @@ def execute_job(directory):
         if progress.get('companion_identity') and progress['companion_identity'] != companion_identity:
             raise ValueError('Previously published companion changed')
         comparison_dir = work/'comparison'
-        update(stage='comparing', companion=str(companion), companion_identity=companion_identity,
+        update(stage='comparing', audit=str(audit_path), companion=str(companion),
+               companion_identity=companion_identity,
                comparison=str(comparison_dir/'summary.json'))
         subprocess.run([sys.executable, str(ROOT/'scripts/compare_jump_trajectories.py'),
                         str(companion), '--output', str(comparison_dir)], check=True)

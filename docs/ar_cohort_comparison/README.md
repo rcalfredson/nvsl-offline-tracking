@@ -88,7 +88,11 @@ interrupted/failed run, repeat the launch command with `--resume` and the same
 output directory. Completed companions and valid completed audits are reused
 after identity/configuration checks; partial attempts are retained and retried
 in new attempt directories. The runner rejects changed inputs, package/library
-versions, or changed runner/diagnostic code on resume. A batch lock prevents two
+versions, or changed runner/diagnostic code on resume. To reuse inputs from
+another run, a job may specify absolute paths in `reuse_audit` and
+`reuse_companion`. The runner verifies the audit and companion against the
+new plan before using them in place. An invalid reuse entry fails the job.
+A batch lock prevents two
 launchers from writing to the same output directory. Ctrl-C or SIGTERM stops the
 worker process groups and preserves completed work.
 

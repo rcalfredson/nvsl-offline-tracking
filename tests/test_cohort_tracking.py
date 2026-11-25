@@ -103,3 +103,27 @@ def test_drifted_tracker_is_rejected_before_output_creation(tmp_path):
     result = invoke(tmp_path)
     assert result.returncode != 0 and 'Frozen runtime mismatch' in result.stdout
     assert not (tmp_path/'batch').exists()
+
+
+def test_job_reuses_verified_external_audit_and_companion(tmp_path, monkeypatch):
+    rec, frozen, job = inputs(tmp_path)
+    audit_dir = tmp_path/'prior-audit'
+    companion = tmp_path/'prior.offline.trx'
+    batch.audit(rec.video, audit_dir, **frozen['audit'])
+    batch.track(audit_dir, companion, config=DetectionConfig(**frozen['detector']))
+    expected = identity(companion, content_hash=True)
+    directory = tmp_path/'job'
+    directory.mkdir()
+    batch.save(directory/'input.json', dict(job, reuse_audit=str(audit_dir),
+                                           reuse_companion=str(companion)))
+
+    def must_reuse(*args, **kwargs):
+        pytest.fail('Inputs should be reused without decoding or tracking again')
+
+    monkeypatch.setattr(batch, 'audit', must_reuse)
+    monkeypatch.setattr(batch, 'track', must_reuse)
+    batch.execute_job(directory)
+    progress = batch.read(directory/'progress.json')
+    assert progress['stage'] == 'complete'
+    assert progress['audit'] == str(audit_dir)
+    assert progress['companion_identity'] == expected
